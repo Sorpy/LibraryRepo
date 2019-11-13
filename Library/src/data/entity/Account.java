@@ -1,6 +1,6 @@
 package data.entity;
 
-import business.converter.common.SkipField;
+import business.converter.common.customannotation.SkipField;
 
 public abstract class Account extends PersistentNamed {
     @SkipField

@@ -1,8 +1,6 @@
 package business.converter.common;
 
-import business.converter.accountclient.AccountClientParam;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import data.entity.AccountClient;
+import business.converter.common.customannotation.SkipField;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -28,7 +26,7 @@ public abstract class BaseParamConverterImpl <Tin,Tout> implements BaseParamConv
 
         paramInfo.forEach((key, value) -> {
             try {
-                if (value.isAnnotationPresent(SkipField.class)) {
+                if (value.getAnnotation(SkipField.class).ignore()) {
                     return;
                 }
                 if (entityInfo.containsKey(key)) {

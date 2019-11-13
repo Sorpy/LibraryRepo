@@ -107,7 +107,7 @@ Changes in this version include:
 
 New features:
 o LANG-1352: EnumUtils.getEnumIgnoreCase and isValidEnumIgnoreCase methods added Thanks to Ruslan Sibgatullin.
-o LANG-1372: Add ToStringSummary annotation Thanks to Sérgio Ozaki.
+o LANG-1372: Add ToStringSummary annotation Thanks to Sï¿½rgio Ozaki.
 o LANG-1356: Add bypass option for classes to recursive and reflective EqualsBuilder Thanks to Yathos UG.
 o LANG-1391: Improve Javadoc for StringUtils.isAnyEmpty(null) Thanks to Sauro Matulli, Oleg Chubaryov.
 o LANG-1393: Add API SystemUtils.String getEnvironmentVariable(final String name, final String defaultValue) Thanks to Gary Gregory.
@@ -283,7 +283,7 @@ o LANG-1307: Add a method in StringUtils to extract only digits out of input
 o LANG-1256: Add JMH maven dependencies. Thanks to C0rWin.
 o LANG-1167: Add null filter to ReflectionToStringBuilder.
              Thanks to Mark Dacek.
-o LANG-1299: Add method for converting string to an array of code points.
+o LANG-1299: Add method for converting string to an array of unicode points.
 o LANG-660:  Add methods to insert arrays into arrays at an index.
 o LANG-1034: Add support for recursive comparison to
              EqualsBuilder#reflectionEquals. Thanks to Yathos UG.
@@ -310,7 +310,7 @@ o LANG-1337: Fix test failures in IBM JDK 8 for ToStringBuilderTest.
 o LANG-1319: MultilineRecursiveToStringStyle StackOverflowError when object is
              an array.
 o LANG-1320: LocaleUtils#toLocale does not support language followed by UN M.49
-             numeric-3 area code followed by variant.
+             numeric-3 area unicode followed by variant.
 o LANG-1300: Clarify or improve behaviour of int-based indexOf methods in
              StringUtils. Thanks to Mark Dacek.
 o LANG-1286: RandomStringUtils random method can overflow and return characters
@@ -319,7 +319,7 @@ o LANG-1292: WordUtils.wrap throws StringIndexOutOfBoundsException.
 o LANG-1287: RandomStringUtils#random can enter infinite loop if end parameter
              is to small. Thanks to Ivan Morozov.
 o LANG-1285: NullPointerException in FastDateParser$TimeZoneStrategy.
-             Thanks to Francesco Chicchiriccò.
+             Thanks to Francesco Chicchiriccï¿½.
 o LANG-1281: Javadoc of StringUtils.ordinalIndexOf is contradictory.
              Thanks to Andreas Lundblad.
 o LANG-1188: StringUtils#join(T...): warning: [unchecked] Possible heap
@@ -338,7 +338,7 @@ o LANG-1155: Add StringUtils#unwrap. Thanks to Saif Asif, Thiago Andrade.
 o LANG-1311: TypeUtils.toString() doesn't handle primitive and Object arrays
              correctly. Thanks to Aaron Digulla.
 o LANG-1312: LocaleUtils#toLocale does not support language followed by UN M.49
-             numeric-3 area code.
+             numeric-3 area unicode.
 o LANG-1265: Build failures when building with Java 9 EA.
 o LANG-1314: javadoc creation broken with Java 8. Thanks to Allon Murienik.
 o LANG-1310: MethodUtils.invokeMethod throws ArrayStoreException if using
@@ -537,7 +537,7 @@ o LANG-1252: Rename NumberUtils.isNumber, isCreatable to better reflect
 o LANG-1230: Remove unnecessary synchronization from registry lookup in
              EqualsBuilder and HashCodeBuilder. Thanks to Philippe Marschall.
 o LANG-1214: Handle "void" in ClassUtils.getClass(). Thanks to Henry Tung.
-o LANG-1250: SerializationUtils#deserialize has unnecessary code and a comment
+o LANG-1250: SerializationUtils#deserialize has unnecessary unicode and a comment
              for that. Thanks to Glease Wang.
 o LANG-1190: TypeUtils.isAssignable throws NullPointerException when fromType
              has type variables and toType generic superclass specifies type
@@ -637,9 +637,9 @@ o LANG-1176: Improve ArrayUtils removeElements time complexity to O(n). Thanks
              to Jeffery Yuan.
 o LANG-1234: getLevenshteinDistance with a threshold: optimize implementation
              if the strings lengths differ more than the threshold. Thanks to
-             Jonatan Jönsson.
+             Jonatan Jï¿½nsson.
 o LANG-1151: Performance improvements for NumberUtils.isParsable. Thanks to
-             Juan Pablo Santos Rodríguez.
+             Juan Pablo Santos Rodrï¿½guez.
 o LANG-1218: EqualsBuilder.append(Object,Object) is too big to be inlined,
              which prevents whole builder to be scalarized. Thanks to
              Ruslan Cheremin.
@@ -651,7 +651,7 @@ o LANG-1182: Clarify Javadoc of StringUtils.containsAny(). Thanks to
 o LANG-1183: Making replacePattern/removePattern methods null safe in
              StringUtils.
 o LANG-1057: Replace StringBuilder with String concatenation for better
-             optimization. Thanks to Otávio Santana.
+             optimization. Thanks to Otï¿½vio Santana.
 o LANG-1075: Deprecate SystemUtils.FILE_SEPARATOR and
              SystemUtils.PATH_SEPARATOR.
 o LANG-979:  TypeUtils.parameterizeWithOwner - wrong format descriptor for
@@ -698,13 +698,13 @@ o LANG-1080: Add NoClassNameToStringStyle implementation of ToStringStyle.
              Thanks to Innokenty Shuvalov.
 o LANG-883:  Add StringUtils.containsAny(CharSequence, CharSequence...) method.
              Thanks to Daniel Stewart.
-o LANG-1052: Multiline recursive to string style. Thanks to Jan Matèrne.
+o LANG-1052: Multiline recursive to string style. Thanks to Jan Matï¿½rne.
 o LANG-536:  Add isSorted() to ArrayUtils. Thanks to James Sawle.
 o LANG-1033: Add StringUtils.countMatches(CharSequence, char)
 o LANG-1021: Provide methods to retrieve all fields/methods annotated with a
-             specific type. Thanks to Alexander Müller.
+             specific type. Thanks to Alexander Mï¿½ller.
 o LANG-1016: NumberUtils#isParsable method(s). Thanks to
-             Juan Pablo Santos Rodríguez.
+             Juan Pablo Santos Rodrï¿½guez.
 o LANG-999:  Add fuzzy String matching logic to StringUtils. Thanks to
              Ben Ripkens.
 o LANG-994:  Add zero copy read method to StrBuilder. Thanks to
@@ -879,12 +879,12 @@ o LANG-943:  Test DurationFormatUtilsTest.testEdgeDuration fails in
 o LANG-613:  ConstructorUtils.getAccessibleConstructor() Does Not Check the
              Accessibility of Enclosing Classes
 o LANG-951:  Fragments are wrong by 1 day when using fragment YEAR or MONTH.
-             Thanks to Sebastian Götz.
+             Thanks to Sebastian Gï¿½tz.
 o LANG-950:  FastDateParser does not handle two digit year parsing like
              SimpleDateFormat
 o LANG-949:  FastDateParserTest.testParses does not test FastDateParser
 o LANG-915:  Wrong locale handling in LocaleUtils.toLocale().
-             Thanks to Sergio Fernández.
+             Thanks to Sergio Fernï¿½ndez.
 
 CHANGES
 =========
@@ -983,7 +983,7 @@ o LANG-462:  FastDateFormat supports parse methods.
 BUG FIXES
 ===========
 
-o LANG-932:  Spelling fixes. Thanks to Ville Skyttä.
+o LANG-932:  Spelling fixes. Thanks to Ville Skyttï¿½.
 o LANG-929:  OctalUnescaper tried to parse all of \279.
 o LANG-928:  OctalUnescaper had bugs when parsing octals starting with a zero.
 o LANG-905:  EqualsBuilder returned true when comparing arrays, even when the
@@ -1136,7 +1136,7 @@ o LANG-537:  Add ArrayUtils.toArray to create generic arrays.
 o LANG-545:  Add ability to create a Future for a constant.
 o LANG-546:  Add methods to Validate to check whether the index is valid for
              the array/list/string.
-o LANG-553:  Add TypeUtils class to provide utility code for working with generic
+o LANG-553:  Add TypeUtils class to provide utility unicode for working with generic
              types.
 o LANG-559:  Added isAssignableFrom and isInstanceOf validation methods.
 o LANG-559:  Added validState validation method.
@@ -1166,8 +1166,8 @@ REMOVALS
 ==========
 
 o LANG-438:  Remove @deprecateds.
-o LANG-492:  Remove code handled now by the JDK.
-o LANG-493:  Remove code that does not hold enough value to remain.
+o LANG-492:  Remove unicode handled now by the JDK.
+o LANG-493:  Remove unicode that does not hold enough value to remain.
 o LANG-590:  Remove JDK 1.2/1.3 bug handling in
              StringUtils.indexOf(String, String, int).
 o LANG-673:  WordUtils.abbreviate() removed
@@ -1181,7 +1181,7 @@ o LANG-336:  Finally start using generics.
 o LANG-355:  StrBuilder should implement CharSequence and Appendable.
 o LANG-396:  Investigate for vararg usages.
 o LANG-424:  Improve Javadoc for StringUtils class.
-o LANG-458:  Refactor Validate.java to eliminate code redundancy.
+o LANG-458:  Refactor Validate.java to eliminate unicode redundancy.
 o LANG-479:  Document where in SVN trunk is.
 o LANG-504:  bring ArrayUtils.isEmpty to the generics world.
 o LANG-505:  Rewrite StringEscapeUtils.

@@ -3,12 +3,19 @@ package data.entity;
 import business.converter.accountclient.AccountClientParam;
 import business.converter.accountclient.AccountClientResult;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SequenceWriter;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import dataaccess.dao.accountclientdao.AccountClientDao;
 import dataaccess.dao.accountclientdao.AccountClientDaoImpl;
 import presentation.service.accountclientservice.AccountClientService;
 import presentation.service.accountclientservice.AccountClientServiceImpl;
 import presentation.service.accountclientstatusservive.AccountClientStatusService;
 import presentation.service.accountclientstatusservive.AccountClientStatusServiceImpl;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class TestRunner {
     public void test() throws JsonProcessingException {
@@ -29,7 +36,7 @@ public class TestRunner {
         accountClientParam.setCountry("Bulg");
         accountClientParam.setCity("Plovdiv");
         accountClientParam.setAddress("Some Adress");
-        accountClientParam.setCode("sAA");
+        accountClientParam.setUnicode("sAA");
         accountClientParam.setName("AccountThing");
         accountClientParam.setDescription("Something");
         accountClientParam.setId((long) 4);
@@ -39,7 +46,7 @@ public class TestRunner {
 
         AccountClientParam accountClientParam2 = new AccountClientParam();
 
-        accountClientParam2.setUserId((long) 15);
+        accountClientParam2.setUserId((long) 3);
         accountClientParam2.setFirstName("Name");
         accountClientParam2.setSecondName("OtherName");
         accountClientParam2.setLastName("ThirdName");
@@ -48,16 +55,16 @@ public class TestRunner {
         accountClientParam2.setCountry("Bulg");
         accountClientParam2.setCity("Plovdiv");
         accountClientParam2.setAddress("Some Adress");
-        accountClientParam2.setCode("aAA");
+        accountClientParam2.setUnicode("aAA");
         accountClientParam2.setName("AccountThing");
         accountClientParam2.setDescription("Something");
-        accountClientParam2.setId((long) 9);
-        accountClientParam2.setAccountClientStatusId((long)1);
+        accountClientParam2.setId((long) 5);
+        accountClientParam2.setAccountClientStatusId((long)2);
 
 
 
         AccountClient accountClient11 = new AccountClient();
-        accountClient11.setId((long)5);
+        accountClient11.setId((long)8);
         accountClient11.setCode("A5K");
         accountClient11.setName("asdasd");
         accountClient11.setAddress("asdasdasdasdas");
@@ -80,66 +87,27 @@ public class TestRunner {
         accountClientParam3.setCountry("Bulg");
         accountClientParam3.setCity("Plovdiv");
         accountClientParam3.setAddress("Some Adress");
-        accountClientParam3.setCode("AKPaaaaas");
+        accountClientParam3.setUnicode("AKPaaaaas");
         accountClientParam3.setName("AccountThing");
         accountClientParam3.setDescription("Something");
         accountClientParam3.setId((long) 10);
+        /*
+        try {
+            File file = new File("C:\\Users\\Lubo\\Desktop\\github\\internship\\Library\\src\\database\\AccountClientJSON");
+            FileWriter fw = new FileWriter(file,true);
+            ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
 
-        //List<AccountClientParam> accountClientParamList = new ArrayList<>();
-        //accountClientParamList.add(accountClientParam2);
-        //accountClientParamList.add(accountClientParam3);
-        //System.out.println(accountClientService.listAll().getText());
+            SequenceWriter sequenceWriter = mapper.writer().writeValuesAsArray(fw);
+            sequenceWriter.write(accountClient11);
 
-        /*System.out.println();
-        System.out.println("accounts added with save arrayList" + accountClientService.create(accountClientParamList).getText());
-        System.out.println();
-        System.out.println("account found " + accountClientService.findByPK(7).getText());
-        System.out.println();
-        System.out.println(accountClientService.listAll().getText());
-        System.out.println();
-        System.out.println(accountClientService.deleteById(5).getText());
-        System.out.println(accountClientService.listAll().getText());
-        accountClientService.create(accountClientParam);
-
-        List<Long> deleteList = new ArrayList<>();
-        deleteList.add((long)6);
-        deleteList.add((long)7);
-        System.out.println(accountClientService.delete(deleteList).getText());
-        System.out.println(accountClientService.listAll().getText());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         */
-        //System.out.println(accountClientService.findByName("ivan").getText());
+
+        System.out.println(accountClientService.findByPK((long)2).getText());
 
 
-
-        /* Block for Account client Status testing
-
-        List<AccountClientStatusParam> accountClientStatuses = new ArrayList<>();
-        AccountClientStatusParam accountClientStatusParam2 = new AccountClientStatusParam();
-        AccountClientStatusParam accountClientStatusParam3 = new AccountClientStatusParam();
-
-        accountClientStatusParam2.setStatus("admin");
-        accountClientStatusParam2.setCode(156);
-        accountClientStatusParam2.setDescription("the account is working");
-        accountClientStatusParam2.setName("AdminStatus");
-        accountClientStatusParam2.setId(1);
-
-        accountClientStatusParam3.setStatus("client");
-        accountClientStatusParam3.setCode(157);
-        accountClientStatusParam3.setDescription("clientThings");
-        accountClientStatusParam3.setName("ClientStatus");
-        accountClientStatusParam3.setId(2);
-
-        accountClientStatuses.add(accountClientStatusParam2);
-        accountClientStatuses.add(accountClientStatusParam3);
-
-        System.out.println(accountClientStatusService.create(accountClientStatuses).getText());
-        */
-        //System.out.println(accountClientService.listAll().getText());
-        //System.out.println(accountClientService.findByParameter("getFirstName","Ivan").getText());
-        //System.out.println(accountClientService.create(accountClientParam2).getText());
-        //BaseResultConverter baseResultConverter = new BaseResultConverterImpl();
-        //System.out.println(baseResultConverter.convertStandart(accountClient,accountClientResult).toString());
-        System.out.println(accountClientService.create(accountClientParam2).getText());
 
     }
 }

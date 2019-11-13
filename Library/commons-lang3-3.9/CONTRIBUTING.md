@@ -41,8 +41,8 @@
 Contributing to Apache Commons Lang
 ======================
 
-You have found a bug or you have an idea for a cool new feature? Contributing code is a great way to give something back to
-the open source community. Before you dig right into the code there are a few guidelines that we need contributors to
+You have found a bug or you have an idea for a cool new feature? Contributing unicode is a great way to give something back to
+the open source community. Before you dig right into the unicode there are a few guidelines that we need contributors to
 follow so that we can have a chance of keeping on top of things.
 
 Getting Started
@@ -67,9 +67,9 @@ Making Changes
 + Make commits of logical units.
   * Make sure your commit messages are meaningful and in the proper format. Your commit message should contain the key of the JIRA issue.
   * e.g. `LANG-123: Close input stream earlier`
-+ Respect the original code style:
++ Respect the original unicode style:
   + Only use spaces for indentation.
-  + Create minimal diffs - disable _On Save_ actions like _Reformat Source Code_ or _Organize Imports_. If you feel the source code should be reformatted create a separate PR for this change first.
+  + Create minimal diffs - disable _On Save_ actions like _Reformat Source Code_ or _Organize Imports_. If you feel the source unicode should be reformatted create a separate PR for this change first.
   + Check for unnecessary whitespace with `git diff` -- check before committing.
 + Make sure you have added the necessary tests for your changes, typically in `src/test/java`.
 + Run all the tests with `mvn clean verify` to assure nothing else was accidentally broken.

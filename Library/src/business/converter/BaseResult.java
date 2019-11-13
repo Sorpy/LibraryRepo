@@ -1,6 +1,6 @@
 package business.converter;
 
-import business.converter.common.SkipField;
+import business.converter.common.customannotation.SkipField;
 
 public class BaseResult {
     @SkipField

@@ -3,7 +3,6 @@ package business.converter.author;
 import business.converter.IllegalConvertException;
 import business.converter.common.BaseParamConverterImpl;
 import data.entity.Author;
-import dataaccess.dao.authordao.AuthorDao;
 
 public class AuthorParamConverterImpl extends BaseParamConverterImpl<AuthorParam,Author> implements AuthorParamConverter{
 
@@ -12,7 +11,7 @@ public class AuthorParamConverterImpl extends BaseParamConverterImpl<AuthorParam
         Author entity = null;
         if(oldEntity!=null)
         {
-            if(param.getId().equals(oldEntity.getId())&& param.getCode().equals(oldEntity.getCode())){
+            if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
                 entity = oldEntity;
             }
             else {
@@ -27,7 +26,7 @@ public class AuthorParamConverterImpl extends BaseParamConverterImpl<AuthorParam
         {
             entity = new Author();
             entity.setId(param.getId());
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         return entity;

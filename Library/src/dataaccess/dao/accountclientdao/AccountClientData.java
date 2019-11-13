@@ -1,5 +1,7 @@
 package dataaccess.dao.accountclientdao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import data.entity.AccountClient;
 import data.entity.AccountClientStatus;
 import data.entity.User;
@@ -7,6 +9,8 @@ import data.entity.UserStatus;
 import dataaccess.dao.accountclientstatusdao.AccountClientStatusData;
 import dataaccess.dao.userdao.UserData;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -14,10 +18,22 @@ import java.util.stream.Collectors;
 
 public class AccountClientData {
 
+
     public static List<AccountClient> accountClients = new ArrayList<>();
     public static Map<Long,AccountClient> accountClientsMap;
+    private static ObjectMapper mapper = new ObjectMapper();
+    private static File file = new File("C:\\Users\\Lubo\\Desktop\\github\\LibraryRepo\\Library\\src\\database\\AccountClientJSON");
 
-
+    static{
+        try {
+            accountClients = mapper.readValue(file, new TypeReference<List<AccountClient>>() {});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }accountClientsMap = accountClients
+                .stream()
+                .collect(Collectors.toMap(AccountClient::getId, item -> item));
+    }
+    /*
     static {
 
         AccountClient accountClient1 = new AccountClient();
@@ -31,7 +47,7 @@ public class AccountClientData {
         accountClient1.setAddress("SomeAddress");
         accountClient1.setAccountClientStatus(AccountClientStatusData.accountClientStatuses.get(0));
         accountClient1.setUser(UserData.users.get(0));
-        accountClient1.setCode("AKK");
+        accountClient1.setUnicode("AKK");
         accountClient1.setName("dataBase account1");
         accountClient1.setDescription("description of the account");
         accountClient1.setId((long) 1);
@@ -52,7 +68,7 @@ public class AccountClientData {
         accountClient2.setAddress("SomeAddress");
         accountClient2.setAccountClientStatus(accountClientStatus2);
         accountClient2.setUser(user2);
-        accountClient2.setCode("AKK5");
+        accountClient2.setUnicode("AKK5");
         accountClient2.setName("dataBase account1");
         accountClient2.setDescription("description of the account");
         accountClient2.setId((long) 2);
@@ -73,7 +89,7 @@ public class AccountClientData {
         accountClient3.setAddress("SomeAddress");
         accountClient3.setAccountClientStatus(accountClientStatus3);
         accountClient3.setUser(user3);
-        accountClient3.setCode("AKK6");
+        accountClient3.setUnicode("AKK6");
         accountClient3.setName("dataBase account1");
         accountClient3.setDescription("description of the account");
         accountClient3.setId((long) 3);
@@ -94,7 +110,7 @@ public class AccountClientData {
         accountClient4.setAddress("SomeAddress");
         accountClient4.setAccountClientStatus(accountClientStatus4);
         accountClient4.setUser(user4);
-        accountClient4.setCode("AKK8");
+        accountClient4.setUnicode("AKK8");
         accountClient4.setName("dataBase account1");
         accountClient4.setDescription("description of the account");
         accountClient4.setId((long) 4);
@@ -115,7 +131,7 @@ public class AccountClientData {
         accountClient5.setAddress("SomeAddress");
         accountClient5.setAccountClientStatus(accountClientStatus5);
         accountClient5.setUser(user5);
-        accountClient5.setCode("AK5K");
+        accountClient5.setUnicode("AK5K");
         accountClient5.setName("dataBase account1");
         accountClient5.setDescription("description of the account");
         accountClient5.setId((long) 5);
@@ -136,7 +152,7 @@ public class AccountClientData {
         accountClient6.setAddress("SomeAddress");
         accountClient6.setAccountClientStatus(accountClientStatus6);
         accountClient6.setUser(user6);
-        accountClient6.setCode("AK55K");
+        accountClient6.setUnicode("AK55K");
         accountClient6.setName("dataBase account1");
         accountClient6.setDescription("description of the account");
         accountClient6.setId((long) 6);
@@ -157,7 +173,7 @@ public class AccountClientData {
         accountClient7.setAddress("SomeAddress");
         accountClient7.setAccountClientStatus(accountClientStatus7);
         accountClient7.setUser(user7);
-        accountClient7.setCode("AK7K");
+        accountClient7.setUnicode("AK7K");
         accountClient7.setName("dataBase account1");
         accountClient7.setDescription("description of the account");
         accountClient7.setId((long) 7);
@@ -170,8 +186,7 @@ public class AccountClientData {
         accountClients.add(accountClient6);
         accountClients.add(accountClient7);
 
-        accountClientsMap = accountClients
-                .stream()
-                .collect(Collectors.toMap(AccountClient::getId, item -> item));
+
     }
+    */
 }

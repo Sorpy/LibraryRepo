@@ -23,7 +23,7 @@ public class BookParamConverterImpl extends BaseParamConverterImpl<BookParam,Boo
         Book entity = null;
         if(oldEntity!=null)
         {
-            if(param.getId().equals(oldEntity.getId())&& param.getCode().equals(oldEntity.getCode())){
+            if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
                 entity = oldEntity;
             }
             else {
@@ -38,7 +38,7 @@ public class BookParamConverterImpl extends BaseParamConverterImpl<BookParam,Boo
         {
             entity = new Book();
             entity.setId(param.getId());
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         entity = convertSpecific(param,entity);

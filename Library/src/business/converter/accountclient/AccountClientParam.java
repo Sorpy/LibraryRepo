@@ -1,9 +1,6 @@
 package business.converter.accountclient;
 
 import business.converter.BaseNamedParam;
-import business.converter.common.SkipField;
-import data.entity.AccountClientStatus;
-import data.entity.User;
 
 public class AccountClientParam extends BaseNamedParam {
     private String firstName;

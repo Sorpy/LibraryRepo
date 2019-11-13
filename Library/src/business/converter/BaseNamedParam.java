@@ -1,19 +1,19 @@
 package business.converter;
 
-import business.converter.common.SkipField;
+import business.converter.common.customannotation.SkipField;
 
 public class BaseNamedParam extends BaseParam{
     @SkipField
-    private String code;
+    private String unicode;
     private String name;
     private String description;
 
-    public String getCode() {
-        return code;
+    public String getUnicode() {
+        return unicode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setUnicode(String unicode) {
+        this.unicode = unicode;
     }
 
     public String getName() {

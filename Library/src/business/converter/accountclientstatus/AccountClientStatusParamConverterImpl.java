@@ -1,9 +1,7 @@
 package business.converter.accountclientstatus;
 
 import business.converter.IllegalConvertException;
-import business.converter.common.BaseParamConverter;
 import business.converter.common.BaseParamConverterImpl;
-import data.entity.AccountClient;
 import data.entity.AccountClientStatus;
 
 public class AccountClientStatusParamConverterImpl extends BaseParamConverterImpl<AccountClientStatusParam,AccountClientStatus> implements AccountClientStatusParamConverter {
@@ -14,7 +12,7 @@ public class AccountClientStatusParamConverterImpl extends BaseParamConverterImp
         AccountClientStatus entity = null;
         if(oldEntity!=null)
         {
-            if(param.getId().equals(oldEntity.getId())&& param.getCode().equals(oldEntity.getCode())){
+            if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
                 entity = oldEntity;
             }
             else {
@@ -29,7 +27,7 @@ public class AccountClientStatusParamConverterImpl extends BaseParamConverterImp
         {
             entity = new AccountClientStatus();
             entity.setId(param.getId());
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         return entity;

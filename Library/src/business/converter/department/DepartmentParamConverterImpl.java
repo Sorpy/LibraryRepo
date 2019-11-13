@@ -11,7 +11,7 @@ public class DepartmentParamConverterImpl implements DepartmentParamConverter {
             entity = oldEntity;
         } else {
             entity = new Department();
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
             entity.setId(param.getId());
         }
         entity.setName(param.getName());

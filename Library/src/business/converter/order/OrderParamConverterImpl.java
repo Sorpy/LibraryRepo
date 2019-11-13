@@ -23,7 +23,7 @@ public class OrderParamConverterImpl implements OrderParamConverter{
         } else {
             entity = new Order();
             entity.setId(param.getId());
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
         }
         entity.setName(param.getName());
         entity.setDescription(param.getDescription());

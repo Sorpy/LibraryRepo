@@ -11,7 +11,7 @@ public class GenreParamConverterImpl implements GenreParamConverter {
             entity = oldEntity;
         } else {
             entity = new Genre();
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
             entity.setId(param.getId());
         }
         entity.setName(param.getName());

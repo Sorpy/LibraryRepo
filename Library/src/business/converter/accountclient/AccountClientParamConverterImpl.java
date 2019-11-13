@@ -19,7 +19,7 @@ public class AccountClientParamConverterImpl extends BaseParamConverterImpl<Acco
         AccountClient entity = null;
         if(oldEntity!=null)
         {
-            if(param.getId().equals(oldEntity.getId())&& param.getCode().equals(oldEntity.getCode())){
+            if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
                 entity = oldEntity;
             }
             else {
@@ -34,7 +34,7 @@ public class AccountClientParamConverterImpl extends BaseParamConverterImpl<Acco
             {
             entity = new AccountClient();
             entity.setId(param.getId());
-            entity.setCode(param.getCode());
+            entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         entity = convertSpecific(param,entity);
