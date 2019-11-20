@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.accountstatusdao.AccountStatusData.*;
+import static dataaccess.dao.common.BaseStorage.saveToDataSource;
 
 public class AccountStatusDaoImpl implements AccountStatusDao {
     @Override

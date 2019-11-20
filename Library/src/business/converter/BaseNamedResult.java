@@ -3,7 +3,6 @@ package business.converter;
 import business.converter.common.customannotation.Track;
 
 public class BaseNamedResult extends BaseResult{
-    @Track
     private String code;
     private String name;
     private String description;

@@ -8,6 +8,7 @@ import dataaccess.dao.common.BaseStorage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -18,27 +19,21 @@ public class AccountData extends BaseStorage {
     public static List<Account> accounts = new ArrayList<>();
     public static Map<Long,Account> accountMap;
     private static ObjectMapper mapper = new ObjectMapper();
-    private static File file = new File(".\\src\\database\\AccountJSON");
+    private static File file1 = new File(".\\src\\database\\AccountJSON");
 
     static{
         try {
-            accounts = mapper.readValue(file, new TypeReference<List<Account>>() {});
+            accounts = mapper.readValue(file1, new TypeReference<List<Account>>() {});
         } catch (IOException e) {
             e.printStackTrace();
         }
         accountMap = accounts
                 .stream()
                 .collect(Collectors.toMap(Account::getId, item -> item));
-    }
-    @Override
-    public File getPath() {
-        return file;
+        file = file1;
+        map = (HashMap) accountMap;
     }
 
-    @Override
-    public List getList() {
-        return accounts;
-    }
     /*
     static {
 

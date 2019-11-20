@@ -125,7 +125,10 @@ public class TestRunner {
 
         //System.out.println(accountService.findByPK((long)2).getText());
 
-        System.out.println(accountStatusService.listAll().getText());
+        //System.out.println(accountStatusService.listAll().getText());
+
+        //System.out.println(accountService.create(accountParam2).getText());
+        System.out.println(accountService.deleteById((long)3));
 
 
         //System.out.println(accountService.update(accountParam2.getId(),accountParam2));

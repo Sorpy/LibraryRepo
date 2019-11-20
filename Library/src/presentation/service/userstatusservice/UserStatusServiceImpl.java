@@ -1,6 +1,7 @@
 package presentation.service.userstatusservice;
 
 import business.converter.userstatus.UserStatusParam;
+import business.converter.userstatus.UserStatusResult;
 import business.processor.userstatusprocessor.UserStatusProcessor;
 import business.processor.userstatusprocessor.UserStatusProcessorImpl;
 import data.common.APIResponse;
@@ -16,7 +17,7 @@ public class UserStatusServiceImpl implements UserStatusService{
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(userProcessor.find(id)));
+            response.setText(serialization.serialization(userStatusProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -29,7 +30,7 @@ public class UserStatusServiceImpl implements UserStatusService{
     public APIResponse listAll() {
         APIResponse response = new APIResponse();
         try {
-            List<UserResult> userResults = userProcessor.find();
+            List<UserStatusResult> userResults = userStatusProcessor.find();
             response.setText(serialization.serialization(userResults));
             response.setResult(true);
         } catch (Exception e) {
@@ -41,11 +42,11 @@ public class UserStatusServiceImpl implements UserStatusService{
     }
 
     @Override
-    public APIResponse create(UserParam param) {
+    public APIResponse create(UserStatusParam param) {
         APIResponse response = new APIResponse();
         try{
-            UserResult userResult = userProcessor.create(param);
-            response.setText(serialization.serialization(userResult));
+            UserStatusResult userStatusResult = userStatusProcessor.create(param);
+            response.setText(serialization.serialization(userStatusResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -56,11 +57,11 @@ public class UserStatusServiceImpl implements UserStatusService{
     }
 
     @Override
-    public APIResponse create(List<UserParam> param) {
+    public APIResponse create(List<UserStatusParam> param) {
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(userProcessor.create(param)));
+            response.setText(serialization.serialization(userStatusProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);
@@ -69,10 +70,10 @@ public class UserStatusServiceImpl implements UserStatusService{
     }
 
     @Override
-    public APIResponse update(long id, UserParam param) {
+    public APIResponse update(long id, UserStatusParam param) {
         APIResponse response = new APIResponse();
         try {
-            userProcessor.update(id,param);
+            userStatusProcessor.update(id,param);
             response.setResult(true);
             response.setText("updated list");
         } catch (Exception e) {
@@ -84,10 +85,10 @@ public class UserStatusServiceImpl implements UserStatusService{
     }
 
     @Override
-    public APIResponse update(List<UserParam> param) {
+    public APIResponse update(List<UserStatusParam> param) {
         APIResponse response = new APIResponse();
         try {
-            userProcessor.update(param);
+            userStatusProcessor.update(param);
             response.setResult(true);
             response.setText("updated list");
         } catch (Exception e) {
@@ -102,7 +103,7 @@ public class UserStatusServiceImpl implements UserStatusService{
     public APIResponse deleteById(long id) {
         APIResponse response = new APIResponse();
         try {
-            userProcessor.delete(id);
+            userStatusProcessor.delete(id);
             response.setResult(true);
             response.setText("deleted element with ID: " + id);
         } catch (Exception e) {
@@ -117,7 +118,7 @@ public class UserStatusServiceImpl implements UserStatusService{
     public APIResponse delete(List<Long> idList) {
         APIResponse response = new APIResponse();
         try {
-            userProcessor.delete(idList);
+            userStatusProcessor.delete(idList);
             response.setResult(true);
             response.setText("deleted element with IDs: " + idList.toString());
         } catch (Exception e){

@@ -10,14 +10,15 @@ import java.util.stream.Collectors;
 
 import static dataaccess.dao.accountdao.AccountData.accounts;
 import static dataaccess.dao.accountdao.AccountData.accountMap;
+import static dataaccess.dao.common.BaseStorage.saveToDataSource;
 
 public class AccountDaoImpl implements AccountDao {
-    private AccountData accountClientData = new AccountData();
+    //private AccountData accountClientData = new AccountData();
     @Override
     public Account save(Account entity) {
         accountMap.putIfAbsent(entity.getId(),entity);
         //accounts.add(entity);
-        accountClientData.saveToDataSource();
+        saveToDataSource();
         return entity;
     }
 
@@ -45,6 +46,7 @@ public class AccountDaoImpl implements AccountDao {
     public void delete(Long id) {
         Account removeEntity = find(id);
         delete(removeEntity);
+        saveToDataSource();
     }
 
     @Override
