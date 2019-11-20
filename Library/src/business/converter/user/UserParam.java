@@ -6,7 +6,7 @@ import data.entity.UserStatus;
 public class UserParam extends BaseParam {
     private String username;
     private String password;
-    private UserStatus userStatus;
+    private Long userStatusId;
 
     public String getUsername() {
         return username;
@@ -24,11 +24,11 @@ public class UserParam extends BaseParam {
         this.password = password;
     }
 
-    public UserStatus getUserStatus() {
-        return userStatus;
+    public Long getUserStatusId() {
+        return userStatusId;
     }
 
-    public void setUserStatus(UserStatus userStatus) {
-        this.userStatus = userStatus;
+    public void setUserStatusId(Long userStatusId) {
+        this.userStatusId = userStatusId;
     }
 }

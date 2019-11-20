@@ -27,7 +27,7 @@ public class BookStatusParamConverterImpl extends BaseParamConverterImpl<BookSta
             {
                 entity = new BookStatus();
                 entity.setId(param.getId());
-                entity.setCode(param.getUnicode());
+                //entity.setCode(param.getUnicode());
             }
             entity = convertStandart(param,entity);
             return entity;

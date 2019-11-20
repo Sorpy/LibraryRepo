@@ -30,7 +30,8 @@ public class GenreDaoImpl implements GenreDao {
 
     @Override
     public List<Genre> update(List<Genre> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

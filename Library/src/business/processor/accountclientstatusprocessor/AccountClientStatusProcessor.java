@@ -1,20 +1,20 @@
 package business.processor.accountclientstatusprocessor;
 
-import business.converter.accountclientstatus.AccountClientStatusParam;
-import business.converter.accountclientstatus.AccountClientStatusResult;
+import business.converter.accountclientstatus.AccountStatusParam;
+import business.converter.accountclientstatus.AccountStatusResult;
 
 import java.util.List;
 
 public interface AccountClientStatusProcessor {
-    AccountClientStatusResult create(AccountClientStatusParam param);
-    List<AccountClientStatusResult> create(List<AccountClientStatusParam> param);
+    AccountStatusResult create(AccountStatusParam param);
+    List<AccountStatusResult> create(List<AccountStatusParam> param);
 
-    void update(Long id,AccountClientStatusParam param);
-    void update(List<AccountClientStatusParam> param);
+    void update(Long id,AccountStatusParam param);
+    void update(List<AccountStatusParam> param);
 
     void delete(Long id);
     void delete(List<Long> idList);
 
-    AccountClientStatusResult find(Long id);
-    List<AccountClientStatusResult> find();
+    AccountStatusResult find(Long id);
+    List<AccountStatusResult> find();
 }

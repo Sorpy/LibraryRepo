@@ -30,7 +30,8 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public List<User> update(List<User> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

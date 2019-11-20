@@ -1,9 +1,10 @@
 package business.converter.usergroup;
 
+import business.converter.common.BaseParamConverterImpl;
 import data.entity.UserGroup;
 import dataaccess.dao.usergroupdao.UserGroupDao;
 
-public class UserGroupParamConverterImpl implements UserGroupParamConverter {
+public class UserGroupParamConverterImpl extends BaseParamConverterImpl<UserGroupParam,UserGroup> implements UserGroupParamConverter {
     private UserGroupDao userGroupDao;
 
     public UserGroupDao getUserGroupDao() {

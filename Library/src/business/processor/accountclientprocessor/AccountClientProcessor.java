@@ -1,7 +1,7 @@
 package business.processor.accountclientprocessor;
 
-import business.converter.accountclient.AccountClientParam;
-import business.converter.accountclient.AccountClientResult;
+import business.converter.accountclient.AccountParam;
+import business.converter.accountclient.AccountResult;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.beans.IntrospectionException;
@@ -9,17 +9,17 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public interface AccountClientProcessor {
-    AccountClientResult create(AccountClientParam param) throws JsonProcessingException, IllegalAccessException;
-    List<AccountClientResult> create(List<AccountClientParam> param) throws JsonProcessingException;
+    AccountResult create(AccountParam param) throws JsonProcessingException, IllegalAccessException;
+    List<AccountResult> create(List<AccountParam> param) throws JsonProcessingException;
 
-    void update(Long id,AccountClientParam param);
-    void update(List<AccountClientParam> param);
+    void update(Long id,AccountParam param);
+    void update(List<AccountParam> param);
 
     void delete(Long id);
     void delete(List<Long> idList);
 
-    AccountClientResult find(Long id) throws JsonProcessingException, IllegalAccessException;
-    List<AccountClientResult> find() throws JsonProcessingException;
-    List<AccountClientResult> find(String name);
-    List<AccountClientResult> find(String name, String value) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, IntrospectionException, InvocationTargetException;
+    AccountResult find(Long id) throws JsonProcessingException, IllegalAccessException;
+    List<AccountResult> find() throws JsonProcessingException;
+    List<AccountResult> find(String name);
+    List<AccountResult> find(String name, String value) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, IntrospectionException, InvocationTargetException;
 }

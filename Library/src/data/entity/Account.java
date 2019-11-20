@@ -1,9 +1,7 @@
 package data.entity;
 
-import business.converter.common.customannotation.SkipField;
-
-public abstract class Account extends PersistentNamed {
-    @SkipField
+public class Account extends PersistentNamed {
+    private AccountStatus accountStatus;
     private String firstName;
     private String secondName;
     private String lastName;
@@ -85,5 +83,13 @@ public abstract class Account extends PersistentNamed {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public AccountStatus getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(AccountStatus accountStatus) {
+        this.accountStatus = accountStatus;
     }
 }

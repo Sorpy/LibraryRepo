@@ -1,6 +1,6 @@
 package business.converter.common;
 
-import business.converter.common.customannotation.SkipField;
+import business.converter.common.customannotation.Track;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -26,9 +26,13 @@ public abstract class BaseParamConverterImpl <Tin,Tout> implements BaseParamConv
 
         paramInfo.forEach((key, value) -> {
             try {
-                if (value.getAnnotation(SkipField.class).ignore()) {
-                    return;
+                if (value.isAnnotationPresent(Track.class)) {
+                   if (value.getAnnotation(Track.class).source().equals(key)){
+                       writeField(entity,value.getAnnotation(Track.class).destination(),value.get(param),true);
+                   }
+                   return;
                 }
+
                 if (entityInfo.containsKey(key)) {
                     writeField(entity, key, value.get(param), true);
                 }

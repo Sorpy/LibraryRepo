@@ -38,7 +38,7 @@ public class BookParamConverterImpl extends BaseParamConverterImpl<BookParam,Boo
         {
             entity = new Book();
             entity.setId(param.getId());
-            entity.setCode(param.getUnicode());
+            //entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         entity = convertSpecific(param,entity);

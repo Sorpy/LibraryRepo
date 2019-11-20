@@ -30,7 +30,8 @@ public class BookStatusDaoImpl implements BookStatusDao {
 
     @Override
     public List<BookStatus> update(List<BookStatus> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Order extends PersistentNamed {
     private Date date;
-    private AccountClient accountClient;
-    private AccountLibrarian accountLibrarian;
+    private Account accountClient;
+    private Account accountLibrarian;
     private Book book;
 
     public Date getDate() {
@@ -16,19 +16,19 @@ public class Order extends PersistentNamed {
         this.date = date;
     }
 
-    public AccountClient getAccountClient() {
+    public Account getAccountClient() {
         return accountClient;
     }
 
-    public void setAccountClient(AccountClient accountClient) {
+    public void setAccount(Account accountClient) {
         this.accountClient = accountClient;
     }
 
-    public AccountLibrarian getAccountLibrarian() {
+    public Account getAccountLibrarian() {
         return accountLibrarian;
     }
 
-    public void setAccountLibrarian(AccountLibrarian accountLibrarian) {
+    public void setAccountLibrarian(Account accountLibrarian) {
         this.accountLibrarian = accountLibrarian;
     }
 

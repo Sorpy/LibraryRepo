@@ -30,7 +30,8 @@ public class AuthorDaoImpl implements AuthorDao {
 
     @Override
     public List<Author> update(List<Author> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

@@ -1,113 +1,133 @@
 package data.entity;
 
-import business.converter.accountclient.AccountClientParam;
-import business.converter.accountclient.AccountClientResult;
+import business.converter.accountclient.AccountParam;
+import business.converter.accountclient.AccountResult;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SequenceWriter;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import dataaccess.dao.accountclientdao.AccountClientDao;
-import dataaccess.dao.accountclientdao.AccountClientDaoImpl;
-import presentation.service.accountclientservice.AccountClientService;
-import presentation.service.accountclientservice.AccountClientServiceImpl;
-import presentation.service.accountclientstatusservive.AccountClientStatusService;
-import presentation.service.accountclientstatusservive.AccountClientStatusServiceImpl;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import dataaccess.dao.accountdao.AccountDao;
+import dataaccess.dao.accountdao.AccountDaoImpl;
+import presentation.service.accountservice.AccountService;
+import presentation.service.accountservice.AccountServiceImpl;
+import presentation.service.accountclientstatusservive.AccountStatusService;
+import presentation.service.accountclientstatusservive.AccountStatusServiceImpl;
 
 public class TestRunner {
     public void test() throws JsonProcessingException {
 
-        AccountClientService accountClientService = new AccountClientServiceImpl();
-        AccountClientStatusService accountClientStatusService = new AccountClientStatusServiceImpl();
-        AccountClientDao accountClientDao = new AccountClientDaoImpl();
+        AccountService accountService = new AccountServiceImpl();
+        AccountStatusService accountStatusService = new AccountStatusServiceImpl();
+        AccountDao accountDao = new AccountDaoImpl();
 
-        AccountClientStatus accountClientStatus = new AccountClientStatus();
+        AccountStatus accountStatus = new AccountStatus();
         UserStatus userStatus = new UserStatus();
         User user1 = new User("Name","Password",userStatus);
-        AccountClientParam accountClientParam = new AccountClientParam();
-        accountClientParam.setFirstName("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        accountClientParam.setSecondName("OtherName");
-        accountClientParam.setLastName("ThirdName");
-        accountClientParam.setPhone("asdasd");
-        accountClientParam.setEmail("Email");
-        accountClientParam.setCountry("Bulg");
-        accountClientParam.setCity("Plovdiv");
-        accountClientParam.setAddress("Some Adress");
-        accountClientParam.setUnicode("sAA");
-        accountClientParam.setName("AccountThing");
-        accountClientParam.setDescription("Something");
-        accountClientParam.setId((long) 4);
-            //System.out.println(accountClientService.create(accountClientParam).getText());
+        AccountParam accountParam = new AccountParam();
+        accountParam.setFirstName("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        accountParam.setSecondName("OtherName");
+        accountParam.setLastName("ThirdName");
+        accountParam.setPhone("asdasd");
+        accountParam.setEmail("Email");
+        accountParam.setCountry("Bulg");
+        accountParam.setCity("Plovdiv");
+        accountParam.setAddress("Some Adress");
+        accountParam.setUnicode("sAA");
+        accountParam.setName("AccountThing");
+        accountParam.setDescription("Something");
+        accountParam.setId((long) 4);
+            //System.out.println(accountService.create(accountParam).getText());
 
 
 
-        AccountClientParam accountClientParam2 = new AccountClientParam();
+        AccountParam accountParam2 = new AccountParam();
 
-        accountClientParam2.setUserId((long) 3);
-        accountClientParam2.setFirstName("Name");
-        accountClientParam2.setSecondName("OtherName");
-        accountClientParam2.setLastName("ThirdName");
-        accountClientParam2.setPhone("asdasd");
-        accountClientParam2.setEmail("Email");
-        accountClientParam2.setCountry("Bulg");
-        accountClientParam2.setCity("Plovdiv");
-        accountClientParam2.setAddress("Some Adress");
-        accountClientParam2.setUnicode("aAA");
-        accountClientParam2.setName("AccountThing");
-        accountClientParam2.setDescription("Something");
-        accountClientParam2.setId((long) 5);
-        accountClientParam2.setAccountClientStatusId((long)2);
-
-
-
-        AccountClient accountClient11 = new AccountClient();
-        accountClient11.setId((long)8);
-        accountClient11.setCode("A5K");
-        accountClient11.setName("asdasd");
-        accountClient11.setAddress("asdasdasdasdas");
-        accountClient11.setCountry("asdasd");
-        accountClient11.setCity("asdadsasd");
-        accountClient11.setEmail("asdasd");
-
-        AccountClientResult accountClientResult = new AccountClientResult();
+        accountParam2.setUserId((long) 2);
+        accountParam2.setFirstName("Name");
+        accountParam2.setSecondName("OtherName");
+        accountParam2.setLastName("ThirdName");
+        accountParam2.setPhone("asdasd");
+        accountParam2.setEmail("Email");
+        accountParam2.setCountry("Bulg");
+        accountParam2.setCity("Plovdiv");
+        accountParam2.setAddress("Some Adress");
+        accountParam2.setUnicode("aAA");
+        accountParam2.setName("AccountThing");
+        accountParam2.setDescription("Something");
+        accountParam2.setId((long) 11);
+        accountParam2.setAccountClientStatusId((long)2);
 
 
-        AccountClientStatus accountClientStatus3 = new AccountClientStatus();
+
+        Account account11 = new Account();
+        account11.setId((long)5);
+        account11.setCode("A5K");
+        account11.setName("asdasd");
+        account11.setAddress("asdasdasdasdas");
+        account11.setCountry("asdasd");
+        account11.setCity("asdadsasd");
+        account11.setEmail("asdasd");
+
+        AccountResult accountClientResult = new AccountResult();
+
+
+        AccountStatus accountStatus3 = new AccountStatus();
         UserStatus userStatus3 = new UserStatus();
         User user3 = new User("Name","Password",userStatus3);
-        AccountClientParam accountClientParam3 = new AccountClientParam();
-        accountClientParam3.setFirstName("Name");
-        accountClientParam3.setSecondName("OtherName");
-        accountClientParam3.setLastName("ThirdName");
-        accountClientParam3.setPhone("asdasd");
-        accountClientParam3.setEmail("Email");
-        accountClientParam3.setCountry("Bulg");
-        accountClientParam3.setCity("Plovdiv");
-        accountClientParam3.setAddress("Some Adress");
-        accountClientParam3.setUnicode("AKPaaaaas");
-        accountClientParam3.setName("AccountThing");
-        accountClientParam3.setDescription("Something");
-        accountClientParam3.setId((long) 10);
-        /*
+        AccountParam accountParam3 = new AccountParam();
+        accountParam3.setFirstName("Name");
+        accountParam3.setSecondName("OtherName");
+        accountParam3.setLastName("ThirdName");
+        accountParam3.setPhone("asdasd");
+        accountParam3.setEmail("Email");
+        accountParam3.setCountry("Bulg");
+        accountParam3.setCity("Plovdiv");
+        accountParam3.setAddress("Some Adress");
+        accountParam3.setUnicode("AKPaaaaas");
+        accountParam3.setName("AccountThing");
+        accountParam3.setDescription("Something");
+        accountParam3.setId((long) 10);
+
+
+        AccountStatus accountStatus1 = new AccountStatus();
+        accountStatus1.setCode("AKP");
+        accountStatus1.setDescription("This is an active client account");
+        accountStatus1.setName("ActiveClientStatus");
+        accountStatus1.setId((long) 1);
+
+        AccountStatus accountStatus2 = new AccountStatus();
+        accountStatus2.setCode("A5KP");
+        accountStatus2.setDescription("This is an inactive client account");
+        accountStatus2.setName("InactiveClientStatus");
+        accountStatus2.setId((long) 2);
+
+
+        AccountStatus accountStatus4 = new AccountStatus();
+        accountStatus4.setCode("AK3P");
+        accountStatus4.setDescription("somethingElse");
+        accountStatus4.setName("SomethingElse");
+        accountStatus4.setId((long) 4);
+/*
         try {
-            File file = new File("C:\\Users\\Lubo\\Desktop\\github\\internship\\Library\\src\\database\\AccountClientJSON");
+            File file = new File(".\\src\\database\\AccountStatusJSON");
             FileWriter fw = new FileWriter(file,true);
             ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
 
             SequenceWriter sequenceWriter = mapper.writer().writeValuesAsArray(fw);
-            sequenceWriter.write(accountClient11);
+            sequenceWriter.write(accountStatus1);
+            sequenceWriter.write(accountStatus2);
+            sequenceWriter.write(accountStatus4);
+
+            sequenceWriter.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
         */
 
-        System.out.println(accountClientService.findByPK((long)2).getText());
+
+        //System.out.println(accountService.findByPK((long)2).getText());
+
+        System.out.println(accountStatusService.listAll().getText());
 
 
-
+        //System.out.println(accountService.update(accountParam2.getId(),accountParam2));
     }
 }

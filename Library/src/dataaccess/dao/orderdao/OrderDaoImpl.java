@@ -30,7 +30,8 @@ public class OrderDaoImpl implements OrderDao{
 
     @Override
     public List<Order> update(List<Order> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

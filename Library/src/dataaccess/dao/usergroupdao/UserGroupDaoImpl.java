@@ -29,7 +29,8 @@ public class UserGroupDaoImpl implements UserGroupDao{
 
     @Override
     public List<UserGroup> update(List<UserGroup> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

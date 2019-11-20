@@ -1,0 +1,51 @@
+[ {
+  "id" : 1,
+  "code" : "AKK",
+  "name" : "dataBase account1",
+  "description" : "description of the account",
+  "accountStatus" : {
+    "id" : 1,
+    "code" : "AKP",
+    "name" : "ActiveClientStatus",
+    "description" : "This is an active client account"
+  },
+  "firstName" : "Ivan",
+  "secondName" : "Petkov",
+  "lastName" : "Draganov",
+  "address" : "SomeAddress",
+  "city" : "Burgas",
+  "country" : "Bulgaria",
+  "phone" : "087887878787",
+  "email" : "asdasd@abv.bg",
+  "user" : {
+    "id" : 0,
+    "username" : "UserName1",
+    "password" : "password1",
+    "userStatus" : null
+  }
+}, {
+  "id" : 2,
+  "code" : "QAKK",
+  "name" : "qdataBase account1",
+  "description" : "qdescription of the account",
+  "accountStatus" : {
+    "id" : 2,
+    "code" : "AKP",
+    "name" : "ActiveClientStatus",
+    "description" : "This is an active client account"
+  },
+  "firstName" : "Ivaan",
+  "secondName" : "Petdkov",
+  "lastName" : "Dragganov",
+  "address" : "qSomeAddress",
+  "city" : "Buqrgas",
+  "country" : "qBulgaria",
+  "phone" : "087887h878787",
+  "email" : "asdadsd@abv.bg",
+  "user" : {
+    "id" : 1,
+    "username" : "UserName3",
+    "password" : "password1",
+    "userStatus" : null
+  }
+} ]

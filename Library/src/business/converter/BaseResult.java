@@ -1,9 +1,9 @@
 package business.converter;
 
-import business.converter.common.customannotation.SkipField;
+import business.converter.common.customannotation.Track;
 
 public class BaseResult {
-    @SkipField
+    @Track
     private Long id;
 
     public Long getId() {

@@ -30,7 +30,8 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     public List<Department> update(List<Department> entity) {
-        return null;
+        entity.forEach(this::update);
+        return entity;
     }
 
     @Override

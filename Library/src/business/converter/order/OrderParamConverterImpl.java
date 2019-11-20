@@ -1,36 +1,47 @@
 package business.converter.order;
 
+import business.converter.IllegalConvertException;
+import business.converter.common.BaseParamConverterImpl;
 import data.entity.Order;
-import dataaccess.dao.accountclientdao.AccountClientDao;
-import dataaccess.dao.accountclientdao.AccountClientDaoImpl;
-import dataaccess.dao.accountlibrariandao.AccountLibrarianDao;
-import dataaccess.dao.accountlibrariandao.AccountLibrarianDaoImpl;
+import dataaccess.dao.accountdao.AccountDao;
+import dataaccess.dao.accountdao.AccountDaoImpl;
 import dataaccess.dao.bookdao.BookDao;
 import dataaccess.dao.bookdao.BookDaoImpl;
 
-public class OrderParamConverterImpl implements OrderParamConverter{
-    private AccountClientDao accountClientDao = new AccountClientDaoImpl();
-    private AccountLibrarianDao accountLibrarianDao = new AccountLibrarianDaoImpl();
+public class OrderParamConverterImpl extends BaseParamConverterImpl<OrderParam,Order> implements OrderParamConverter{
+    private AccountDao accountDao = new AccountDaoImpl();
     private BookDao bookDao = new BookDaoImpl();
 
 
 
     @Override
-    public Order convert(OrderParam param, Order oldEntity){
+    public Order convert(OrderParam param, Order oldEntity) {
         Order entity = null;
-        if(oldEntity!=null){
-            entity = oldEntity;
+        if (oldEntity != null) {
+            if (param.getId().equals(oldEntity.getId()) && param.getUnicode().equals(oldEntity.getCode())) {
+                entity = oldEntity;
+            } else {
+                try {
+                    throw new IllegalConvertException("Id and/or code do  not match");
+                } catch (IllegalConvertException e) {
+                    e.printStackTrace();
+                }
+            }
         } else {
             entity = new Order();
             entity.setId(param.getId());
-            entity.setCode(param.getUnicode());
+            //entity.setCode(param.getUnicode());
         }
-        entity.setName(param.getName());
-        entity.setDescription(param.getDescription());
-        entity.setAccountClient(accountClientDao.find(param.getAccountClientId()));
-        entity.setAccountLibrarian(accountLibrarianDao.find(param.getAccountLibrarianId()));
+        entity = convertStandart(param, entity);
+        entity = convertSpecific(param,entity);
+        return entity;
+    }
+
+    @Override
+    public Order convertSpecific(OrderParam param, Order entity) {
+        entity.setAccount(accountDao.find(param.getAccountClientId()));
+        entity.setAccountLibrarian(accountDao.find(param.getAccountLibrarianId()));
         entity.setBook(bookDao.find(param.getBookId()));
-        entity.setDate(param.getDate());
         return entity;
     }
 }

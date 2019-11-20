@@ -26,7 +26,7 @@ public class AuthorParamConverterImpl extends BaseParamConverterImpl<AuthorParam
         {
             entity = new Author();
             entity.setId(param.getId());
-            entity.setCode(param.getUnicode());
+            //entity.setCode(param.getUnicode());
         }
         entity = convertStandart(param,entity);
         return entity;

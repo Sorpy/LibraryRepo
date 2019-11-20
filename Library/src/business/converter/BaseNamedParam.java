@@ -1,9 +1,9 @@
 package business.converter;
 
-import business.converter.common.customannotation.SkipField;
+import business.converter.common.customannotation.Track;
 
 public class BaseNamedParam extends BaseParam{
-    @SkipField
+    @Track(ignore =false,source = "unicode",destination = "code")
     private String unicode;
     private String name;
     private String description;

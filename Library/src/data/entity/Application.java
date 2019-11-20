@@ -1,8 +1,6 @@
 package data.entity;
 
-import business.converter.accountclient.AccountClientParam;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import presentation.service.accountclientservice.AccountClientServiceImpl;
 
 public class Application {
 
