@@ -2,6 +2,7 @@ package dataaccess.dao.orderdao;
 
 import data.entity.Order;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.orderdao.OrderData.*;
@@ -17,14 +18,14 @@ public class OrderDaoImpl implements OrderDao{
 
     @Override
     public List<Order> save (List<Order> entity) {
-        orders.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public Order update(Order entity) {
         delete(entity.getId());
-        orders.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class OrderDaoImpl implements OrderDao{
 
     @Override
     public void delete(Order entity) {
-        orders.remove(entity);
+        orderMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class OrderDaoImpl implements OrderDao{
 
     @Override
     public List<Order> find() {
-        return orders;
+        return new ArrayList<>(orderMap.values());
     }
 
     @Override
     public Order find(Long id) {
-        return orders
+        return new ArrayList<>(orderMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

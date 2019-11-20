@@ -6,9 +6,9 @@ import data.entity.Department;
 public class DepartmentResultConverterImpl extends BaseResultConverterImpl<Department,DepartmentResult> implements DepartmentResultConverter {
     @Override
     public DepartmentResult convert(Department param) {
-        DepartmentResult bookStatusResult = new DepartmentResult();
-        bookStatusResult = convertStandart(param,bookStatusResult);
-        return bookStatusResult;
+        DepartmentResult departmentResult = new DepartmentResult();
+        departmentResult = convertStandart(param,departmentResult);
+        return departmentResult;
     }
 
     @Override

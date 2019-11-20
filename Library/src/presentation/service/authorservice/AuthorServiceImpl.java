@@ -13,14 +13,6 @@ public class AuthorServiceImpl implements AuthorService{
     private Serialization serialization = new Serialization();
     private AuthorProcessor authorProcessor = new AuthorProcessorImpl();
 
-    public AuthorProcessor getAuthorProcessor() {
-        return authorProcessor;
-    }
-
-    public void setAuthorProcessor(AuthorProcessor authorProcessor) {
-        this.authorProcessor = authorProcessor;
-    }
-
     @Override
     public APIResponse findByPK(long id) {
         APIResponse response = new APIResponse();
@@ -80,13 +72,31 @@ public class AuthorServiceImpl implements AuthorService{
     @Override
     public APIResponse update(long id, AuthorParam param) {
         APIResponse response = new APIResponse();
-        authorProcessor.update(id,param);
+        try {
+            authorProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<AuthorParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            authorProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

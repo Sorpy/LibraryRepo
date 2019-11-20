@@ -13,14 +13,6 @@ public class UserGroupServiceImpl implements UserGroupService{
     private Serialization serialization = new Serialization();
     private UserGroupProcessor userGroupProcessor = new UserGroupProcessorImpl();
 
-    public UserGroupProcessor getUserGroupProcessor() {
-        return userGroupProcessor;
-    }
-
-    public void setUserGroupProcessor(UserGroupProcessor userGroupProcessor) {
-        this.userGroupProcessor = userGroupProcessor;
-    }
-
     @Override
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
@@ -80,13 +72,31 @@ public class UserGroupServiceImpl implements UserGroupService{
     @Override
     public APIResponse update(long id, UserGroupParam param) {
         APIResponse response = new APIResponse();
-        userGroupProcessor.update(id,param);
+        try {
+            userGroupProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<UserGroupParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            userGroupProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

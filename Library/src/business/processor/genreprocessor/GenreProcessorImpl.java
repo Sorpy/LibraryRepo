@@ -49,7 +49,11 @@ public class GenreProcessorImpl implements GenreProcessor{
 
     @Override
     public void update(List<GenreParam> param) {
-
+        List<Genre> genres = new ArrayList<>();
+        param.forEach(genreParam -> genres
+                .add(genreParamConverter
+                        .convert(genreParam,null)));
+        genreDao.update(genres);
     }
 
     @Override

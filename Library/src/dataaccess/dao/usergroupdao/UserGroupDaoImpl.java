@@ -2,6 +2,7 @@ package dataaccess.dao.usergroupdao;
 
 import data.entity.UserGroup;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.usergroupdao.UserGroupData.*;
@@ -17,13 +18,14 @@ public class UserGroupDaoImpl implements UserGroupDao{
 
     @Override
     public List<UserGroup> save (List<UserGroup> entity) {
-        userGroups.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public UserGroup update(UserGroup entity) {
-        userGroups.add(entity);
+        delete(entity.getId());
+        save(entity);
         return entity;
     }
 
@@ -41,7 +43,7 @@ public class UserGroupDaoImpl implements UserGroupDao{
 
     @Override
     public void delete(UserGroup entity) {
-        userGroups.remove(entity);
+        userGroupMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -51,14 +53,14 @@ public class UserGroupDaoImpl implements UserGroupDao{
 
     @Override
     public List<UserGroup> find() {
-        return userGroups;
+        return new ArrayList<>(userGroupMap.values());
     }
 
     @Override
     public UserGroup find(long id) {
-        return userGroups
+        return new ArrayList<>(userGroupMap.values())
                 .stream()
-                .filter(a -> a.getId()==id)
+                .filter(a -> a.getId().equals(id))
                 .findFirst().get();
     }
 }

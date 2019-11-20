@@ -2,6 +2,7 @@ package dataaccess.dao.bookstatusdao;
 
 import data.entity.BookStatus;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.bookstatusdao.BookStatusData.*;
@@ -17,14 +18,14 @@ public class BookStatusDaoImpl implements BookStatusDao {
 
     @Override
     public List<BookStatus> save (List<BookStatus> entity) {
-        bookStatuses.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public BookStatus update(BookStatus entity) {
         delete(entity.getId());
-        bookStatuses.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class BookStatusDaoImpl implements BookStatusDao {
 
     @Override
     public void delete(BookStatus entity) {
-        bookStatuses.remove(entity);
+        bookStatusMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class BookStatusDaoImpl implements BookStatusDao {
 
     @Override
     public List<BookStatus> find() {
-        return bookStatuses;
+        return new ArrayList<>(bookStatusMap.values());
     }
 
     @Override
     public BookStatus find(Long id) {
-        return bookStatuses
+        return new ArrayList<>(bookStatusMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

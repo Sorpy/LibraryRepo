@@ -49,7 +49,11 @@ public class BookProcessorImpl implements BookProcessor{
 
     @Override
     public void update(List<BookParam> param) {
-
+        List<Book> books = new ArrayList<>();
+        param.forEach(bookParam -> books
+                    .add(bookParamConverter
+                            .convert(bookParam,null)));
+        bookDao.update(books);
     }
 
     @Override

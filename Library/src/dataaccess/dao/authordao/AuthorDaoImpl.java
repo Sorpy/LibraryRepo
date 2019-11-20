@@ -2,6 +2,7 @@ package dataaccess.dao.authordao;
 
 import data.entity.Author;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.authordao.AuthorData.*;
@@ -17,14 +18,14 @@ public class AuthorDaoImpl implements AuthorDao {
 
     @Override
     public List<Author> save (List<Author> entity) {
-        authors.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public Author update(Author entity) {
         delete(entity.getId());
-        authors.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class AuthorDaoImpl implements AuthorDao {
 
     @Override
     public void delete(Author entity) {
-        authors.remove(entity);
+        authorMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class AuthorDaoImpl implements AuthorDao {
 
     @Override
     public List<Author> find() {
-        return authors;
+        return new ArrayList<>(authorMap.values());
     }
 
     @Override
     public Author find(Long id) {
-        return authors
+        return new ArrayList<>(authorMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

@@ -1,6 +1,6 @@
 package presentation.service.accountclientstatusservive;
 
-import business.converter.accountclientstatus.AccountStatusParam;
+import business.converter.accountstatus.AccountStatusParam;
 import data.common.APIResponse;
 
 import java.util.List;

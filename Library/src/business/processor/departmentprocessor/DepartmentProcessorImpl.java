@@ -50,7 +50,11 @@ public class DepartmentProcessorImpl implements DepartmentProcessor{
 
     @Override
     public void update(List<DepartmentParam> param) {
-
+        List<Department> departments = new ArrayList<>();
+        param.forEach(departmentParam -> departments
+                .add(departmentParamConverter
+                        .convert(departmentParam,null)));
+        departmentDao.update(departments);
     }
 
     @Override

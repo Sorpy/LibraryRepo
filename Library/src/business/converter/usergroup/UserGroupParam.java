@@ -4,13 +4,13 @@ import business.converter.BaseParam;
 import data.entity.UserGroupStatus;
 
 public class UserGroupParam extends BaseParam {
-    private UserGroupStatus userGroupStatus;
+    private Long userGroupStatusId;
 
-    public UserGroupStatus getUserGroupStatus() {
-        return userGroupStatus;
+    public Long getUserGroupStatusId() {
+        return userGroupStatusId;
     }
 
-    public void setUserGroupStatus(UserGroupStatus userGroupStatus) {
-        this.userGroupStatus = userGroupStatus;
+    public void setUserGroupStatusId(Long userGroupStatusId) {
+        this.userGroupStatusId = userGroupStatusId;
     }
 }

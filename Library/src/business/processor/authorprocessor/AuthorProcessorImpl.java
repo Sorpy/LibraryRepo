@@ -48,7 +48,11 @@ public class AuthorProcessorImpl implements AuthorProcessor{
 
     @Override
     public void update(List<AuthorParam> param) {
-
+        List<Author> authors = new ArrayList<>();
+        param.forEach(author -> authors
+                .add(authorParamConverter
+                        .convert(author,null)));
+        authorDao.update(authors);
     }
 
     @Override

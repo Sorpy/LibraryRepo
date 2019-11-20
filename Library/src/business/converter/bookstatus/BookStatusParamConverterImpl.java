@@ -8,28 +8,24 @@ public class BookStatusParamConverterImpl extends BaseParamConverterImpl<BookSta
 
 
         @Override
-        public BookStatus convert(BookStatusParam param, BookStatus oldEntity){
+        public BookStatus convert(BookStatusParam param, BookStatus oldEntity) {
             BookStatus entity = null;
-            if(oldEntity!=null)
-            {
-                if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
+            if (oldEntity != null) {
+                if (param.getId().equals(oldEntity.getId()) && param.getUnicode().equals(oldEntity.getCode())) {
                     entity = oldEntity;
-                }
-                else {
+                } else {
                     try {
                         throw new IllegalConvertException("Id and/or code do  not match");
                     } catch (IllegalConvertException e) {
                         e.printStackTrace();
                     }
                 }
-            }
-            else
-            {
+            } else {
                 entity = new BookStatus();
                 entity.setId(param.getId());
                 //entity.setCode(param.getUnicode());
             }
-            entity = convertStandart(param,entity);
+            entity = convertStandart(param, entity);
             return entity;
         }
 

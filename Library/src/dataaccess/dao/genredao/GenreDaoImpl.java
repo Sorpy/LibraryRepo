@@ -2,6 +2,7 @@ package dataaccess.dao.genredao;
 
 import data.entity.Genre;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.genredao.GenreData.*;
@@ -17,14 +18,14 @@ public class GenreDaoImpl implements GenreDao {
 
     @Override
     public List<Genre> save (List<Genre> entity) {
-        genres.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public Genre update(Genre entity) {
         delete(entity.getId());
-        genres.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class GenreDaoImpl implements GenreDao {
 
     @Override
     public void delete(Genre entity) {
-        genres.remove(entity);
+        genreMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class GenreDaoImpl implements GenreDao {
 
     @Override
     public List<Genre> find() {
-        return genres;
+        return new ArrayList<>(genreMap.values());
     }
 
     @Override
     public Genre find(Long id) {
-        return genres
+        return new ArrayList<>(genreMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

@@ -48,7 +48,11 @@ public class OrderProcessorImpl implements OrderProcessor{
 
     @Override
     public void update(List<OrderParam> param) {
-
+        List<Order> orders = new ArrayList<>();
+        param.forEach(orderParam -> orders
+                .add(orderParamConverter
+                        .convert(orderParam,null)));
+        orderDao.update(orders);
     }
 
     @Override

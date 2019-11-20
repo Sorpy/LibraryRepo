@@ -1,6 +1,6 @@
 package data.entity;
 
-public class UsersUserGroup extends Persistent {
+public class UsersUserGroup extends PersistentNamed {
     private User user;
     private UserGroup userGroup;//list
 

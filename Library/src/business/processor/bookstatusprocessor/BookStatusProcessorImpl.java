@@ -47,7 +47,11 @@ public class BookStatusProcessorImpl implements BookStatusProcessor{
 
     @Override
     public void update(List<BookStatusParam> param) {
-
+        List<BookStatus> bookStatuses = new ArrayList<>();
+        param.forEach(bookStatusParam -> bookStatuses
+                .add(bookStatusParamConverter
+                        .convert(bookStatusParam,null)));
+        bookStatusDao.update(bookStatuses);
     }
 
     @Override

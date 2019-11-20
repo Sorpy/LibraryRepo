@@ -6,9 +6,9 @@ import data.entity.Author;
 public class AuthorResultConverterImpl extends BaseResultConverterImpl<Author,AuthorResult> implements AuthorResultConverter{
     @Override
     public AuthorResult convert(Author param) {
-        AuthorResult AuthorResult = new AuthorResult();
-        AuthorResult =convertStandart(param,AuthorResult);
-        return AuthorResult;
+        AuthorResult authorResult = new AuthorResult();
+        authorResult =convertStandart(param,authorResult);
+        return authorResult;
     }
 
     @Override

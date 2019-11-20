@@ -2,6 +2,7 @@ package dataaccess.dao.userdao;
 
 import data.entity.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.userdao.UserData.*;
@@ -17,14 +18,14 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public List<User> save (List<User> entity) {
-        users.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public User update(User entity) {
         delete(entity.getId());
-        users.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public void delete(User entity) {
-        users.remove(entity);
+        userMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public List<User> find() {
-        return users;
+        return new ArrayList<>(userMap.values());
     }
 
     @Override
     public User find(Long id) {
-        return users
+        return new ArrayList<>(userMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

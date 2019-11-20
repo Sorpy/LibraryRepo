@@ -49,7 +49,7 @@ public class AccountDaoImpl implements AccountDao {
 
     @Override
     public void delete(Account entity) {
-        accounts.remove(entity);
+        accountMap.remove(entity.getId(),entity);
     }
 
     @Override

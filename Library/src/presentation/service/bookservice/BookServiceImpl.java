@@ -80,13 +80,31 @@ public class BookServiceImpl implements BookService{
     @Override
     public APIResponse update(long id, BookParam param) {
         APIResponse response = new APIResponse();
-        bookProcessor.update(id,param);
+        try {
+            bookProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<BookParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            bookProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

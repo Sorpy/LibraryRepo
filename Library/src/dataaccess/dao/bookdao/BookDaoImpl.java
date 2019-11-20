@@ -2,6 +2,7 @@ package dataaccess.dao.bookdao;
 
 import data.entity.Book;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.bookdao.BookData.*;
@@ -17,14 +18,14 @@ public class BookDaoImpl implements BookDao{
 
     @Override
     public List<Book> save (List<Book> entity) {
-        books.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public Book update(Book entity) {
         delete(entity.getId());
-        books.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class BookDaoImpl implements BookDao{
 
     @Override
     public void delete(Book entity) {
-        books.remove(entity);
+        bookMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class BookDaoImpl implements BookDao{
 
     @Override
     public List<Book> find() {
-        return books;
+        return new ArrayList<>(bookMap.values());
     }
 
     @Override
     public Book find(Long id) {
-        return books
+        return new ArrayList<>(bookMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

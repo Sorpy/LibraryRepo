@@ -1,7 +1,7 @@
 package data.entity;
 
-import business.converter.accountclient.AccountParam;
-import business.converter.accountclient.AccountResult;
+import business.converter.account.AccountParam;
+import business.converter.account.AccountResult;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import dataaccess.dao.accountdao.AccountDao;
 import dataaccess.dao.accountdao.AccountDaoImpl;

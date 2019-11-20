@@ -10,37 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserGroupProcessorImpl implements UserGroupProcessor{
-    private UserGroupDao userGroupDao;
-    private UserGroupParamConverter userGroupParamConverter;
-    private UserGroupResultConverter userGroupResultConverter;
-
-    public UserGroupDao getUserGroupDao() {
-        return userGroupDao;
-    }
-
-    public void setUserGroupDao(UserGroupDao userGroupDao) {
-        this.userGroupDao = userGroupDao;
-    }
-
-    public UserGroupParamConverter getUserGroupParamConverter() {
-        return userGroupParamConverter;
-    }
-
-    public void setUserGroupParamConverter(UserGroupParamConverter userGroupParamConverter) {
-        this.userGroupParamConverter = userGroupParamConverter;
-    }
-
-    public UserGroupResultConverter getUserGroupResultConverter() {
-        return userGroupResultConverter;
-    }
-
-    public void setUserGroupResultConverter(UserGroupResultConverter userGroupResultConverter) {
-        this.userGroupResultConverter = userGroupResultConverter;
-    }
+    private UserGroupDao userGroupDao = new UserGroupDaoImpl();
+    private UserGroupParamConverter userGroupParamConverter = new UserGroupParamConverterImpl();
+    private UserGroupResultConverter userGroupResultConverter = new UserGroupResultConverterImpl();
 
     @Override
     public UserGroupResult create(UserGroupParam param) {
-        return userGroupResultConverter.convert(userGroupDao.save(userGroupParamConverter.convert(param)));
+        return userGroupResultConverter
+                .convert(userGroupDao
+                        .save(userGroupParamConverter
+                                .convert(param,null)));
     }
 
     @Override
@@ -48,9 +27,13 @@ public class UserGroupProcessorImpl implements UserGroupProcessor{
         List<UserGroup> userGroups = new ArrayList<>();
         List<UserGroupResult> userGroupResults = new ArrayList<>();
 
-        param.forEach(userGroupParam -> userGroups.add(userGroupParamConverter.convert(userGroupParam)));
+        param.forEach(userGroupParam -> userGroups
+                .add(userGroupParamConverter
+                        .convert(userGroupParam,null)));
         userGroupDao.save(userGroups);
-        userGroups.forEach(userGroup -> userGroupResults.add(userGroupResultConverter.convert(userGroup)));
+        userGroups.forEach(userGroup -> userGroupResults
+                .add(userGroupResultConverter
+                        .convert(userGroup)));
 
         return userGroupResults;
     }
@@ -60,13 +43,18 @@ public class UserGroupProcessorImpl implements UserGroupProcessor{
         UserGroup oldEntity = userGroupDao.find(id);
         if (oldEntity!=null){
             userGroupDao.delete(id);
-            userGroupDao.update(userGroupParamConverter.convert(param,oldEntity));
+            userGroupDao.update(userGroupParamConverter
+                    .convert(param,oldEntity));
         }else System.out.println("No entity with id " + id + " found");
     }
 
     @Override
     public void update(List<UserGroupParam> param) {
-
+        List<UserGroup> userGroups = new ArrayList<>();
+        param.forEach(userGroupParam -> userGroups
+                .add(userGroupParamConverter
+                        .convert(userGroupParam,null)));
+        userGroupDao.update(userGroups);
     }
 
     @Override
@@ -81,14 +69,18 @@ public class UserGroupProcessorImpl implements UserGroupProcessor{
 
     @Override
     public UserGroupResult find(long id) {
-        return userGroupResultConverter.convert(userGroupDao.find(id));
+        return userGroupResultConverter
+                .convert(userGroupDao
+                        .find(id));
     }
 
     @Override
     public List<UserGroupResult> find() {
         List<UserGroupResult> userResults = new ArrayList<>();
         userGroupDao.find()
-                .forEach(user -> userResults.add(userGroupResultConverter.convert(user)));
+                .forEach(user -> userResults
+                        .add(userGroupResultConverter
+                                .convert(user)));
         return userResults;
     }
 }

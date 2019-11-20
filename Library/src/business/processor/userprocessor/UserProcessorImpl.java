@@ -3,42 +3,21 @@ package business.processor.userprocessor;
 import business.converter.user.*;
 import data.entity.User;
 import dataaccess.dao.userdao.UserDao;
+import dataaccess.dao.userdao.UserDaoImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserProcessorImpl implements UserProcessor{
-    private UserDao userDao;
-    private UserParamConverter userParamConverter;
-    private UserResultConverter userResultConverter;
-
-    public UserDao getUserDao() {
-        return userDao;
-    }
-
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-
-    public UserParamConverter getUserParamConverter() {
-        return userParamConverter;
-    }
-
-    public void setUserParamConverter(UserParamConverter userParamConverter) {
-        this.userParamConverter = userParamConverter;
-    }
-
-    public UserResultConverter getUserResultConverter() {
-        return userResultConverter;
-    }
-
-    public void setUserResultConverter(UserResultConverter userResultConverter) {
-        this.userResultConverter = userResultConverter;
-    }
+    private UserDao userDao = new UserDaoImpl();
+    private UserParamConverter userParamConverter = new UserParamConverterImpl();
+    private UserResultConverter userResultConverter = new UserResultConverterImpl();
 
     @Override
     public UserResult create(UserParam param) {
-        return userResultConverter.convert(userDao.save(userParamConverter.convert(param)));
+        return userResultConverter.convert(userDao
+                .save(userParamConverter
+                        .convert(param,null)));
     }
 
     @Override
@@ -46,9 +25,13 @@ public class UserProcessorImpl implements UserProcessor{
         List<User> users = new ArrayList<>();
         List<UserResult> userResults = new ArrayList<>();
 
-        param.forEach(userParam -> users.add(userParamConverter.convert(userParam)));
+        param.forEach(userParam -> users
+                .add(userParamConverter
+                        .convert(userParam,null)));
         userDao.save(users);
-        users.forEach(user -> userResults.add(userResultConverter.convert(user)));
+        users.forEach(user -> userResults
+                .add(userResultConverter
+                        .convert(user)));
 
         return userResults;
     }
@@ -58,13 +41,18 @@ public class UserProcessorImpl implements UserProcessor{
         User oldEntity = userDao.find(id);
         if (oldEntity!=null){
             userDao.delete(id);
-            userDao.update(userParamConverter.convert(param,oldEntity));
+            userDao.update(userParamConverter
+                    .convert(param,oldEntity));
         }else System.out.println("No entity with id " + id + " found");
     }
 
     @Override
     public void update(List<UserParam> param) {
-
+        List<User> users = new ArrayList<>();
+        param.forEach(userParam -> users
+                .add(userParamConverter
+                        .convert(userParam,null)));
+        userDao.update(users);
     }
 
     @Override
@@ -86,7 +74,9 @@ public class UserProcessorImpl implements UserProcessor{
     public List<UserResult> find() {
         List<UserResult> userResults = new ArrayList<>();
         userDao.find()
-                .forEach(user -> userResults.add(userResultConverter.convert(user)));
+                .forEach(user -> userResults
+                        .add(userResultConverter
+                                .convert(user)));
         return userResults;
     }
 }

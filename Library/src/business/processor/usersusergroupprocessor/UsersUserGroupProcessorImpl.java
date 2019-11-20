@@ -1,77 +1,82 @@
 package business.processor.usersusergroupprocessor;
 
 import business.converter.usersusergroup.*;
+import data.entity.UsersUserGroup;
 import dataaccess.dao.usersusergroupdao.UsersUserGroupDao;
 import dataaccess.dao.usersusergroupdao.UsersUserGroupDaoImpl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UsersUserGroupProcessorImpl implements UsersUserGroupProcessor{
-    private UsersUserGroupDao usersUserGroupDao;
-    private UsersUserGroupParamConverter usersUserGroupParamConverter;
-    private UsersUserGroupResultConverter usersUserGroupResultConverter;
-
-    public UsersUserGroupDao getUsersUserGroupDao() {
-        return usersUserGroupDao;
-    }
-
-    public void setUsersUserGroupDao(UsersUserGroupDao usersUserGroupDao) {
-        this.usersUserGroupDao = usersUserGroupDao;
-    }
-
-    public UsersUserGroupParamConverter getUsersUserGroupParamConverter() {
-        return usersUserGroupParamConverter;
-    }
-
-    public void setUsersUserGroupParamConverter(UsersUserGroupParamConverter usersUserGroupParamConverter) {
-        this.usersUserGroupParamConverter = usersUserGroupParamConverter;
-    }
-
-    public UsersUserGroupResultConverter getUsersUserGroupResultConverter() {
-        return usersUserGroupResultConverter;
-    }
-
-    public void setUsersUserGroupResultConverter(UsersUserGroupResultConverter usersUserGroupResultConverter) {
-        this.usersUserGroupResultConverter = usersUserGroupResultConverter;
-    }
+    private UsersUserGroupDao usersUserGroupDao = new UsersUserGroupDaoImpl();
+    private UsersUserGroupParamConverter usersUserGroupParamConverter =  new UsersUserGroupParamConverterImpl();
+    private UsersUserGroupResultConverter usersUserGroupResultConverter = new UsersUserGroupResultConverterImpl();
 
     @Override
     public UsersUserGroupResult create(UsersUserGroupParam param) {
-        return null;
+        return usersUserGroupResultConverter.convert(usersUserGroupDao
+                .save(usersUserGroupParamConverter
+                        .convert(param,null)));
     }
 
     @Override
     public List<UsersUserGroupResult> create(List<UsersUserGroupParam> param) {
-        return null;
+        List<UsersUserGroup> usersUserGroups = new ArrayList<>();
+        List<UsersUserGroupResult> usersUserGroupResults = new ArrayList<>();
+
+        param.forEach(userStatusParam -> usersUserGroups
+                .add(usersUserGroupParamConverter
+                        .convert(userStatusParam,null)));
+        usersUserGroupDao.save(usersUserGroups);
+        usersUserGroups.forEach(user -> usersUserGroupResults
+                .add(usersUserGroupResultConverter
+                        .convert(user)));
+
+        return usersUserGroupResults;
     }
 
     @Override
     public void update(long id, UsersUserGroupParam param) {
-
+        UsersUserGroup oldEntity = usersUserGroupDao.find(id);
+        if (oldEntity!=null){
+            usersUserGroupDao.delete(id);
+            usersUserGroupDao.update(usersUserGroupParamConverter
+                    .convert(param,oldEntity));
+        }else System.out.println("No entity with id " + id + " found");
     }
 
     @Override
     public void update(List<UsersUserGroupParam> param) {
-
+        List<UsersUserGroup> usersUserGroups = new ArrayList<>();
+        param.forEach(usersUserGroupParam -> usersUserGroups
+                .add(usersUserGroupParamConverter
+                        .convert(usersUserGroupParam,null)));
+        usersUserGroupDao.update(usersUserGroups);
     }
 
     @Override
     public void delete(long id) {
-
+        usersUserGroupDao.delete(id);
     }
 
     @Override
     public void delete(List<Long> idList) {
-
+        usersUserGroupDao.delete(idList);
     }
 
     @Override
     public UsersUserGroupResult find(long id) {
-        return null;
+        return usersUserGroupResultConverter.convert(usersUserGroupDao.find(id));
     }
 
     @Override
     public List<UsersUserGroupResult> find() {
-        return null;
+        List<UsersUserGroupResult> userResults = new ArrayList<>();
+        usersUserGroupDao.find()
+                .forEach(user -> userResults
+                        .add(usersUserGroupResultConverter
+                                .convert(user)));
+        return userResults;
     }
 }

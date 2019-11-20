@@ -1,6 +1,6 @@
 package presentation.service.accountservice;
 
-import business.converter.accountclient.AccountParam;
+import business.converter.account.AccountParam;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import data.common.APIResponse;
 

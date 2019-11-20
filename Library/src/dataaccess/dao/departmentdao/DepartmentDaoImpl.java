@@ -2,6 +2,7 @@ package dataaccess.dao.departmentdao;
 
 import data.entity.Department;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.departmentdao.DepartmentData.*;
@@ -17,14 +18,14 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     public List<Department> save (List<Department> entity) {
-        departments.addAll(entity);
+        entity.forEach(this::save);
         return entity;
     }
 
     @Override
     public Department update(Department entity) {
         delete(entity.getId());
-        departments.add(entity);
+        save(entity);
         return entity;
     }
 
@@ -42,7 +43,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     public void delete(Department entity) {
-        departments.remove(entity);
+        departmentMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     public List<Department> find() {
-        return departments;
+        return new ArrayList<>(departmentMap.values());
     }
 
     @Override
     public Department find(Long id) {
-        return departments
+        return new ArrayList<>(departmentMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

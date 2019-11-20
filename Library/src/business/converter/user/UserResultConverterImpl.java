@@ -7,8 +7,8 @@ public class UserResultConverterImpl extends BaseResultConverterImpl<User,UserRe
     @Override
     public UserResult convert(User param) {
         UserResult userResult = new UserResult();
-        convertStandart(param,userResult);
-        convertSpecific(param,userResult);
+        userResult = convertStandart(param,userResult);
+        userResult = convertSpecific(param,userResult);
         return userResult;
     }
 

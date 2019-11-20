@@ -2,6 +2,7 @@ package dataaccess.dao.accountstatusdao;
 
 import data.entity.AccountStatus;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static dataaccess.dao.accountstatusdao.AccountStatusData.*;
@@ -42,7 +43,7 @@ public class AccountStatusDaoImpl implements AccountStatusDao {
 
     @Override
     public void delete(AccountStatus entity) {
-        accountStatuses.remove(entity);
+        accountStatusMap.remove(entity.getId(),entity);
     }
 
     @Override
@@ -52,12 +53,12 @@ public class AccountStatusDaoImpl implements AccountStatusDao {
 
     @Override
     public List<AccountStatus> find() {
-        return accountStatuses;
+        return new ArrayList<>(accountStatusMap.values());
     }
 
     @Override
     public AccountStatus find(Long id) {
-        return accountStatuses
+        return new ArrayList<>(accountStatusMap.values())
                 .stream()
                 .filter(a -> a.getId().equals(id))
                 .findFirst().get();

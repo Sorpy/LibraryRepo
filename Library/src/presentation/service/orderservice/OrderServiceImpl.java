@@ -80,13 +80,31 @@ public class OrderServiceImpl implements OrderService{
     @Override
     public APIResponse update(long id, OrderParam param) {
         APIResponse response = new APIResponse();
-        orderProcessor.update(id,param);
+        try {
+            orderProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<OrderParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            orderProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

@@ -6,9 +6,9 @@ import data.entity.Genre;
 public class GenreResultConverterImpl extends BaseResultConverterImpl<Genre,GenreResult> implements GenreResultConverter{
     @Override
     public GenreResult convert(Genre param) {
-        GenreResult bookStatusResult = new GenreResult();
-        bookStatusResult = convertStandart(param,bookStatusResult);
-        return bookStatusResult;
+        GenreResult genreResult = new GenreResult();
+        genreResult = convertStandart(param,genreResult);
+        return genreResult;
     }
 
     @Override

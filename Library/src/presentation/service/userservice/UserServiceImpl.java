@@ -3,6 +3,7 @@ package presentation.service.userservice;
 import business.converter.user.UserParam;
 import business.converter.user.UserResult;
 import business.processor.userprocessor.UserProcessor;
+import business.processor.userprocessor.UserProcessorImpl;
 import data.common.APIResponse;
 import presentation.jsonconverter.Serialization;
 
@@ -10,15 +11,7 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService{
     private Serialization serialization = new Serialization();
-    private UserProcessor userProcessor;
-
-    public UserProcessor getUserProcessor() {
-        return userProcessor;
-    }
-
-    public void setUserProcessor(UserProcessor userProcessor) {
-        this.userProcessor = userProcessor;
-    }
+    private UserProcessor userProcessor = new UserProcessorImpl();
 
     @Override
     public APIResponse findByPK(long id){
@@ -79,13 +72,31 @@ public class UserServiceImpl implements UserService{
     @Override
     public APIResponse update(long id, UserParam param) {
         APIResponse response = new APIResponse();
-        userProcessor.update(id,param);
+        try {
+            userProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<UserParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            userProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

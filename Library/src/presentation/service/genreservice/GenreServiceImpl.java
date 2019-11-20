@@ -80,13 +80,31 @@ public class GenreServiceImpl implements GenreService {
     @Override
     public APIResponse update(long id, GenreParam param) {
         APIResponse response = new APIResponse();
-        genreProcessor.update(id,param);
+        try {
+            genreProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<GenreParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            genreProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override

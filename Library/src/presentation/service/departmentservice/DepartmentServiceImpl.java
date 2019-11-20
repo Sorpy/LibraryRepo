@@ -80,13 +80,31 @@ public class DepartmentServiceImpl implements DepartmentService{
     @Override
     public APIResponse update(long id, DepartmentParam param) {
         APIResponse response = new APIResponse();
-        departmentProcessor.update(id,param);
+        try {
+            departmentProcessor.update(id,param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
         return response;
     }
 
     @Override
     public APIResponse update(List<DepartmentParam> param) {
-        return null;
+        APIResponse response = new APIResponse();
+        try {
+            departmentProcessor.update(param);
+            response.setResult(true);
+            response.setText("updated list");
+        } catch (Exception e) {
+            response.setText("Something went wrong " + e.getMessage());
+            response.setResult(false);
+        }
+
+        return response;
     }
 
     @Override
