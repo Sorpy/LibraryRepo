@@ -1,35 +1,35 @@
 package dataaccess.dao.genredao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import data.entity.Genre;
+import dataaccess.dao.common.BaseStorage;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class GenreData {
+public class GenreData extends BaseStorage {
     public static List<Genre> genres = new ArrayList<>();
     public static Map<Long,Genre> genreMap;
+    private static ObjectMapper mapper = new ObjectMapper();
+    private static File file1 = new File(".\\src\\database\\GenreJSON");
 
     static {
-
-        Genre genre1 = new Genre();
-        genre1.setCode("A22KPs");
-        genre1.setDescription("This is an active client account");
-        genre1.setName("ActiveClientStatus");
-        genre1.setId((long) 1);
-
-        Genre genre2 = new Genre();
-        genre2.setCode("AK899Ps");
-        genre2.setDescription("This is an inactive client account");
-        genre2.setName("InactiveClientStatus");
-        genre2.setId((long) 2);
-
-        genres.add(genre2);
-        genres.add(genre2);
-
+        try {
+            genres = mapper.readValue(file1, new TypeReference<List<Genre>>() {
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         genreMap = genres
                 .stream()
                 .collect(Collectors.toMap(Genre::getId, item -> item));
+        file = file1;
+        map = (HashMap) genreMap;
     }
 }

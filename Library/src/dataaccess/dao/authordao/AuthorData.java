@@ -1,36 +1,35 @@
 package dataaccess.dao.authordao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import data.entity.Author;
+import dataaccess.dao.common.BaseStorage;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class AuthorData {
+public class AuthorData extends BaseStorage {
     public static List<Author> authors = new ArrayList<>();
-    public static Map<Long,Author> authorMap;
+    public static Map<Long, Author> authorMap;
+    private static ObjectMapper mapper = new ObjectMapper();
+    private static File file1 = new File(".\\src\\database\\AuthorJSON");
 
     static {
-        Author author1 = new Author();
-        author1.setCode("AKPs");
-        author1.setDescription("something");
-        author1.setName("Author");
-        author1.setAuthorName("Author Name 1");
-        author1.setId((long) 1);
-
-        Author author2 = new Author();
-        author2.setAuthorName("Author Name 2");
-        author2.setCode("AKPsdd");
-        author2.setDescription("author author");
-        author2.setName("autjor autroh");
-        author2.setId((long) 2);
-
-        authors.add(author1);
-        authors.add(author2);
-
+        try {
+            authors = mapper.readValue(file1, new TypeReference<List<Author>>() {
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         authorMap = authors
                 .stream()
-                .collect(Collectors.toMap(Author::getId, item->item));
+                .collect(Collectors.toMap(Author::getId, item -> item));
+        file = file1;
+        map = (HashMap) authorMap;
     }
 }

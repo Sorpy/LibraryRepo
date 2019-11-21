@@ -1,48 +1,39 @@
 package dataaccess.dao.bookdao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import data.entity.Book;
 import dataaccess.dao.authordao.AuthorData;
 import dataaccess.dao.bookstatusdao.BookStatusData;
+import dataaccess.dao.common.BaseStorage;
 import dataaccess.dao.departmentdao.DepartmentData;
 import dataaccess.dao.genredao.GenreData;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
-public class BookData {
+public class BookData extends BaseStorage {
     public static List<Book> books = new ArrayList<>();
     public static Map<Long,Book> bookMap;
+    private static ObjectMapper mapper = new ObjectMapper();
+    private static File file1 = new File(".\\src\\database\\BookJSON");
 
     static {
-        Book book1 = new Book();
-        book1.setBookStatus(BookStatusData.bookStatuses.get(0));
-        book1.setBookName("Name");
-        book1.setDepartment(DepartmentData.departments.get(0));
-        book1.setAuthor(AuthorData.authors.get(0));
-        book1.setGenre(GenreData.genres.get(0));
-        book1.setPrice(15.2);
-        book1.setYear(1999);
-        book1.setCode("AKPVs");
-        book1.setId((long)55);
-        book1.setDescription("asdasda");
-        book1.setName("something");
-
-        Book book2 = new Book();
-        book2.setBookStatus(BookStatusData.bookStatuses.get(1));
-        book2.setBookName("Name");
-        book2.setDepartment(DepartmentData.departments.get(1));
-        book2.setAuthor(AuthorData.authors.get(1));
-        book2.setGenre(GenreData.genres.get(1));
-        book2.setPrice(15.2);
-        book2.setYear(1999);
-        book2.setCode("A44KPs");
-        book2.setId((long)5);
-        book2.setDescription("asdasda");
-        book2.setName("something");
-
-        books.add(book1);
-        books.add(book2);
-
+        try {
+            books = mapper.readValue(file1, new TypeReference<List<Book>>() {
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        bookMap = books
+                .stream()
+                .collect(Collectors.toMap(Book::getId, item -> item));
+        file = file1;
+        map = (HashMap) bookMap;
     }
 }
