@@ -4,13 +4,14 @@ import business.converter.account.*;
 import data.entity.Account;
 import dataaccess.dao.accountdao.AccountDao;
 import dataaccess.dao.accountdao.AccountDaoImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.beans.IntrospectionException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
-
-
+@Component
 public class AccountProcessorImpl implements AccountProcessor {
     private AccountDao accountDao = new AccountDaoImpl();
     private AccountParamConverter accountParamConverter = new AccountParamConverterImpl();

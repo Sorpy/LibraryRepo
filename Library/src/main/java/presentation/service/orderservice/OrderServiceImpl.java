@@ -3,14 +3,13 @@ package presentation.service.orderservice;
 import business.converter.order.OrderParam;
 import business.converter.order.OrderResult;
 import business.processor.orderprocessor.OrderProcessor;
-import business.processor.orderprocessor.OrderProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class OrderServiceImpl implements OrderService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private OrderProcessor orderProcessor;
 
     public OrderProcessor getOrderProcessor() {
@@ -25,7 +24,7 @@ public class OrderServiceImpl implements OrderService{
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(orderProcessor.find(id)));
+            response.setText(serializationImpl.serialization(orderProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -39,7 +38,7 @@ public class OrderServiceImpl implements OrderService{
         APIResponse response = new APIResponse();
         try {
             List<OrderResult> orderResults = orderProcessor.find();
-            response.setText(serialization.serialization(orderResults));
+            response.setText(serializationImpl.serialization(orderResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -54,7 +53,7 @@ public class OrderServiceImpl implements OrderService{
         APIResponse response = new APIResponse();
         try{
             OrderResult genreResult = orderProcessor.create(param);
-            response.setText(serialization.serialization(genreResult));
+            response.setText(serializationImpl.serialization(genreResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -69,7 +68,7 @@ public class OrderServiceImpl implements OrderService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(orderProcessor.create(param)));
+            response.setText(serializationImpl.serialization(orderProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

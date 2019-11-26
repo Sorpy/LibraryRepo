@@ -5,13 +5,17 @@ import business.converter.accountstatus.AccountStatusResult;
 import business.processor.accountclientstatusprocessor.AccountStatusProcessor;
 import business.processor.accountclientstatusprocessor.AccountStatusProcessorImpl;
 import data.common.APIResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
-
 public class AccountStatusServiceImpl implements AccountStatusService {
-    private Serialization serialization = new Serialization();
-    private AccountStatusProcessor accountStatusProcessor = new AccountStatusProcessorImpl();
+    @Autowired
+    private Serialization serialization;
+    @Autowired
+    private AccountStatusProcessor accountStatusProcessor;
 
 
     @Override

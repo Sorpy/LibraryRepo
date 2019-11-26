@@ -5,12 +5,12 @@ import business.converter.genre.GenreResult;
 import business.processor.genreprocessor.GenreProcessor;
 import business.processor.genreprocessor.GenreProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class GenreServiceImpl implements GenreService {
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private GenreProcessor genreProcessor = new GenreProcessorImpl();
 
     public GenreProcessor getGenreProcessor() {
@@ -25,7 +25,7 @@ public class GenreServiceImpl implements GenreService {
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(genreProcessor.find(id)));
+            response.setText(serializationImpl.serialization(genreProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -39,7 +39,7 @@ public class GenreServiceImpl implements GenreService {
         APIResponse response = new APIResponse();
         try {
             List<GenreResult> genreResults = genreProcessor.find();
-            response.setText(serialization.serialization(genreResults));
+            response.setText(serializationImpl.serialization(genreResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -54,7 +54,7 @@ public class GenreServiceImpl implements GenreService {
         APIResponse response = new APIResponse();
         try{
             GenreResult genreResult = genreProcessor.create(param);
-            response.setText(serialization.serialization(genreResult));
+            response.setText(serializationImpl.serialization(genreResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -69,7 +69,7 @@ public class GenreServiceImpl implements GenreService {
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(genreProcessor.create(param)));
+            response.setText(serializationImpl.serialization(genreProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

@@ -5,19 +5,19 @@ import business.converter.author.AuthorResult;
 import business.processor.authorprocessor.AuthorProcessor;
 import business.processor.authorprocessor.AuthorProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class AuthorServiceImpl implements AuthorService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private AuthorProcessor authorProcessor = new AuthorProcessorImpl();
 
     @Override
     public APIResponse findByPK(long id) {
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(authorProcessor.find(id)));
+            response.setText(serializationImpl.serialization(authorProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -31,7 +31,7 @@ public class AuthorServiceImpl implements AuthorService{
         APIResponse response = new APIResponse();
         try {
             List<AuthorResult> authorResults = authorProcessor.find();
-            response.setText(serialization.serialization(authorResults));
+            response.setText(serializationImpl.serialization(authorResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -46,7 +46,7 @@ public class AuthorServiceImpl implements AuthorService{
         APIResponse response = new APIResponse();
         try{
             AuthorResult authorResult = authorProcessor.create(param);
-            response.setText(serialization.serialization(authorResult));
+            response.setText(serializationImpl.serialization(authorResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -61,7 +61,7 @@ public class AuthorServiceImpl implements AuthorService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(authorProcessor.create(param)));
+            response.setText(serializationImpl.serialization(authorProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

@@ -5,12 +5,12 @@ import business.converter.book.BookResult;
 import business.processor.bookprocessor.BookProcessor;
 import business.processor.bookprocessor.BookProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class BookServiceImpl implements BookService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private BookProcessor bookProcessor = new BookProcessorImpl();
 
     public BookProcessor getBookProcessor() {
@@ -25,7 +25,7 @@ public class BookServiceImpl implements BookService{
     public APIResponse findByPK(long id) {
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(bookProcessor.find(id)));
+            response.setText(serializationImpl.serialization(bookProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -39,7 +39,7 @@ public class BookServiceImpl implements BookService{
         APIResponse response = new APIResponse();
         try {
             List<BookResult> bookResults = bookProcessor.find();
-            response.setText(serialization.serialization(bookResults));
+            response.setText(serializationImpl.serialization(bookResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -54,7 +54,7 @@ public class BookServiceImpl implements BookService{
         APIResponse response = new APIResponse();
         try{
             BookResult bookResult = bookProcessor.create(param);
-            response.setText(serialization.serialization(bookResult));
+            response.setText(serializationImpl.serialization(bookResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -69,7 +69,7 @@ public class BookServiceImpl implements BookService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(bookProcessor.create(param)));
+            response.setText(serializationImpl.serialization(bookProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

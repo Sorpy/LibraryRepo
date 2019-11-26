@@ -5,19 +5,19 @@ import business.converter.userstatus.UserStatusResult;
 import business.processor.userstatusprocessor.UserStatusProcessor;
 import business.processor.userstatusprocessor.UserStatusProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class UserStatusServiceImpl implements UserStatusService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private UserStatusProcessor userStatusProcessor = new UserStatusProcessorImpl();
 
     @Override
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(userStatusProcessor.find(id)));
+            response.setText(serializationImpl.serialization(userStatusProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -31,7 +31,7 @@ public class UserStatusServiceImpl implements UserStatusService{
         APIResponse response = new APIResponse();
         try {
             List<UserStatusResult> userResults = userStatusProcessor.find();
-            response.setText(serialization.serialization(userResults));
+            response.setText(serializationImpl.serialization(userResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -46,7 +46,7 @@ public class UserStatusServiceImpl implements UserStatusService{
         APIResponse response = new APIResponse();
         try{
             UserStatusResult userStatusResult = userStatusProcessor.create(param);
-            response.setText(serialization.serialization(userStatusResult));
+            response.setText(serializationImpl.serialization(userStatusResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -61,7 +61,7 @@ public class UserStatusServiceImpl implements UserStatusService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(userStatusProcessor.create(param)));
+            response.setText(serializationImpl.serialization(userStatusProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

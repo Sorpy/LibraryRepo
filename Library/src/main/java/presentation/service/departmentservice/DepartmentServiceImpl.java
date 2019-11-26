@@ -5,12 +5,12 @@ import business.converter.department.DepartmentResult;
 import business.processor.departmentprocessor.DepartmentProcessor;
 import business.processor.departmentprocessor.DepartmentProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class DepartmentServiceImpl implements DepartmentService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private DepartmentProcessor departmentProcessor = new DepartmentProcessorImpl();
 
     public DepartmentProcessor getDepartmentProcessor() {
@@ -25,7 +25,7 @@ public class DepartmentServiceImpl implements DepartmentService{
     public APIResponse findByPk(long id) {
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(departmentProcessor.find(id)));
+            response.setText(serializationImpl.serialization(departmentProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -39,7 +39,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         APIResponse response = new APIResponse();
         try {
             List<DepartmentResult> departmentResults = departmentProcessor.find();
-            response.setText(serialization.serialization(departmentResults));
+            response.setText(serializationImpl.serialization(departmentResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -54,7 +54,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         APIResponse response = new APIResponse();
         try{
             DepartmentResult departmentResult = departmentProcessor.create(param);
-            response.setText(serialization.serialization(departmentResult));
+            response.setText(serializationImpl.serialization(departmentResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -69,7 +69,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(departmentProcessor.create(param)));
+            response.setText(serializationImpl.serialization(departmentProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

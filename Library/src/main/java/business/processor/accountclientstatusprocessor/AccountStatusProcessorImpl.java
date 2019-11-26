@@ -4,10 +4,12 @@ import business.converter.accountstatus.*;
 import data.entity.AccountStatus;
 import dataaccess.dao.accountstatusdao.AccountStatusDao;
 import dataaccess.dao.accountstatusdao.AccountStatusDaoImpl;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class AccountStatusProcessorImpl implements AccountStatusProcessor {
     private AccountStatusDao accountStatusDao = new AccountStatusDaoImpl();
     private AccountStatusParamConverter accountStatusParamConverter = new AccountStatusParamConverterImpl();

@@ -5,19 +5,19 @@ import business.converter.user.UserResult;
 import business.processor.userprocessor.UserProcessor;
 import business.processor.userprocessor.UserProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class UserServiceImpl implements UserService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private UserProcessor userProcessor = new UserProcessorImpl();
 
     @Override
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(userProcessor.find(id)));
+            response.setText(serializationImpl.serialization(userProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService{
         APIResponse response = new APIResponse();
         try {
             List<UserResult> userResults = userProcessor.find();
-            response.setText(serialization.serialization(userResults));
+            response.setText(serializationImpl.serialization(userResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService{
         APIResponse response = new APIResponse();
         try{
             UserResult userResult = userProcessor.create(param);
-            response.setText(serialization.serialization(userResult));
+            response.setText(serializationImpl.serialization(userResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(userProcessor.create(param)));
+            response.setText(serializationImpl.serialization(userProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);

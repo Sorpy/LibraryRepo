@@ -5,20 +5,25 @@ import business.converter.account.AccountResult;
 import business.processor.accountclientprocessor.AccountProcessor;
 import business.processor.accountclientprocessor.AccountProcessorImpl;
 import data.common.APIResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class AccountServiceImpl implements AccountService {
-    private Serialization serialization = new Serialization();
-    private AccountProcessor accountProcessor = new AccountProcessorImpl();
+    @Autowired
+    private Serialization serializationImpl;
+    @Autowired
+    private AccountProcessor accountProcessor;
 
     @Override
     public APIResponse findByPK(Long id) {
         APIResponse response = new APIResponse();
         try {
             response.setText
-                    (serialization.serialization
+                    (serializationImpl.serialization
                             (accountProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
@@ -35,7 +40,7 @@ public class AccountServiceImpl implements AccountService {
         APIResponse response = new APIResponse();
         try {
             List<AccountResult> accountClientResults = accountProcessor.find(name);
-            response.setText(serialization.serialization(accountClientResults));
+            response.setText(serializationImpl.serialization(accountClientResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -50,7 +55,7 @@ public class AccountServiceImpl implements AccountService {
         try {
 
             List<AccountResult> accountClientResults = accountProcessor.find(name, value.toLowerCase());
-            response.setText(serialization.serialization(accountClientResults));
+            response.setText(serializationImpl.serialization(accountClientResults));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong " + e.getMessage());
@@ -64,7 +69,7 @@ public class AccountServiceImpl implements AccountService {
         APIResponse response = new APIResponse();
         try {
             List<AccountResult> accountClientResults = accountProcessor.find();
-            response.setText(serialization.serialization(accountClientResults));
+            response.setText(serializationImpl.serialization(accountClientResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -79,7 +84,7 @@ public class AccountServiceImpl implements AccountService {
         APIResponse response = new APIResponse();
         try{
             AccountResult accountClientResult = accountProcessor.create(param);
-            response.setText(serialization.serialization(accountClientResult));
+            response.setText(serializationImpl.serialization(accountClientResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e);
@@ -94,7 +99,7 @@ public class AccountServiceImpl implements AccountService {
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization
+            response.setText(serializationImpl.serialization
                     (accountProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.getMessage());

@@ -5,18 +5,18 @@ import business.converter.usersusergroup.UsersUserGroupResult;
 import business.processor.usersusergroupprocessor.UsersUserGroupProcessor;
 import business.processor.usersusergroupprocessor.UsersUserGroupProcessorImpl;
 import data.common.APIResponse;
-import presentation.jsonconverter.Serialization;
+import presentation.jsonconverter.SerializationImpl;
 
 import java.util.List;
 
 public class UsersUserGroupServiceImpl implements UsersUserGroupService{
-    private Serialization serialization = new Serialization();
+    private SerializationImpl serializationImpl = new SerializationImpl();
     private UsersUserGroupProcessor usersUserGroupProcessor = new UsersUserGroupProcessorImpl();
     @Override
     public APIResponse findByPK(long id){
         APIResponse response = new APIResponse();
         try {
-            response.setText(serialization.serialization(usersUserGroupProcessor.find(id)));
+            response.setText(serializationImpl.serialization(usersUserGroupProcessor.find(id)));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -30,7 +30,7 @@ public class UsersUserGroupServiceImpl implements UsersUserGroupService{
         APIResponse response = new APIResponse();
         try {
             List<UsersUserGroupResult> usersUserGroupResults = usersUserGroupProcessor.find();
-            response.setText(serialization.serialization(usersUserGroupResults));
+            response.setText(serializationImpl.serialization(usersUserGroupResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());
@@ -45,7 +45,7 @@ public class UsersUserGroupServiceImpl implements UsersUserGroupService{
         APIResponse response = new APIResponse();
         try{
             UsersUserGroupResult usersUserGroupResult = usersUserGroupProcessor.create(param);
-            response.setText(serialization.serialization(usersUserGroupResult));
+            response.setText(serializationImpl.serialization(usersUserGroupResult));
             response.setResult(true);
         } catch (Exception e){
             response.setText("Something went wrong "+ e.toString());
@@ -60,7 +60,7 @@ public class UsersUserGroupServiceImpl implements UsersUserGroupService{
         APIResponse response = new APIResponse();
         try{
             response.setResult(true);
-            response.setText(serialization.serialization(usersUserGroupProcessor.create(param)));
+            response.setText(serializationImpl.serialization(usersUserGroupProcessor.create(param)));
         } catch(Exception e) {
             response.setText("Something went wrong " + e.toString());
             response.setResult(false);
