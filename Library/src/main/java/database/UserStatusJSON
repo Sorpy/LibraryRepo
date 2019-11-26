@@ -1,0 +1,6 @@
+[ {
+  "id" : 1,
+  "code" : "AKP",
+  "name" : "ActiveClientStatus",
+  "description" : "This is an active client account"
+}]
