@@ -4,5 +4,4 @@ import application.business.converter.common.BaseResultConverter;
 import application.data.entity.Department;
 
 public interface DepartmentResultConverter extends BaseResultConverter<Department,DepartmentResult> {
-    DepartmentResult convert(Department param);
 }

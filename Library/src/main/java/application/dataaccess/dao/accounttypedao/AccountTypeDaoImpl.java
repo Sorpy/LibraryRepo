@@ -3,6 +3,7 @@ package application.dataaccess.dao.accounttypedao;
 import application.data.entity.AccountType;
 import application.dataaccess.dao.accountstatusdao.AccountStatusData;
 import application.dataaccess.dao.common.BaseStorage;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
 
 import static application.dataaccess.dao.accounttypedao.AccountTypeData.accountTypes;
 import static application.dataaccess.dao.accounttypedao.AccountTypeData.accountTypeMap;
-
+@Component
 public class AccountTypeDaoImpl implements AccountTypeDao{
     @Override
     public AccountType save(AccountType entity) {

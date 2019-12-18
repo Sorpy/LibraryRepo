@@ -6,32 +6,21 @@ import application.business.converter.common.BaseParamConverterImpl;
 import org.springframework.stereotype.Component;
 
 @Component
-public class GenreParamConverterImpl extends BaseParamConverterImpl<GenreParam, Genre> implements GenreParamConverter {
+public class GenreParamConverterImpl
+        extends BaseParamConverterImpl<GenreParam, Genre>
+        implements GenreParamConverter {
+
+
 
     @Override
-    public Genre convert(GenreParam param, Genre oldEntity) {
-        Genre entity = null;
-        if (oldEntity != null) {
-            if (param.getId().equals(oldEntity.getId()) && param.getUnicode().equals(oldEntity.getCode())) {
-                entity = oldEntity;
-            } else {
-                try {
-                    throw new IllegalConvertException("Id and/or code do  not match");
-                } catch (IllegalConvertException e) {
-                    e.printStackTrace();
-                }
-            }
-        } else {
-            entity = new Genre();
-            entity.setId(param.getId());
-            //entity.setCode(param.getUnicode());
-        }
-        entity = convertStandart(param, entity);
-        return entity;
+    public void convertSpecific(GenreParam param, Genre entity) {
     }
 
     @Override
-    public Genre convertSpecific(GenreParam param, Genre entity) {
-        return null;
+    public Genre getEntity(GenreParam param) {
+        Genre genre = new Genre();
+        genre.setCode(param.getCode());
+        genre.setId(param.getId());
+        return genre;
     }
 }

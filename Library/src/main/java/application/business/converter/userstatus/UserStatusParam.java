@@ -1,6 +1,6 @@
 package application.business.converter.userstatus;
 
-import application.business.converter.BaseNamedParam;
+import application.business.converter.basepersistent.BaseNamedParam;
 import org.springframework.stereotype.Component;
 
 @Component

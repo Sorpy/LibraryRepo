@@ -2,7 +2,7 @@ package application.presentation.service.accountservice;
 
 import application.business.converter.account.AccountParam;
 import application.business.converter.account.AccountResult;
-import application.business.processor.accountclientprocessor.AccountProcessor;
+import application.business.processor.accountprocessor.AccountProcessor;
 import application.data.common.APIResponse;
 import application.presentation.jsonconverter.Serialization;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,22 +23,6 @@ public class AccountServiceImpl implements AccountService {
             response.setText
                     (serializationImpl.serialization
                             (accountProcessor.find(id)));
-            response.setResult(true);
-        } catch (Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
-        }
-
-        return response;
-    }
-
-
-    @Override
-    public APIResponse findByName(String name){
-        APIResponse response = new APIResponse();
-        try {
-            List<AccountResult> accountClientResults = accountProcessor.find(name);
-            response.setText(serializationImpl.serialization(accountClientResults));
             response.setResult(true);
         } catch (Exception e) {
             response.setText("Something went wrong " + e.getMessage());

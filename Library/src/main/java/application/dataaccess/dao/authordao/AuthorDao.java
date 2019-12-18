@@ -1,10 +1,11 @@
 package application.dataaccess.dao.authordao;
 
 import application.data.entity.Author;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface AuthorDao {
+public interface AuthorDao extends BaseDao<Author, Long> {
     Author save(Author entity);
     List<Author> save(List<Author> entity);
 

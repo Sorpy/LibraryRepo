@@ -7,14 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class AccountStatusResultConverterImpl extends BaseResultConverterImpl<AccountStatus, AccountStatusResult> implements AccountStatusResultConverter {
     @Override
-    public AccountStatusResult convert(AccountStatus param) {
-        AccountStatusResult accountStatusResult = new AccountStatusResult();
-        accountStatusResult =convertStandart(param, accountStatusResult);
-        return accountStatusResult;
+    public AccountStatusResult getResult() {
+        return new AccountStatusResult();
     }
 
+
     @Override
-    public AccountStatusResult convertSpecific(AccountStatus entity, AccountStatusResult result) {
-        return null;
-    }
+    public void convertSpecific(AccountStatus entity, AccountStatusResult result) { }
 }

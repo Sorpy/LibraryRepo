@@ -1,8 +1,12 @@
 package application.business.converter.common;
 
-public interface BaseResultConverter <Tin,Tout>{
+public interface BaseResultConverter <ENT, OUT>{
 
-    Tout convertStandart (Tin entity, Tout result);
+    OUT convertStandard (ENT entity, OUT result);
 
-    Tout convertSpecific (Tin entity, Tout result);
+    void convertSpecific (ENT entity, OUT result);
+
+    OUT convert(ENT entity);
+
+    OUT getResult();
 }

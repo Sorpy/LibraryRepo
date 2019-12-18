@@ -13,15 +13,12 @@ import application.presentation.service.usergroupstatusservice.UserGroupStatusSe
 import application.presentation.service.userstatusservice.UserStatusService;
 import application.presentation.service.usersusergroupservice.UsersUserGroupService;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import application.dataaccess.dao.accountdao.AccountDao;
-import application.dataaccess.dao.accountdao.AccountDaoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import application.presentation.service.accountservice.AccountService;
 import application.presentation.service.accountstatusservive.AccountStatusService;
-import application.presentation.service.accountstatusservive.AccountStatusServiceImpl;
 import application.presentation.service.userservice.UserService;
-import application.presentation.service.userservice.UserServiceImpl;
+
 @Component
 public class TestRunner {
 
@@ -62,7 +59,7 @@ public class TestRunner {
         accountParam.setCountry("Bulg");
         accountParam.setCity("Plovdiv");
         accountParam.setAddress("Some Adress");
-        accountParam.setUnicode("sAA");
+        accountParam.setCode("sAA");
         accountParam.setName("AccountThing");
         accountParam.setDescription("Something");
         accountParam.setId((long) 4);
@@ -81,7 +78,7 @@ public class TestRunner {
         accountParam2.setCountry("Bulg");
         accountParam2.setCity("Plovdiv");
         accountParam2.setAddress("Some Adress");
-        accountParam2.setUnicode("aAA");
+        accountParam2.setCode("aAA");
         accountParam2.setName("AccountThing");
         accountParam2.setDescription("Something");
         accountParam2.setId((long) 11);
@@ -113,13 +110,13 @@ public class TestRunner {
         accountParam3.setCountry("Bulg");
         accountParam3.setCity("Plovdiv");
         accountParam3.setAddress("Some Adress");
-        accountParam3.setUnicode("AKPaaaaas");
+        accountParam3.setCode("AKPaaaaas");
         accountParam3.setName("AccountThing");
         accountParam3.setDescription("Something");
         accountParam3.setId((long) 10);
 
         AccountStatusParam accountStatus1 = new AccountStatusParam();
-        accountStatus1.setUnicode("AKP");
+        accountStatus1.setCode("AKP");
         accountStatus1.setDescription("This is an active client account");
         accountStatus1.setName("ActiveClientStatus");
         accountStatus1.setId((long) 1);

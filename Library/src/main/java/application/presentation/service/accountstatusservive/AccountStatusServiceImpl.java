@@ -2,7 +2,7 @@ package application.presentation.service.accountstatusservive;
 
 import application.business.converter.accountstatus.AccountStatusParam;
 import application.business.converter.accountstatus.AccountStatusResult;
-import application.business.processor.accountclientstatusprocessor.AccountStatusProcessor;
+import application.business.processor.accountstatusprocessor.AccountStatusProcessor;
 import application.data.common.APIResponse;
 import application.presentation.jsonconverter.Serialization;
 import org.springframework.beans.factory.annotation.Autowired;

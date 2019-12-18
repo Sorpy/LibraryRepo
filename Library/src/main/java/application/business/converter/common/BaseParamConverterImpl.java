@@ -8,10 +8,10 @@ import java.util.Map;
 
 import static org.apache.commons.lang3.reflect.FieldUtils.*;
 
-public abstract class BaseParamConverterImpl <Tin,Tout> implements BaseParamConverter<Tin,Tout> {
+public abstract class BaseParamConverterImpl <IN, ENT > implements BaseParamConverter<IN, ENT> {
 
     @Override
-    public Tout convertStandart(Tin param, Tout entity) {
+    public ENT convertStandard(IN param, ENT entity) {
 
         Map<String, Field> paramInfo = new HashMap<>();
         for (Field field : getAllFieldsList(param.getClass())) {
@@ -46,5 +46,34 @@ public abstract class BaseParamConverterImpl <Tin,Tout> implements BaseParamConv
 
 
     @Override
-    public abstract Tout convertSpecific(Tin param, Tout entity);
+    public abstract void convertSpecific(IN param, ENT entity);
+
+    @Override
+    public ENT convert(IN param, ENT oldEntity){
+        ENT entity = null;
+        if(oldEntity!=null)
+        {
+            //if(param.getId().equals(oldEntity.getId())&& param.getCode().equals(oldEntity.getCode())){
+                entity = oldEntity;
+           /* }
+            else {
+                try {
+                    throw new IllegalConvertException("Id and/or code do  not match");
+                } catch (IllegalConvertException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            */
+        }
+        else
+        {
+            entity = getEntity(param);
+        }
+        entity = convertStandard(param,entity);
+        return entity;
+    }
+
+    @Override
+    public abstract ENT getEntity(IN param);
 }

@@ -1,10 +1,11 @@
 package application.dataaccess.dao.usersusergroupdao;
 
 import application.data.entity.UsersUserGroup;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface UsersUserGroupDao {
+public interface UsersUserGroupDao extends BaseDao<UsersUserGroup, Long> {
     UsersUserGroup save(UsersUserGroup entity);
     List<UsersUserGroup> save(List<UsersUserGroup> entity);
 

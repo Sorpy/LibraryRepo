@@ -5,16 +5,17 @@ import application.data.entity.BookStatus;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BookStatusResultConverterImpl extends BaseResultConverterImpl<BookStatus,BookStatusResult> implements BookStatusResultConverter{
+public class BookStatusResultConverterImpl
+        extends BaseResultConverterImpl<BookStatus,BookStatusResult>
+        implements BookStatusResultConverter{
+
     @Override
-    public BookStatusResult convert(BookStatus param) {
-        BookStatusResult bookStatusResult = new BookStatusResult();
-        bookStatusResult = convertStandart(param,bookStatusResult);
-        return bookStatusResult;
+    public void convertSpecific(BookStatus entity, BookStatusResult result) {
+
     }
 
     @Override
-    public BookStatusResult convertSpecific(BookStatus entity, BookStatusResult result) {
-        return null;
+    public BookStatusResult getResult() {
+        return new BookStatusResult();
     }
 }

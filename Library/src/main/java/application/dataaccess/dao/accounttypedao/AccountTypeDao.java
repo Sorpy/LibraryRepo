@@ -1,10 +1,11 @@
 package application.dataaccess.dao.accounttypedao;
 
 import application.data.entity.AccountType;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface AccountTypeDao {
+public interface AccountTypeDao extends BaseDao<AccountType, Long> {
     AccountType save(AccountType entity);
     List<AccountType> save(List<AccountType> entity);
 

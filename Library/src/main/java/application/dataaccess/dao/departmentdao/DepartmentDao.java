@@ -1,10 +1,11 @@
 package application.dataaccess.dao.departmentdao;
 
 import application.data.entity.Department;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface DepartmentDao {
+public interface DepartmentDao extends BaseDao<Department, Long> {
     Department save(Department entity);
     List<Department> save(List<Department> entity);
 

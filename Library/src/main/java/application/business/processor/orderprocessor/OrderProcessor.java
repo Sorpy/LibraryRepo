@@ -2,19 +2,10 @@ package application.business.processor.orderprocessor;
 
 import application.business.converter.order.OrderParam;
 import application.business.converter.order.OrderResult;
+import application.business.processor.common.BaseProcessor;
 
 import java.util.List;
 
-public interface OrderProcessor {
-    OrderResult create(OrderParam param);
-    List<OrderResult> create(List<OrderParam> param);
+public interface OrderProcessor extends BaseProcessor<OrderParam, OrderResult,Long> {
 
-    void update(Long id,OrderParam param);
-    void update(List<OrderParam> param);
-
-    void delete(Long id);
-    void delete(List<Long> idList);
-
-    OrderResult find(Long id);
-    List<OrderResult> find();
 }

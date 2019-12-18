@@ -2,19 +2,11 @@ package application.business.processor.usergroupstatusprocessor;
 
 import application.business.converter.usergroupstatus.UserGroupStatusParam;
 import application.business.converter.usergroupstatus.UserGroupStatusResult;
+import application.business.processor.common.BaseProcessor;
+import application.data.entity.UserGroupStatus;
 
 import java.util.List;
 
-public interface UserGroupStatusProcessor {
-    UserGroupStatusResult create(UserGroupStatusParam param);
-    List<UserGroupStatusResult> create(List<UserGroupStatusParam> param);
+public interface UserGroupStatusProcessor extends BaseProcessor<UserGroupStatusParam,UserGroupStatusResult,Long> {
 
-    void update(long id,UserGroupStatusParam param);
-    void update(List<UserGroupStatusParam> param);
-
-    void delete(long id);
-    void delete(List<Long> idList);
-
-    UserGroupStatusResult find(long id);
-    List<UserGroupStatusResult> find();
 }

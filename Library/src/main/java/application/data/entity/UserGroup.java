@@ -1,5 +1,6 @@
 package application.data.entity;
 
+import application.data.common.Persistent;
 import org.springframework.stereotype.Component;
 
 @Component

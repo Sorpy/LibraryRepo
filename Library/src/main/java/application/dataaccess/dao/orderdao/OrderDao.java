@@ -1,10 +1,11 @@
 package application.dataaccess.dao.orderdao;
 
 import application.data.entity.Order;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface OrderDao {
+public interface OrderDao extends BaseDao<Order, Long> {
     Order save(Order entity);
     List<Order> save(List<Order> entity);
 

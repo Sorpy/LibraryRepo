@@ -10,33 +10,13 @@ public class AccountStatusParamConverterImpl extends BaseParamConverterImpl<Acco
 
 
     @Override
-    public AccountStatus convert(AccountStatusParam param, AccountStatus oldEntity){
-        AccountStatus entity = null;
-        if(oldEntity!=null)
-        {
-            if(param.getId().equals(oldEntity.getId())&& param.getUnicode().equals(oldEntity.getCode())){
-                entity = oldEntity;
-            }
-            else {
-                try {
-                    throw new IllegalConvertException("Id and/or code do  not match");
-                } catch (IllegalConvertException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        else
-        {
-            entity = new AccountStatus();
-            entity.setId(param.getId());
-            //entity.setCode(param.getUnicode());
-        }
-        entity = convertStandart(param,entity);
-        return entity;
+    public AccountStatus getEntity(AccountStatusParam param) {
+        AccountStatus accountStatus = new AccountStatus();
+        accountStatus.setId(param.getId());
+        accountStatus.setCode(param.getCode());
+        return accountStatus;
     }
 
     @Override
-    public AccountStatus convertSpecific(AccountStatusParam param, AccountStatus entity) {
-        return null;
-    }
+    public void convertSpecific(AccountStatusParam param, AccountStatus entity) { }
 }

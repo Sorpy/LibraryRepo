@@ -10,7 +10,6 @@ public interface AccountService {
 
     APIResponse findByPK(Long id);
     APIResponse listAll() throws JsonProcessingException;
-    APIResponse findByName(String name);
     APIResponse findByParameter(String name,String value);
 
     APIResponse create(AccountParam param) throws JsonProcessingException;

@@ -1,9 +1,6 @@
-package application.data.entity;
+package application.business.converter.basepersistent;
 
-import org.springframework.stereotype.Component;
-
-@Component
-public class PersistentNamed extends Persistent {
+public class BaseNamedResult extends BaseResult{
     private String code;
     private String name;
     private String description;
@@ -31,5 +28,4 @@ public class PersistentNamed extends Persistent {
     public void setDescription(String description) {
         this.description = description;
     }
-
 }

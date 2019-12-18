@@ -5,16 +5,18 @@ import application.data.entity.UserGroupStatus;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserGroupStatusResultConverterImpl extends BaseResultConverterImpl<UserGroupStatus,UserGroupStatusResult> implements UserGroupStatusResultConverter {
+public class UserGroupStatusResultConverterImpl
+        extends BaseResultConverterImpl<UserGroupStatus,UserGroupStatusResult>
+        implements UserGroupStatusResultConverter {
+
+
+
     @Override
-    public UserGroupStatusResult convert(UserGroupStatus param) {
-        UserGroupStatusResult userGroupStatusResult = new UserGroupStatusResult();
-        userGroupStatusResult = convertStandart(param,userGroupStatusResult);
-        return userGroupStatusResult;
+    public void convertSpecific(UserGroupStatus entity, UserGroupStatusResult result) {
     }
 
     @Override
-    public UserGroupStatusResult convertSpecific(UserGroupStatus entity, UserGroupStatusResult result) {
-        return null;
+    public UserGroupStatusResult getResult() {
+        return new UserGroupStatusResult();
     }
 }

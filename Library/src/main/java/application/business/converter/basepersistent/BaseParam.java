@@ -1,9 +1,6 @@
-package application.data.entity;
+package application.business.converter.basepersistent;
 
-import org.springframework.stereotype.Component;
-
-@Component
-public class Persistent {
+public class BaseParam {
     private Long id;
 
     public Long getId() {
@@ -14,3 +11,4 @@ public class Persistent {
         this.id = id;
     }
 }
+

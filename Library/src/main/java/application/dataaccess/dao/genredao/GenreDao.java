@@ -1,10 +1,11 @@
 package application.dataaccess.dao.genredao;
 
 import application.data.entity.Genre;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface GenreDao {
+public interface GenreDao extends BaseDao<Genre, Long> {
     Genre save(Genre entity);
     List<Genre> save(List<Genre> entity);
 

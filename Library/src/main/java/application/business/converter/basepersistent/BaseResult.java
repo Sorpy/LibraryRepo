@@ -1,4 +1,4 @@
-package application.business.converter;
+package application.business.converter.basepersistent;
 
 public class BaseResult {
     private Long id;

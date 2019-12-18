@@ -1,18 +1,14 @@
 package application.business.converter.common;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.apache.commons.lang3.reflect.FieldUtils.*;
 
-public abstract class BaseResultConverterImpl <Tin,Tout> implements BaseResultConverter<Tin,Tout>{
-    private ObjectMapper objectMapper = new ObjectMapper();
+public abstract class BaseResultConverterImpl <ENT, OUT> implements BaseResultConverter<ENT, OUT>{
 
-    @Override
-    public Tout convertStandart(Tin entity, Tout result) {
+    public OUT convertStandard(ENT entity, OUT result) {
         Map<String, Field> entityInfo = new HashMap<>();
         for (Field field : getAllFieldsList(entity.getClass())) {
             field.setAccessible(true);
@@ -39,5 +35,15 @@ public abstract class BaseResultConverterImpl <Tin,Tout> implements BaseResultCo
     }
 
     @Override
-    public abstract Tout convertSpecific(Tin entity, Tout result);
+    public abstract void convertSpecific(ENT entity, OUT result);
+
+    @Override
+    public  OUT convert(ENT entity){
+        OUT result = getResult();
+        convertStandard(entity,result);
+        convertSpecific(entity,result);
+        return result;
+    }
+
+    public abstract OUT getResult();
 }

@@ -48,7 +48,7 @@ public class AccountData extends BaseStorage {
         accountClient1.setAddress("SomeAddress");
         accountClient1.setAccountStatus(AccountStatusData.accountStatuses.get(0));
         accountClient1.setUser(UserData.users.get(0));
-        accountClient1.setUnicode("AKK");
+        accountClient1.setCode("AKK");
         accountClient1.setName("dataBase account1");
         accountClient1.setDescription("description of the account");
         accountClient1.setId((long) 1);
@@ -69,7 +69,7 @@ public class AccountData extends BaseStorage {
         accountClient2.setAddress("SomeAddress");
         accountClient2.setAccountStatus(accountClientStatus2);
         accountClient2.setUser(user2);
-        accountClient2.setUnicode("AKK5");
+        accountClient2.setCode("AKK5");
         accountClient2.setName("dataBase account1");
         accountClient2.setDescription("description of the account");
         accountClient2.setId((long) 2);
@@ -90,7 +90,7 @@ public class AccountData extends BaseStorage {
         accountClient3.setAddress("SomeAddress");
         accountClient3.setAccountStatus(accountClientStatus3);
         accountClient3.setUser(user3);
-        accountClient3.setUnicode("AKK6");
+        accountClient3.setCode("AKK6");
         accountClient3.setName("dataBase account1");
         accountClient3.setDescription("description of the account");
         accountClient3.setId((long) 3);
@@ -111,7 +111,7 @@ public class AccountData extends BaseStorage {
         accountClient4.setAddress("SomeAddress");
         accountClient4.setAccountStatus(accountClientStatus4);
         accountClient4.setUser(user4);
-        accountClient4.setUnicode("AKK8");
+        accountClient4.setCode("AKK8");
         accountClient4.setName("dataBase account1");
         accountClient4.setDescription("description of the account");
         accountClient4.setId((long) 4);
@@ -132,7 +132,7 @@ public class AccountData extends BaseStorage {
         accountClient5.setAddress("SomeAddress");
         accountClient5.setAccountStatus(accountClientStatus5);
         accountClient5.setUser(user5);
-        accountClient5.setUnicode("AK5K");
+        accountClient5.setCode("AK5K");
         accountClient5.setName("dataBase account1");
         accountClient5.setDescription("description of the account");
         accountClient5.setId((long) 5);
@@ -153,7 +153,7 @@ public class AccountData extends BaseStorage {
         accountClient6.setAddress("SomeAddress");
         accountClient6.setAccountStatus(accountClientStatus6);
         accountClient6.setUser(user6);
-        accountClient6.setUnicode("AK55K");
+        accountClient6.setCode("AK55K");
         accountClient6.setName("dataBase account1");
         accountClient6.setDescription("description of the account");
         accountClient6.setId((long) 6);
@@ -174,7 +174,7 @@ public class AccountData extends BaseStorage {
         accountClient7.setAddress("SomeAddress");
         accountClient7.setAccountStatus(accountClientStatus7);
         accountClient7.setUser(user7);
-        accountClient7.setUnicode("AK7K");
+        accountClient7.setCode("AK7K");
         accountClient7.setName("dataBase account1");
         accountClient7.setDescription("description of the account");
         accountClient7.setId((long) 7);

@@ -5,16 +5,16 @@ import application.business.converter.common.BaseResultConverterImpl;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserStatusResultConverterImpl extends BaseResultConverterImpl<UserStatus,UserStatusResult> implements UserStatusResultConverter {
+public class UserStatusResultConverterImpl
+        extends BaseResultConverterImpl<UserStatus,UserStatusResult>
+        implements UserStatusResultConverter {
+
     @Override
-    public UserStatusResult convert(UserStatus param) {
-        UserStatusResult userStatusResult = new UserStatusResult();
-        userStatusResult = convertStandart(param,userStatusResult);
-        return userStatusResult;
+    public void convertSpecific(UserStatus entity, UserStatusResult result) {
     }
 
     @Override
-    public UserStatusResult convertSpecific(UserStatus entity, UserStatusResult result) {
-        return null;
+    public UserStatusResult getResult() {
+        return new UserStatusResult();
     }
 }

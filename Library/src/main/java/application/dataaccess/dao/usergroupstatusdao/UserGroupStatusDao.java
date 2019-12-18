@@ -1,10 +1,11 @@
 package application.dataaccess.dao.usergroupstatusdao;
 
 import application.data.entity.UserGroupStatus;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface UserGroupStatusDao {
+public interface UserGroupStatusDao extends BaseDao<UserGroupStatus, Long> {
     UserGroupStatus save(UserGroupStatus entity);
     List<UserGroupStatus> save(List<UserGroupStatus> entity);
 

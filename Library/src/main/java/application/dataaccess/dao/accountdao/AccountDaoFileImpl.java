@@ -1,24 +1,23 @@
 package application.dataaccess.dao.accountdao;
 
 import application.data.entity.Account;
-import application.dataaccess.dao.common.BaseStorage;
+import application.dataaccess.dao.common.BaseDaoFileImpl;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import static application.dataaccess.dao.accountdao.AccountData.accounts;
-import static application.dataaccess.dao.accountdao.AccountData.accountMap;
 @Component
-public class AccountDaoImpl implements AccountDao {
-    //private AccountData accountClientData = new AccountData();
+public class AccountDaoFileImpl extends BaseDaoFileImpl<Account,Long> implements AccountDao {
+    @Override
+    public Account getEntity() {
+        return new Account();
+    }
+
+
+
+
+    /*
     @Override
     public Account save(Account entity) {
         accountMap.putIfAbsent(entity.getId(),entity);
-        //accounts.add(entity);
         BaseStorage.saveToDataSource();
         return entity;
     }
@@ -65,12 +64,6 @@ public class AccountDaoImpl implements AccountDao {
         return new ArrayList<>(accountMap.values());
     }
 
-    public List<Account> find(String name) {
-        return new ArrayList<>(accountMap.values())
-                .stream()
-                .filter(e -> e.getFirstName().toLowerCase().equals(name))
-                .collect(Collectors.toList());
-    }
 
     @Override
     public List<Account> find(String name, String value) throws InvocationTargetException, IllegalAccessException, NoSuchMethodException {
@@ -93,4 +86,6 @@ public class AccountDaoImpl implements AccountDao {
                 .filter(e -> e.getId().equals(id))
                 .findFirst().get();
     }
+
+     */
 }

@@ -4,5 +4,4 @@ import application.business.converter.common.BaseParamConverter;
 import application.data.entity.Order;
 
 public interface OrderParamConverter extends BaseParamConverter<OrderParam,Order> {
-    Order convert(OrderParam param, Order oldEntity);
 }

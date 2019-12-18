@@ -1,7 +1,11 @@
 package application.business.converter.common;
 
-public interface BaseParamConverter <Tin,Tout> {
-    Tout convertStandart (Tin param, Tout entity);
+public interface BaseParamConverter <IN, ENT> {
+    ENT convertStandard(IN param, ENT entity);
 
-    Tout convertSpecific (Tin param, Tout entity);
+    void convertSpecific (IN param, ENT entity);
+
+    ENT convert (IN param, ENT entity);
+
+    ENT getEntity(IN param);
 }

@@ -2,19 +2,10 @@ package application.business.processor.userprocessor;
 
 import application.business.converter.user.UserParam;
 import application.business.converter.user.UserResult;
+import application.business.processor.common.BaseProcessor;
 
 import java.util.List;
 
-public interface UserProcessor {
-    UserResult create(UserParam param);
-    List<UserResult> create(List<UserParam> param);
+public interface UserProcessor extends BaseProcessor<UserParam,UserResult,Long> {
 
-    void update(long id,UserParam param);
-    void update(List<UserParam> param);
-
-    void delete(long id);
-    void delete(List<Long> idList);
-
-    UserResult find(long id);
-    List<UserResult> find();
 }

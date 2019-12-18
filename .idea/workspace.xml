@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85fa47b4-c4e9-47bd-bb30-c297f7c725f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Library/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Library/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Library/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Library/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Library/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/BaseNamedParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/BaseNamedResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/BaseParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/BaseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/account/AccountResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accountstatus/AccountStatusResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/accounttype/AccountTypeResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/author/AuthorResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/book/BookResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/bookstatus/BookStatusResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/common/BaseResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/department/DepartmentResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/genre/GenreResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/order/OrderResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/user/UserResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroup/UserGroupResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usergroupstatus/UserGroupStatusResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/userstatus/UserStatusResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResultConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResultConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/converter/usersusergroup/UsersUserGroupResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accountclientprocessor/AccountProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accountclientprocessor/AccountProcessorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accountclientstatusprocessor/AccountStatusProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accountclientstatusprocessor/AccountStatusProcessorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/authorprocessor/AuthorProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/authorprocessor/AuthorProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/authorprocessor/AuthorProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/authorprocessor/AuthorProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookprocessor/BookProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookprocessor/BookProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookprocessor/BookProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookprocessor/BookProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/genreprocessor/GenreProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/genreprocessor/GenreProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/orderprocessor/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/orderprocessor/OrderProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/orderprocessor/OrderProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/orderprocessor/OrderProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userprocessor/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userprocessor/UserProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/AccountStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/AccountStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/BookStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/BookStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/Persistent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/PersistentNamed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserGroupStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserGroupStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UserStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UsersUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/data/entity/UsersUserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountdao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountdao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountdao/AccountDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountdao/AccountData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountdao/AccountData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/authordao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/authordao/AuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/bookdao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/bookdao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/genredao/GenreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/genredao/GenreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/orderdao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/orderdao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/userdao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/userdao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountservice/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountservice/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountservice/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountstatusservive/AccountStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/application/presentation/service/accountstatusservive/AccountStatusServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/LibraryApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/common/BaseProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/common/BaseProcessorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Library/src/main/java/application/business/processor/common/BaseProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_9_sources.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="800" />
+    <option name="height" value="860" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibraryRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibraryRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/LibraryApplication" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open LibraryRepo" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="application.LibraryApplication" />
+      <module name="LibraryRepo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85fa47b4-c4e9-47bd-bb30-c297f7c725f9" name="Default Changelist" comment="" />
+      <created>1576598458491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576598458491</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/LibraryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/common/BaseProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/common/BaseProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LibraryRepo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

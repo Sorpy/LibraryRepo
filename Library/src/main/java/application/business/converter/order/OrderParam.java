@@ -1,6 +1,6 @@
 package application.business.converter.order;
 
-import application.business.converter.BaseNamedParam;
+import application.business.converter.basepersistent.BaseNamedParam;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

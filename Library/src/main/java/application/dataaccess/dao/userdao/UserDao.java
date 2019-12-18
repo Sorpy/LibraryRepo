@@ -1,10 +1,11 @@
 package application.dataaccess.dao.userdao;
 
 import application.data.entity.User;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserDao extends BaseDao<User, Long> {
     User save(User entity);
     List<User> save(List<User> entity);
 

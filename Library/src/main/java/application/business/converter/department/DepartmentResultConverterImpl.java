@@ -6,15 +6,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DepartmentResultConverterImpl extends BaseResultConverterImpl<Department,DepartmentResult> implements DepartmentResultConverter {
+
+
     @Override
-    public DepartmentResult convert(Department param) {
-        DepartmentResult departmentResult = new DepartmentResult();
-        departmentResult = convertStandart(param,departmentResult);
-        return departmentResult;
+    public void convertSpecific(Department entity, DepartmentResult result) {
     }
 
     @Override
-    public DepartmentResult convertSpecific(Department entity, DepartmentResult result) {
-        return null;
+    public DepartmentResult getResult() {
+        return new DepartmentResult();
     }
 }

@@ -1,10 +1,11 @@
 package application.dataaccess.dao.bookdao;
 
 import application.data.entity.Book;
+import application.dataaccess.dao.common.BaseDao;
 
 import java.util.List;
 
-public interface BookDao {
+public interface BookDao extends BaseDao<Book, Long> {
     Book save(Book entity);
     List<Book> save(List<Book> entity);
 

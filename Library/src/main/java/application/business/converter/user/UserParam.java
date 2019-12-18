@@ -1,6 +1,6 @@
 package application.business.converter.user;
 
-import application.business.converter.BaseParam;
+import application.business.converter.basepersistent.BaseParam;
 import org.springframework.stereotype.Component;
 
 @Component

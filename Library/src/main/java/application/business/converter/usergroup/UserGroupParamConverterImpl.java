@@ -4,7 +4,6 @@ import application.business.converter.IllegalConvertException;
 import application.business.converter.common.BaseParamConverterImpl;
 import application.data.entity.UserGroup;
 import application.dataaccess.dao.usergroupstatusdao.UserGroupStatusDao;
-import application.dataaccess.dao.usergroupstatusdao.UserGroupStatusDaoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,36 +12,17 @@ public class UserGroupParamConverterImpl extends BaseParamConverterImpl<UserGrou
     @Autowired
     private UserGroupStatusDao userGroupStatusDao;
 
+
+
     @Override
-    public UserGroup convert(UserGroupParam param, UserGroup oldEntity){
-        UserGroup entity = null;
-        if(oldEntity!=null)
-        {
-            if(param.getId().equals(oldEntity.getId())){
-                entity = oldEntity;
-            }
-            else {
-                try {
-                    throw new IllegalConvertException("Id and/or code do  not match");
-                } catch (IllegalConvertException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        else
-        {
-            entity = new UserGroup();
-            entity.setId(param.getId());
-            //entity.setCode(param.getUnicode());
-        }
-        entity = convertStandart(param,entity);
-        entity = convertSpecific(param,entity);
-        return entity;
+    public void convertSpecific(UserGroupParam param, UserGroup entity) {
+        entity.setUserGroupStatus(userGroupStatusDao.find(param.getUserGroupStatusId()));
     }
 
     @Override
-    public UserGroup convertSpecific(UserGroupParam param, UserGroup entity) {
-        entity.setUserGroupStatus(userGroupStatusDao.find(param.getUserGroupStatusId()));
-        return entity;
+    public UserGroup getEntity(UserGroupParam param) {
+        UserGroup userGroup = new UserGroup();
+        userGroup.setId(param.getId());
+        return userGroup;
     }
 }
