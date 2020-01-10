@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountDaoJPA" class="application.dataaccess.dao.accountdao.AccountDaoJPAImpl" />
+
+    <bean id="accountStatusDaoJPA" class="application.dataaccess.dao.accountstatusdao.AccountStatusDaoJPAImpl" />
+
+    <bean id="accountTypeDaoJPA" class="application.dataaccess.dao.accounttypedao.AccountTypeDaoJPAImpl" />
+
+    <bean id="authorDaoJPA" class="application.dataaccess.dao.authordao.AuthorDaoJPAImpl" />
+
+    <bean id="bookDaoJPA" class="application.dataaccess.dao.bookdao.BookDaoJPAImpl" />
+
+    <bean id="bookStatusDaoJPA" class="application.dataaccess.dao.bookstatusdao.BookStatusDaoJPAImpl" />
+
+    <bean id="departmentDaoJPA" class="application.dataaccess.dao.departmentdao.DepartmentDaoJPAImpl" />
+
+    <bean id="genreDaoJPA" class="application.dataaccess.dao.genredao.GenreDaoJPAImpl" />
+
+    <bean id="orderDaoJPA" class="application.dataaccess.dao.orderdao.OrderDaoJPAImpl" />
+
+    <bean id="userDaoJPA" class="application.dataaccess.dao.userdao.UserDaoJPAImpl" />
+
+    <bean id="userGroupDaoJPA" class="application.dataaccess.dao.usergroupdao.UserGroupDaoJPAImpl" />
+
+    <bean id="userGroupStatusJPA" class="application.dataaccess.dao.usergroupstatusdao.UserGroupStatusDaoJPAImpl" />
+
+    <bean id="userStatusJPA" class="application.dataaccess.dao.userstatusdao.UserStatusDaoJPAImpl" />
+
+    <bean id="usersUserGroupDaoJPA" class="application.dataaccess.dao.usersusergroupdao.UsersUserGroupDaoJPAImpl" />
+
+
+
+</beans>

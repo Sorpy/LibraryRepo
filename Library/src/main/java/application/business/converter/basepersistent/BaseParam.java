@@ -1,6 +1,7 @@
 package application.business.converter.basepersistent;
 
 public class BaseParam {
+
     private Long id;
 
     public Long getId() {
@@ -11,4 +12,3 @@ public class BaseParam {
         this.id = id;
     }
 }
-

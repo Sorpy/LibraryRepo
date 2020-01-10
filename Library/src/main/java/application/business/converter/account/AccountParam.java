@@ -14,7 +14,7 @@ public class AccountParam extends BaseNamedParam {
     private String phone;
     private String email;
     private Long userId;
-    private Long accountClientStatusId;
+    private Long accountStatusId;
 
 
     public Long getUserId() {
@@ -25,12 +25,12 @@ public class AccountParam extends BaseNamedParam {
         this.userId = userId;
     }
 
-    public Long getAccountClientStatusId() {
-        return accountClientStatusId;
+    public Long getAccountStatusId() {
+        return accountStatusId;
     }
 
-    public void setAccountClientStatusId(Long accountClientStatusId) {
-        this.accountClientStatusId = accountClientStatusId;
+    public void setAccountStatusId(Long accountStatusId) {
+        this.accountStatusId = accountStatusId;
     }
 
     public String getFirstName() {

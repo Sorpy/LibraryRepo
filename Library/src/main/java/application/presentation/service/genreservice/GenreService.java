@@ -1,23 +1,7 @@
 package application.presentation.service.genreservice;
 
 import application.business.converter.genre.GenreParam;
-import application.data.common.APIResponse;
+import application.presentation.service.common.BaseService;
 
-import java.util.List;
-
-public interface GenreService {
-    APIResponse findByPK(long id);
-    APIResponse listAll();
-
-    APIResponse create(GenreParam param);
-    APIResponse create(List<GenreParam> param);
-
-    APIResponse update(long id, GenreParam param);
-    APIResponse update(List<GenreParam> param);
-
-    APIResponse deleteById(long id);
-    APIResponse delete(List<Long> idList);
-
-    void validateParameters(GenreParam param);
-    void validateParameters(List<GenreParam> param);
+public interface GenreService extends BaseService<GenreParam,Long> {
 }

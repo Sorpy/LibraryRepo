@@ -1,23 +1,8 @@
 package application.presentation.service.usergroupservice;
 
 import application.business.converter.usergroup.UserGroupParam;
-import application.data.common.APIResponse;
+import application.presentation.service.common.BaseService;
 
-import java.util.List;
+public interface UserGroupService extends BaseService<UserGroupParam,Long> {
 
-public interface UserGroupService {
-    APIResponse findByPK(long id);
-    APIResponse listAll();
-
-    APIResponse create(UserGroupParam param);
-    APIResponse create(List<UserGroupParam> param);
-
-    APIResponse update(long id, UserGroupParam param);
-    APIResponse update(List<UserGroupParam> param);
-
-    APIResponse deleteById(long id);
-    APIResponse delete(List<Long> idList);
-
-    void validateParameters(UserGroupParam param);
-    void validateParameters(List<UserGroupParam> param);
 }

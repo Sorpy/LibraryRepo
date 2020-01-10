@@ -1,7 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4366cf1e-677a-463d-8a86-bce426ba1f8c" name="Default Changelist" comment="" />
+    <list default="true" id="4366cf1e-677a-463d-8a86-bce426ba1f8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoFileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commonstorage/BaseStorageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDataImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDataImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/LibraryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/LibraryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/accounttype/AccountTypeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/accounttype/AccountTypeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/accountprocessor/AccountProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/accountprocessor/AccountProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/accountstatusprocessor/AccountStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/accountstatusprocessor/AccountStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/accounttypeprocessor/AccountTypeProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/authorprocessor/AuthorProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/authorprocessor/AuthorProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/bookprocessor/BookProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/bookprocessor/BookProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/bookstatusprocessor/BookStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/departmentprocessor/DepartmentProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/orderprocessor/OrderProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/orderprocessor/OrderProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/usergroupprocessor/UserGroupProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/usergroupstatusprocessor/UserGroupStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/userstatusprocessor/UserStatusProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/BookStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/BookStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroupStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroupStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UserStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoFileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoFileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoJPAImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDataImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoFileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/BaseDaoFileImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/BaseStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/database/AccountStatusJSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/database/AccountStatusJSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/database/UserStatusJSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/database/UserStatusJSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountservice/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountservice/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountservice/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountstatusservive/AccountStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountstatusservive/AccountStatusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountstatusservive/AccountStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accountstatusservive/AccountStatusServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accounttype/AccountTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accounttype/AccountTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/accounttype/AccountTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/accounttype/AccountTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/authorservice/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/authorservice/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/authorservice/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/authorservice/AuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookservice/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookservice/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookservice/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookservice/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookstatusservice/BookStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookstatusservice/BookStatusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookstatusservice/BookStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/bookstatusservice/BookStatusServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/departmentservice/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/departmentservice/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/departmentservice/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/departmentservice/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/genreservice/GenreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/genreservice/GenreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/genreservice/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/genreservice/GenreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/orderservice/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/orderservice/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/orderservice/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/orderservice/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupservice/UserGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupservice/UserGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupservice/UserGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupservice/UserGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupstatusservice/UserGroupStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupstatusservice/UserGroupStatusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupstatusservice/UserGroupStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupstatusservice/UserGroupStatusServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/userservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/userservice/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/userservice/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/userservice/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usersusergroupservice/UsersUserGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usersusergroupservice/UsersUserGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/usersusergroupservice/UsersUserGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/usersusergroupservice/UsersUserGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -12,6 +146,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -21,32 +158,193 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="333">
+              <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+              <folding>
+                <element signature="e#2360#2361#0" expanded="true" />
+                <element signature="e#2396#2397#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="432">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/AccountType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Author.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serial</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoFileImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountdao/AccountDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoFileImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accounttypedao/AccountTypeDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/authordao/AuthorDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookdao/BookDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/BookStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Genre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroupStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UserStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParamConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/LibraryApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/AccountType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="800" />
-    <option name="height" value="860" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -57,38 +355,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -96,8 +399,29 @@
               <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -106,8 +430,8 @@
               <item name="processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LibraryApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibraryApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -116,17 +440,115 @@
               <item name="processor" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="accountdao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="accountstatusdao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="commondao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/commons-lang3-3.9" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,6 +561,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="LibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.LibraryApplication" />
+      <module name="LibraryApplication.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LibraryApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -153,60 +595,572 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32936078" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3726977" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3261105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9674973" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3261105" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/bookstatusdao/BookStatusDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/orderdao/OrderDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupdao/UserGroupDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/departmentdao/DepartmentData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/genredao/GenreDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/Context.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/462dff65f6f8bde02ee9d8afe07fe9d50268199c/javax.persistence-api-2.2-sources.jar!/javax/persistence/ForeignKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/462dff65f6f8bde02ee9d8afe07fe9d50268199c/javax.persistence-api-2.2-sources.jar!/javax/persistence/JoinColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/BookStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/UserGroupStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#2479#2480#0" expanded="true" />
+            <element signature="e#2722#2723#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="130" column="65" selection-start-line="130" selection-start-column="65" selection-end-line="130" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoFileImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/accountstatusdao/AccountStatusDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoFileImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/business/converter/account/AccountParamConverterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/AccountType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2396#2397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LibraryApplication</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

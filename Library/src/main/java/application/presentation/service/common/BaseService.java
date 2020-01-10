@@ -1,23 +1,25 @@
 package application.presentation.service.common;
 
 import application.data.common.APIResponse;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
-public interface BaseService<IN,ENT,OUT,PK> {
+import java.util.List;
 
-    APIResponse findByPK(Long id);
+public interface BaseService<IN,PK> {
+
+    APIResponse findByPK(PK id);
     APIResponse listAll() throws JsonProcessingException;
     APIResponse findByParameter(String name,String value);
 
-    APIResponse create(AccountParam param) throws JsonProcessingException;
-    APIResponse create(List<AccountParam> param) throws JsonProcessingException;
+    APIResponse create(IN param) throws JsonProcessingException;
+    APIResponse create(List<IN> param) throws JsonProcessingException;
 
-    APIResponse update(Long id, AccountParam param);
-    APIResponse update(List<AccountParam> param);
+    APIResponse update(PK id, IN param);
+    APIResponse update(List<IN> param);
 
-    APIResponse deleteById(Long id);
-    APIResponse delete(List<Long> idList);
+    APIResponse deleteById(PK id);
+    APIResponse delete(List<PK> idList);
 
-    void validateParameters(AccountParam param);
-    void validateParameters(List<AccountParam> param);
-}
+    void validateParameters(IN param);
+    void validateParameters(List<IN> param);
 }

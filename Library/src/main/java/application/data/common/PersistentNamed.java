@@ -2,10 +2,15 @@ package application.data.common;
 
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Column;
+
 @Component
-public class PersistentNamed extends Persistent {
+public abstract class PersistentNamed extends Persistent {
+    @Column(name = "code")
     private String code;
+    @Column(name = "name")
     private String name;
+    @Column(name = "description")
     private String description;
 
     public String getCode() {

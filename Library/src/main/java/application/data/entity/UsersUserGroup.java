@@ -3,9 +3,19 @@ package application.data.entity;
 import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 @Component
+@Entity
 public class UsersUserGroup extends PersistentNamed {
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
+    @OneToOne
+    @JoinColumn(name = "userGroup_id")
     private UserGroup userGroup;//list
 
     public User getUser() {
@@ -22,5 +32,10 @@ public class UsersUserGroup extends PersistentNamed {
 
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
+    }
+
+    @Id
+    public Long getId() {
+        return super.getId();
     }
 }

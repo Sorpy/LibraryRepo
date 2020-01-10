@@ -47,23 +47,6 @@ public class TestRunner {
 
     public void test() throws JsonProcessingException {
 
-        AccountStatus accountStatus = new AccountStatus();
-        UserStatus userStatus = new UserStatus();
-        User user1 = new User("Name","Password",userStatus);
-        AccountParam accountParam = new AccountParam();
-        accountParam.setFirstName("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        accountParam.setSecondName("OtherName");
-        accountParam.setLastName("ThirdName");
-        accountParam.setPhone("asdasd");
-        accountParam.setEmail("Email");
-        accountParam.setCountry("Bulg");
-        accountParam.setCity("Plovdiv");
-        accountParam.setAddress("Some Adress");
-        accountParam.setCode("sAA");
-        accountParam.setName("AccountThing");
-        accountParam.setDescription("Something");
-        accountParam.setId((long) 4);
-            //System.out.println(accountService.create(accountParam).getText());
 
 
 
@@ -82,7 +65,7 @@ public class TestRunner {
         accountParam2.setName("AccountThing");
         accountParam2.setDescription("Something");
         accountParam2.setId((long) 11);
-        accountParam2.setAccountClientStatusId((long)2);
+        accountParam2.setAccountStatusId((long)2);
 
 
 
@@ -98,22 +81,6 @@ public class TestRunner {
         AccountResult accountClientResult = new AccountResult();
 
 
-        AccountStatus accountStatus3 = new AccountStatus();
-        UserStatus userStatus3 = new UserStatus();
-        User user3 = new User("Name","Password",userStatus3);
-        AccountParam accountParam3 = new AccountParam();
-        accountParam3.setFirstName("Name");
-        accountParam3.setSecondName("OtherName");
-        accountParam3.setLastName("ThirdName");
-        accountParam3.setPhone("asdasd");
-        accountParam3.setEmail("Email");
-        accountParam3.setCountry("Bulg");
-        accountParam3.setCity("Plovdiv");
-        accountParam3.setAddress("Some Adress");
-        accountParam3.setCode("AKPaaaaas");
-        accountParam3.setName("AccountThing");
-        accountParam3.setDescription("Something");
-        accountParam3.setId((long) 10);
 
         AccountStatusParam accountStatus1 = new AccountStatusParam();
         accountStatus1.setCode("AKP");

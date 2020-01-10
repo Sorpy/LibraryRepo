@@ -14,4 +14,8 @@ public class AccountProcessorImpl
         implements AccountProcessor {
 
 
+    @Override
+    public Long getPK(AccountParam ent) {
+        return ent.getId();
+    }
 }

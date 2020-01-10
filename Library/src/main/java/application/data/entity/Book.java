@@ -3,14 +3,28 @@ package application.data.entity;
 import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+
 @Component
+@Entity
 public class Book extends PersistentNamed {
+    @Column
     private String bookName;
+    @OneToOne
+    @JoinColumn(name = "author_id")
     private Author author;
+    @OneToOne
+    @JoinColumn(name = "genre_id")
     private Genre genre;
+    @OneToOne
+    @JoinColumn(name = "department_id")
     private Department department;
+    @Column
     private int year;
+    @Column
     private double price;
+    @OneToOne
+    @JoinColumn(name = "bookStatus_id")
     private BookStatus bookStatus;
 
     public String getBookName() {
@@ -67,5 +81,10 @@ public class Book extends PersistentNamed {
 
     public void setBookStatus(BookStatus bookStatus) {
         this.bookStatus = bookStatus;
+    }
+
+    @Id
+    public Long getId() {
+        return super.getId();
     }
 }

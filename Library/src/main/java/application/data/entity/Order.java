@@ -3,12 +3,24 @@ package application.data.entity;
 import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import java.util.Date;
 @Component
+@Entity
 public class Order extends PersistentNamed {
+    @Column
     private Date date;
+    @Column
+    @JoinColumn(name = "accountClient_id")
     private Account accountClient;
+    @Column
+    @JoinColumn(name = "accountLibrarian_id")
     private Account accountLibrarian;
+    @Column
+    @JoinColumn(name = "book_id")
     private Book book;
 
     public Date getDate() {
@@ -41,5 +53,9 @@ public class Order extends PersistentNamed {
 
     public void setBook(Book book) {
         this.book = book;
+    }
+    @Id
+    public Long getId() {
+        return super.getId();
     }
 }

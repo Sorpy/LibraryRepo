@@ -3,21 +3,18 @@ package application.data.entity;
 import application.data.common.Persistent;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+
 @Component
+@Entity
 public class User extends Persistent {
+    @Column
     private String username;
+    @Column
     private String password;
+    @OneToOne
+    @JoinColumn(name = "userStatus_id")
     private UserStatus userStatus;
-
-    public User(String username, String password, UserStatus userStatus) {
-        this.username = username;
-        this.password = password;
-        this.userStatus = userStatus;
-    }
-
-    public User() {
-
-    }
 
     public String getUsername() {
         return username;
@@ -41,5 +38,9 @@ public class User extends Persistent {
 
     public void setUserStatus(UserStatus userStatus) {
         this.userStatus = userStatus;
+    }
+    @Id
+    public Long getId() {
+        return super.getId();
     }
 }

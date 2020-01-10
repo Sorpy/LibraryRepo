@@ -2,7 +2,7 @@ package application.business.processor.common;
 
 import application.business.converter.common.BaseParamConverter;
 import application.business.converter.common.BaseResultConverter;
-import application.dataaccess.dao.common.BaseDao;
+import application.dataaccess.dao.common.commondao.BaseDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.beans.IntrospectionException;
@@ -10,7 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BaseProcessorImpl <IN,ENT,OUT,PK,
+public abstract class BaseProcessorImpl <IN,ENT,OUT,PK,
         DAO extends BaseDao<ENT,PK>,
         PConvert extends BaseParamConverter<IN,ENT>,
         RConvert extends BaseResultConverter<ENT,OUT>>
@@ -71,9 +71,13 @@ public class BaseProcessorImpl <IN,ENT,OUT,PK,
     @Override
     public void update(List<IN> param) {
         List<ENT> entities = new ArrayList<>();
-        param.forEach(entity -> entities
-                .add(paramConverter
-                        .convert(entity,null)));
+
+        for (IN parameter : param) {
+            if (dao.find(getPK(parameter)) != null){
+                entities.add(paramConverter
+                        .convert(parameter,dao.find(getPK(parameter))));
+            }
+        }
         dao.update(entities);
     }
 
@@ -124,4 +128,5 @@ public class BaseProcessorImpl <IN,ENT,OUT,PK,
                 });
         return results;
     }
+    public abstract PK getPK(IN ent);
 }

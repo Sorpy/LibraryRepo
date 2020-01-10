@@ -3,17 +3,32 @@ package application.data.entity;
 import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+
 @Component
+@Entity
 public class Account extends PersistentNamed {
-    private AccountStatus accountStatus;
+    @Column
     private String firstName;
+    @Column
     private String secondName;
+    @Column
     private String lastName;
+    @Column
     private String address;
+    @Column
     private String city;
+    @Column
     private String country;
+    @Column
     private String phone;
+    @Column
     private String email;
+    @OneToOne(mappedBy = "")
+    @JoinColumn(name = "accountStatus_id")
+    private AccountStatus accountStatus;
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
 
@@ -95,5 +110,9 @@ public class Account extends PersistentNamed {
 
     public void setAccountStatus(AccountStatus accountStatus) {
         this.accountStatus = accountStatus;
+    }
+    @Id
+    public Long getId() {
+        return super.getId();
     }
 }
