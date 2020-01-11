@@ -6,6 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <!-- Database connection settings -->
+        <property name="hbm2ddl.auto">update</property>
         <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
         <property name='connection.url'>jdbc:mariadb://localhost:3306/SampleDB</property>
         <property name='connection.username'>root</property>
@@ -20,8 +21,5 @@
 
         <!-- Echo all executed SQL to stdout -->
         <property name='show_sql'>true</property>
-
-        <mapping class="application.data.entity.Account"/>
-        <mapping class="application.data.entity.AccountStatus"/>
     </session-factory>
 </hibernate-configuration>

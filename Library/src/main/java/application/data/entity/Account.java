@@ -24,8 +24,8 @@ public class Account extends PersistentNamed {
     private String phone;
     @Column
     private String email;
-    @OneToOne(mappedBy = "")
-    @JoinColumn(name = "accountStatus_id")
+    @OneToOne
+    @JoinColumn(name = "accountStatus_id", referencedColumnName = "id")
     private AccountStatus accountStatus;
     @OneToOne
     @JoinColumn(name = "user_id")
@@ -112,6 +112,7 @@ public class Account extends PersistentNamed {
         this.accountStatus = accountStatus;
     }
     @Id
+    @Column
     public Long getId() {
         return super.getId();
     }
