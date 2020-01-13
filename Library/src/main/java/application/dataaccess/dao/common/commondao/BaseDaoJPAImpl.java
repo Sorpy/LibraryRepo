@@ -9,8 +9,6 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import java.beans.IntrospectionException;
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class BaseDaoJPAImpl<ENT extends Persistent, PK> implements BaseDao<ENT,PK> {
@@ -111,7 +109,7 @@ public class BaseDaoJPAImpl<ENT extends Persistent, PK> implements BaseDao<ENT,P
     }
 
     @Override
-    public List<ENT> find(String name, String value) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, IntrospectionException, InvocationTargetException {
+    public List<ENT> find(String name, String value) {
         return null;
     }
 }
