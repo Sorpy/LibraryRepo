@@ -6,9 +6,10 @@ import application.business.processor.common.BaseProcessor;
 import application.data.common.APIResponse;
 import application.presentation.jsonconverter.Serialization;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@RestController
 public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
         PROCESSOR extends BaseProcessor<IN,OUT,PK>>
         implements BaseService<IN,PK> {
@@ -19,6 +20,7 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     private PROCESSOR processor;
 
     @Override
+
     public APIResponse findByPK(PK id) {
         APIResponse response = new APIResponse();
         try {

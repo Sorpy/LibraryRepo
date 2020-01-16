@@ -4,4 +4,8 @@ import application.data.entity.Author;
 import application.dataaccess.dao.common.commondao.BaseDaoJPAImpl;
 
 public class AuthorDaoJPAImpl extends BaseDaoJPAImpl<Author,Long> implements AuthorDao {
+    @Override
+    public Class<Author> getMyType() {
+        return Author.class;
+    }
 }

@@ -15,6 +15,7 @@ public class AccountParam extends BaseNamedParam {
     private String email;
     private Long userId;
     private Long accountStatusId;
+    private Long accountTypeId;
 
 
     public Long getUserId() {
@@ -95,5 +96,13 @@ public class AccountParam extends BaseNamedParam {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Long getAccountTypeId() {
+        return accountTypeId;
+    }
+
+    public void setAccountTypeId(Long accountTypeId) {
+        this.accountTypeId = accountTypeId;
     }
 }

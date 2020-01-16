@@ -100,7 +100,7 @@ public abstract class BaseProcessorImpl <IN,ENT,OUT,PK,
     @Override
     public List<OUT> find() {
         List<OUT> results = new ArrayList<>();
-        dao.find()
+        dao.findAll()
                 .forEach(entity -> {
                     try {
                         results

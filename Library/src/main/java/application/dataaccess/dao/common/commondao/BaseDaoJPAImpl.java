@@ -1,111 +1,71 @@
 package application.dataaccess.dao.common.commondao;
 
 import application.data.common.Persistent;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.util.List;
 
-public class BaseDaoJPAImpl<ENT extends Persistent, PK> implements BaseDao<ENT,PK> {
+@Repository
+@Transactional
+public abstract class BaseDaoJPAImpl<ENT extends Persistent, PK> implements BaseDao<ENT,PK> {
 
-    private Session currentSession;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-    private Transaction currentTransaction;
+    public abstract Class<ENT> getMyType();
 
-    private Class<ENT> clazz;
-
-    private Session openCurrentSession() {
-        currentSession = getSessionFactory().openSession();
-        return currentSession;
-    }
-
-    private Session openCurrentSessionWithTransaction() {
-        currentSession = getSessionFactory().openSession();
-        currentTransaction = currentSession.beginTransaction();
-        return currentSession;
-    }
-
-    private void closeCurrentSession() {
-        currentSession.close();
-    }
-
-    private void closeCurrentSessionWithTransaction() {
-        currentTransaction.commit();
-        currentSession.close();
-    }
-
-    private static SessionFactory getSessionFactory(){
-        StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-
-        Metadata meta = new MetadataSources(ssr).getMetadataBuilder().build();
-
-        return meta.getSessionFactoryBuilder().build();
-    }
 
     @Override
     public ENT save(ENT entity) {
-        openCurrentSessionWithTransaction();
-        currentSession.save(entity);
-        closeCurrentSessionWithTransaction();
+        entityManager.persist(entity);
         return entity;
     }
 
     @Override
-    public List<ENT> save(List<ENT> entList) {
-        openCurrentSessionWithTransaction();
-        entList.forEach(ent -> currentSession.save(ent));
-        closeCurrentSessionWithTransaction();
-        return entList;
+    public List<ENT> save(List<ENT> entities) {
+        entities.forEach(this::save);
+        return entities;
     }
 
     @Override
     public ENT update(ENT entity) {
-        openCurrentSessionWithTransaction();
-        currentSession.update(entity);
-        closeCurrentSessionWithTransaction();
+        entityManager.merge(entity);
         return entity;
     }
 
     @Override
-    public List<ENT> update(List<ENT> entList) {
-        entList.forEach(this::update);
-        return entList;
+    public List<ENT> update(List<ENT> entities) {
+        entities.forEach(this::update);
+        return entities;
     }
 
     @Override
     public void deleteById(PK id) {
-        delete(find(id));
+        delete(
+                find(id));
     }
 
     @Override
     public void delete(ENT entity) {
-        openCurrentSessionWithTransaction();
-        currentSession.save(entity);
-        closeCurrentSessionWithTransaction();
+        entityManager.remove(entity);
     }
 
     @Override
     public void delete(List<PK> idList) {
-        idList.forEach(this::deleteById);
+
     }
 
     @Override
-    public List<ENT> find() {
-        openCurrentSession();
-        return (List<ENT>) currentSession.createQuery("FROM " + clazz.getName()).list();
+    public List<ENT> findAll() {
+        return (List<ENT>) entityManager.createQuery("FROM " + getMyType().getName()).getResultList();
     }
 
     @Override
     public ENT find(PK id) {
-        openCurrentSession();
-        ENT ent =currentSession.find(clazz,id);
-        closeCurrentSession();
-        return ent;
+        return entityManager.find(getMyType(),id);
     }
 
     @Override

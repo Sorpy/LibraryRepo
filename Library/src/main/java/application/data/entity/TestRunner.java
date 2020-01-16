@@ -128,7 +128,7 @@ public class TestRunner {
 
         //System.out.println(accountStatusService.listAll().getText());
 
-        System.out.println(accountStatusService.create(accountStatus1).getText());
+        System.out.println(accountStatusService.listAll().getText());
         //System.out.println(accountService.deleteById((long)3));
 
 

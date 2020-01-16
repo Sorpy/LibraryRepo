@@ -25,10 +25,13 @@ public class Account extends PersistentNamed {
     @Column
     private String email;
     @OneToOne
-    @JoinColumn(name = "accountStatus_id", referencedColumnName = "id")
+    @JoinColumn
+    private AccountType accountType;
+    @OneToOne
+    @JoinColumn
     private AccountStatus accountStatus;
     @OneToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn
     private User user;
 
 
@@ -111,9 +114,12 @@ public class Account extends PersistentNamed {
     public void setAccountStatus(AccountStatus accountStatus) {
         this.accountStatus = accountStatus;
     }
-    @Id
-    @Column
-    public Long getId() {
-        return super.getId();
+
+    public AccountType getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(AccountType accountType) {
+        this.accountType = accountType;
     }
 }

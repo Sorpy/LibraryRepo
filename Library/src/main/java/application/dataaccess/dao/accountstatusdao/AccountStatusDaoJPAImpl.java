@@ -5,4 +5,8 @@ import application.dataaccess.dao.common.commondao.BaseDaoJPAImpl;
 
 
 public class AccountStatusDaoJPAImpl extends BaseDaoJPAImpl<AccountStatus,Long> implements AccountStatusDao {
+    @Override
+    public Class<AccountStatus> getMyType() {
+        return AccountStatus.class;
+    }
 }

@@ -17,7 +17,9 @@ public class AccountResultConverterImpl extends BaseResultConverterImpl<Account,
     public void convertSpecific(Account entity, AccountResult result) {
         result.setUsername(entity.getUser().getUsername());
         result.setUserId(entity.getUser().getId());
-        result.setAccountClientStatusName(entity.getAccountStatus().getName());
-        result.setAccountClientStatusId(entity.getAccountStatus().getId());
+        result.setAccountStatusName(entity.getAccountStatus().getName());
+        result.setAccountStatusId(entity.getAccountStatus().getId());
+        result.setAccountTypeId(entity.getAccountType().getId());
+        result.setAccountTypeName(entity.getAccountType().getName());
     }
 }

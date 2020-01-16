@@ -39,8 +39,4 @@ public class User extends Persistent {
     public void setUserStatus(UserStatus userStatus) {
         this.userStatus = userStatus;
     }
-    @Id
-    public Long getId() {
-        return super.getId();
-    }
 }

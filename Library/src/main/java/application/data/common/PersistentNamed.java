@@ -1,10 +1,9 @@
 package application.data.common;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
-@Component
+@MappedSuperclass
 public abstract class PersistentNamed extends Persistent {
     @Column(name = "code")
     private String code;

@@ -14,9 +14,11 @@ public class AccountResult extends BaseNamedResult {
     private String phone;
     private String email;
     private String username;
-    private String accountClientStatusName;
+    private String accountStatusName;
     private Long userId;
-    private Long accountClientStatusId;
+    private Long accountStatusId;
+    private String accountTypeName;
+    private Long accountTypeId;
 
 
     public String getUsername() {
@@ -27,12 +29,12 @@ public class AccountResult extends BaseNamedResult {
         this.username = username;
     }
 
-    public String getAccountClientStatusName() {
-        return accountClientStatusName;
+    public String getAccountStatusName() {
+        return accountStatusName;
     }
 
-    public void setAccountClientStatusName(String accountClientStatusName) {
-        this.accountClientStatusName = accountClientStatusName;
+    public void setAccountStatusName(String accountStatusName) {
+        this.accountStatusName = accountStatusName;
     }
 
     public Long getUserId() {
@@ -43,12 +45,12 @@ public class AccountResult extends BaseNamedResult {
         this.userId = userId;
     }
 
-    public Long getAccountClientStatusId() {
-        return accountClientStatusId;
+    public Long getAccountStatusId() {
+        return accountStatusId;
     }
 
-    public void setAccountClientStatusId(Long accountClientStatusId) {
-        this.accountClientStatusId = accountClientStatusId;
+    public void setAccountStatusId(Long accountStatusId) {
+        this.accountStatusId = accountStatusId;
     }
 
     public String getFirstName() {
@@ -115,6 +117,21 @@ public class AccountResult extends BaseNamedResult {
         this.email = email;
     }
 
+    public String getAccountTypeName() {
+        return accountTypeName;
+    }
+
+    public void setAccountTypeName(String accountTypeName) {
+        this.accountTypeName = accountTypeName;
+    }
+
+    public Long getAccountTypeId() {
+        return accountTypeId;
+    }
+
+    public void setAccountTypeId(Long accountTypeId) {
+        this.accountTypeId = accountTypeId;
+    }
 
     @Override
     public String toString() {
@@ -128,9 +145,9 @@ public class AccountResult extends BaseNamedResult {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", username='" + username + '\'' +
-                ", accountClientStatusName='" + accountClientStatusName + '\'' +
+                ", accountStatusName='" + accountStatusName + '\'' +
                 ", userId=" + userId +
-                ", accountClientStatusId=" + accountClientStatusId +
+                ", accountStatusId=" + accountStatusId +
                 '}';
     }
 }

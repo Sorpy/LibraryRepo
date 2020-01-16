@@ -15,7 +15,7 @@ public interface BaseDao <ENT,PK>{
     void delete(ENT entity);
     void delete(List<PK> idList);
 
-    List<ENT> find();
+    List<ENT> findAll();
     ENT find(PK id);
     List<ENT> find(String name, String value) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, IntrospectionException, InvocationTargetException;
 

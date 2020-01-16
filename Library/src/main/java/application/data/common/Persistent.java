@@ -1,11 +1,10 @@
 package application.data.common;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
-@Component
+@MappedSuperclass
 public abstract class Persistent {
     @Id
     @Column(name = "id")

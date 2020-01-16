@@ -4,7 +4,6 @@ import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
@@ -34,8 +33,4 @@ public class UsersUserGroup extends PersistentNamed {
         this.userGroup = userGroup;
     }
 
-    @Id
-    public Long getId() {
-        return super.getId();
-    }
 }

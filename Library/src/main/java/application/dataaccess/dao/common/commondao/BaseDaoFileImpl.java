@@ -61,7 +61,7 @@ public abstract class BaseDaoFileImpl<ENT extends Persistent,PK,STORAGE extends 
     }
 
     @Override
-    public List<ENT> find() {
+    public List<ENT> findAll() {
         return new ArrayList<>(storage.getMap().values());    }
 
     @Override

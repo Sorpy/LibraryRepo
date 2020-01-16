@@ -83,8 +83,4 @@ public class Book extends PersistentNamed {
         this.bookStatus = bookStatus;
     }
 
-    @Id
-    public Long getId() {
-        return super.getId();
-    }
 }
