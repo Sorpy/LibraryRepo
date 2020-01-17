@@ -3,156 +3,153 @@ package application.presentation.service.common;
 import application.business.converter.basepersistent.BaseParam;
 import application.business.converter.basepersistent.BaseResult;
 import application.business.processor.common.BaseProcessor;
-import application.data.common.APIResponse;
-import application.presentation.jsonconverter.Serialization;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@RestController
 public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
         PROCESSOR extends BaseProcessor<IN,OUT,PK>>
         implements BaseService<IN,PK> {
 
     @Autowired
-    private Serialization serial;
-    @Autowired
     private PROCESSOR processor;
 
     @Override
+    @GetMapping("/findБъPK")
+    public ResponseEntity<OUT> findByPK(@RequestBody PK id) {
 
-    public APIResponse findByPK(PK id) {
-        APIResponse response = new APIResponse();
         try {
-            response.setText
-                    (serial.serialization
-                            (processor.find(id)));
-            response.setResult(true);
+            if (id==null || (Long)id<=0){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            else {
+                return new ResponseEntity<>(processor.find(id), HttpStatus.OK);
+            }
+
         } catch (Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
-    public APIResponse findByParameter(String name,String value){
-        APIResponse response = new APIResponse();
+    @GetMapping("/findByParameter")
+    public ResponseEntity<List<OUT>> findByParameter(String name,String value){
         try {
-
-            List<OUT> results = processor.find(name, value.toLowerCase());
-            response.setText(serial.serialization(results));
-            response.setResult(true);
+            if (name == null || value == null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }else {
+                return new ResponseEntity<>(processor.find(name, value),HttpStatus.OK);
+            }
         } catch (Exception e){
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return response;
     }
 
     @Override
-    public APIResponse listAll() {
-        APIResponse response = new APIResponse();
+    @GetMapping("/listAll")
+    public ResponseEntity<List<OUT>> listAll() {
         try {
             List<OUT> results = processor.find();
-            response.setText(serial.serialization(results));
-            response.setResult(true);
+            if (results == null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            else {
+            return new ResponseEntity<>(results,HttpStatus.OK);
+                }
         } catch (Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return  new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
-    public APIResponse create(IN param) {
-        APIResponse response = new APIResponse();
+    @PostMapping("/create")
+    public ResponseEntity<OUT> create(@RequestBody IN param) {
         try{
-            OUT result = processor.create(param);
-            response.setText(serial.serialization(result));
-            response.setResult(true);
+            if (param == null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            return new ResponseEntity<>(processor.create(param),HttpStatus.OK);
         } catch (Exception e){
-            response.setText("Something went wrong "+ e);
-            response.setResult(false);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
-    public APIResponse create(List<IN> param) {
-        APIResponse response = new APIResponse();
+    @PostMapping("/createList")
+    public ResponseEntity<List<OUT>> create(@RequestBody List<IN> param) {
         try{
-            response.setResult(true);
-            response.setText(serial.serialization
-                    (processor.create(param)));
+            if (param==null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+            return new ResponseEntity<>(processor.create(param),HttpStatus.OK);
+            }
         } catch(Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return response;
     }
 
     @Override
-    public APIResponse update(PK id, IN param) {
-        APIResponse response = new APIResponse();
+    @PutMapping("/update")
+    public ResponseEntity update(@RequestBody PK id, IN param) {
         try {
-            processor.update(id,param);
-            response.setResult(true);
-            response.setText("updated list");
+            if (id == null || param == null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.update(id,param);
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+
         } catch (Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
-    public APIResponse update(List<IN> param) {
-        APIResponse response = new APIResponse();
+    @PutMapping("/updateAll")
+    public ResponseEntity update(List<IN> param) {
         try {
-            processor.update(param);
-            response.setResult(true);
-            response.setText("updated list");
+            if (param == null){
+                return new ResponseEntity(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.update(param);
+                return new ResponseEntity(HttpStatus.OK);
+            }
         } catch (Exception e) {
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
-    public APIResponse deleteById(PK id) {
-        APIResponse response = new APIResponse();
-        try {
-            processor.delete(id);
-            response.setResult(true);
-            response.setText("deleted element with ID: " + id);
-        } catch (Exception e){
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
-        }
+    @DeleteMapping("/deleteById")
+    public ResponseEntity deleteById(PK id) {
 
-        return response;
+        try {
+            if (id==null || (Long)id<=0){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.delete(id);
+                return new ResponseEntity(HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
     }
 
     @Override
-    public APIResponse delete(List<PK> idList) {
-        APIResponse response = new APIResponse();
+    @DeleteMapping("/deleteAll")
+    public ResponseEntity delete(List<PK> idList) {
         try {
-            processor.delete(idList);
-            response.setResult(true);
-            response.setText("deleted element with IDs: " + idList.toString());
-        } catch (Exception e){
-            response.setText("Something went wrong " + e.getMessage());
-            response.setResult(false);
+            if (idList==null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.delete(idList);
+                return new ResponseEntity(HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
-
-        return response;
     }
 
     @Override
