@@ -15,7 +15,7 @@ public interface BaseService<IN,PK> {
     ResponseEntity create(List<IN> param) throws JsonProcessingException;
 
     ResponseEntity update(PK id, IN param);
-    ResponseEntity update(List<IN> param);
+    ResponseEntity updateList(List<IN> param);
 
     ResponseEntity deleteById(PK id);
     ResponseEntity delete(List<PK> idList);

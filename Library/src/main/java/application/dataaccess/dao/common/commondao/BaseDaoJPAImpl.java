@@ -6,7 +6,12 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
+
+import static org.apache.commons.lang3.reflect.FieldUtils.getAllFieldsList;
+import static org.apache.commons.lang3.reflect.FieldUtils.readDeclaredField;
 
 @Repository
 @Transactional
@@ -55,7 +60,7 @@ public abstract class BaseDaoJPAImpl<ENT extends Persistent, PK> implements Base
 
     @Override
     public void delete(List<PK> idList) {
-
+        idList.forEach(this::deleteById);
     }
 
     @Override
@@ -70,6 +75,21 @@ public abstract class BaseDaoJPAImpl<ENT extends Persistent, PK> implements Base
 
     @Override
     public List<ENT> find(String name, String value) {
-        return null;
+        ArrayList<ENT> entities = new ArrayList<>();
+        findAll().forEach(ent -> {
+            for (Field field : getAllFieldsList(ent.getClass())) {
+                field.setAccessible(true);
+                String fieldValue = null;
+                try {
+                    fieldValue = (String) readDeclaredField(ent, name, true);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+                if (field.getName().equals(name) && value.equals(fieldValue)) {
+                    entities.add(ent);
+                }
+            }
+        });
+        return entities;
     }
 }

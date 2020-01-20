@@ -17,7 +17,7 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     private PROCESSOR processor;
 
     @Override
-    @GetMapping("/findБъPK")
+    @GetMapping("/findByPK")
     public ResponseEntity<OUT> findByPK(@RequestBody PK id) {
 
         try {
@@ -35,7 +35,7 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
 
     @Override
     @GetMapping("/findByParameter")
-    public ResponseEntity<List<OUT>> findByParameter(String name,String value){
+    public ResponseEntity<List<OUT>> findByParameter(@RequestParam(name = "name") String name,@RequestParam String value){
         try {
             if (name == null || value == null){
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -92,13 +92,13 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
 
     @Override
     @PutMapping("/update")
-    public ResponseEntity update(@RequestBody PK id, IN param) {
+    public ResponseEntity<String> update(@RequestParam(name = "id") PK id,@RequestBody IN param) {
         try {
             if (id == null || param == null){
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             } else {
                 processor.update(id,param);
-                return new ResponseEntity<>(HttpStatus.OK);
+                return new ResponseEntity<>("Updated",HttpStatus.OK);
             }
 
         } catch (Exception e) {
@@ -107,8 +107,8 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     }
 
     @Override
-    @PutMapping("/updateAll")
-    public ResponseEntity update(List<IN> param) {
+    @PutMapping("/updateList")
+    public ResponseEntity updateList(@RequestBody List<IN> param) {
         try {
             if (param == null){
                 return new ResponseEntity(HttpStatus.BAD_REQUEST);
@@ -123,7 +123,7 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
 
     @Override
     @DeleteMapping("/deleteById")
-    public ResponseEntity deleteById(PK id) {
+    public ResponseEntity deleteById(@RequestBody PK id) {
 
         try {
             if (id==null || (Long)id<=0){
@@ -138,8 +138,8 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     }
 
     @Override
-    @DeleteMapping("/deleteAll")
-    public ResponseEntity delete(List<PK> idList) {
+    @DeleteMapping("/deleteList")
+    public ResponseEntity delete(@RequestBody List<PK> idList) {
         try {
             if (idList==null){
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
