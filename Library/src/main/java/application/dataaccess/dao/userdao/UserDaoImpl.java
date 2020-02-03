@@ -8,4 +8,9 @@ public class UserDaoImpl extends BaseDaoFileImpl<User,Long, UserDataImpl> implem
     public Long getPK(User user) {
         return user.getId();
     }
+
+    @Override
+    public User getUser(String username) {
+        return null;
+    }
 }

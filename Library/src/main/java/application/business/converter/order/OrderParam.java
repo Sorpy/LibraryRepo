@@ -3,21 +3,20 @@ package application.business.converter.order;
 import application.business.converter.basepersistent.BaseNamedParam;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 @Component
 public class OrderParam  extends BaseNamedParam {
-    private Date date;
+    //private Date date;
     private Long accountClientId;
     private Long accountLibrarianId;
     private Long bookId;
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
+//    public Date getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(Date date) {
+//        this.date = date;
+//    }
 
     public Long getAccountClientId() {
         return accountClientId;

@@ -1,8 +1,7 @@
 package application.business.converter.userstatus;
 
-import application.data.entity.UserStatus;
-import application.business.converter.IllegalConvertException;
 import application.business.converter.common.BaseParamConverterImpl;
+import application.data.entity.UserStatus;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,6 +18,6 @@ public class UserStatusParamConverterImpl extends BaseParamConverterImpl<UserSta
         UserStatus userStatus = new UserStatus();
         userStatus.setCode(param.getCode());
         userStatus.setId(param.getId());
-        return null;
+        return userStatus;
     }
 }

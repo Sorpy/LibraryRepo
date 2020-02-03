@@ -3,10 +3,9 @@ package application.business.converter.order;
 import application.business.converter.basepersistent.BaseNamedResult;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 @Component
 public class OrderResult extends BaseNamedResult {
-    private Date date;
+    //private Date date;
     private Long accountClientId;
     private String accountClientName;
     private Long accountLibrarianId;
@@ -63,13 +62,13 @@ public class OrderResult extends BaseNamedResult {
         this.accountLibrarianName = accountLibrarianName;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
+//    public Date getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(Date date) {
+//        this.date = date;
+//    }
 }
 
 

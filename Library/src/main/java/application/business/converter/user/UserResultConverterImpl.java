@@ -16,6 +16,6 @@ public class UserResultConverterImpl extends BaseResultConverterImpl<User,UserRe
 
     @Override
     public UserResult getResult() {
-        return null;
+        return new UserResult();
     }
 }

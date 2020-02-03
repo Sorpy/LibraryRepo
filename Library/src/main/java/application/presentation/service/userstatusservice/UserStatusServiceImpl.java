@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 @RestController
 @RequestMapping("/UserStatus")
-public class UserStatusServiceImpl extends BaseServiceImpl<UserStatusParam,UserStatusResult,Long,UserStatusProcessor> implements UserStatusService{
+public class UserStatusServiceImpl
+        extends BaseServiceImpl<UserStatusParam,UserStatusResult,Long,UserStatusProcessor>
+        implements UserStatusService{
 
 }

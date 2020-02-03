@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Component
 @Entity
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class User extends Persistent {
     @Column
     private String username;

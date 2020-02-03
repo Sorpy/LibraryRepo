@@ -3,14 +3,14 @@ package application.data.entity;
 import application.data.common.PersistentNamed;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Column;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-import java.util.Date;
+
 @Component
 public class Order extends PersistentNamed {
-    @Column
-    private Date date;
+//    @Column
+//    @Temporal(TemporalType.DATE)
+//    private Date date;
     @OneToOne
     @JoinColumn(name = "accountClient_id")
     private Account accountClient;
@@ -21,13 +21,13 @@ public class Order extends PersistentNamed {
     @JoinColumn(name = "book_id")
     private Book book;
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
+//    public Date getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(Date date) {
+//        this.date = date;
+//    }
 
     public Account getAccountClient() {
         return accountClient;

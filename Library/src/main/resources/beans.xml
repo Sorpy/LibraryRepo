@@ -27,9 +27,9 @@
 
     <bean id="userGroupDaoJPA" class="application.dataaccess.dao.usergroupdao.UserGroupDaoJPAImpl" />
 
-    <bean id="userGroupStatusJPA" class="application.dataaccess.dao.usergroupstatusdao.UserGroupStatusDaoJPAImpl" />
+    <bean id="userGroupStatusDaoJPA" class="application.dataaccess.dao.usergroupstatusdao.UserGroupStatusDaoJPAImpl" />
 
-    <bean id="userStatusJPA" class="application.dataaccess.dao.userstatusdao.UserStatusDaoJPAImpl" />
+    <bean id="userStatusDoaJPA" class="application.dataaccess.dao.userstatusdao.UserStatusDaoJPAImpl" />
 
     <bean id="usersUserGroupDaoJPA" class="application.dataaccess.dao.usersusergroupdao.UsersUserGroupDaoJPAImpl" />
 
