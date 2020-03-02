@@ -30,7 +30,6 @@ public abstract class BaseResultConverterImpl <ENT, OUT> implements BaseResultCo
                 System.out.println(e);
             }
         });
-        System.out.println();
         return result;
     }
 
@@ -46,4 +45,5 @@ public abstract class BaseResultConverterImpl <ENT, OUT> implements BaseResultCo
     }
 
     public abstract OUT getResult();
+
 }

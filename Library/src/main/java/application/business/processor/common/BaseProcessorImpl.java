@@ -2,6 +2,7 @@ package application.business.processor.common;
 
 import application.business.converter.common.BaseParamConverter;
 import application.business.converter.common.BaseResultConverter;
+import application.data.common.Persistent;
 import application.dataaccess.dao.common.commondao.BaseDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -10,7 +11,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BaseProcessorImpl <IN,ENT,OUT,PK,
+public abstract class BaseProcessorImpl <IN,ENT extends Persistent,OUT,PK,
         DAO extends BaseDao<ENT,PK>,
         PConvert extends BaseParamConverter<IN,ENT>,
         RConvert extends BaseResultConverter<ENT,OUT>>
@@ -83,12 +84,22 @@ public abstract class BaseProcessorImpl <IN,ENT,OUT,PK,
 
     @Override
     public void delete(PK id) {
-        dao.deleteById(id);
+        dao.delete(id);
     }
 
     @Override
     public void delete(List<PK> idList) {
         dao.delete(idList);
+    }
+
+    @Override
+    public void erase(PK id) {
+        dao.eraseById(id);
+    }
+
+    @Override
+    public void erase(List<PK> idList) {
+        dao.erase(idList);
     }
 
     @Override

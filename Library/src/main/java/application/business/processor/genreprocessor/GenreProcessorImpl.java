@@ -9,6 +9,9 @@ import application.business.processor.common.BaseProcessorImpl;
 import application.data.entity.Genre;
 import application.dataaccess.dao.genredao.GenreDao;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
+
 @Component
 public class GenreProcessorImpl extends BaseProcessorImpl<GenreParam,Genre,GenreResult,Long, GenreDao, GenreParamConverter,GenreResultConverter>
         implements GenreProcessor{

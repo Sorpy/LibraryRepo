@@ -11,6 +11,7 @@ public abstract class PersistentNamed extends Persistent {
     private String name;
     @Column(name = "description")
     private String description;
+    
 
     public String getCode() {
         return code;

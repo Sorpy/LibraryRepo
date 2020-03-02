@@ -12,13 +12,13 @@ public class Order extends PersistentNamed {
 //    @Temporal(TemporalType.DATE)
 //    private Date date;
     @OneToOne
-    @JoinColumn(name = "accountClient_id")
+    @JoinColumn(name = "accountClient_id",nullable = false)
     private Account accountClient;
     @OneToOne
-    @JoinColumn(name = "accountLibrarian_id")
+    @JoinColumn(name = "accountLibrarian_id",nullable = false)
     private Account accountLibrarian;
     @OneToOne
-    @JoinColumn(name = "book_id")
+    @JoinColumn(name = "book_id",nullable = false)
     private Book book;
 
 //    public Date getDate() {

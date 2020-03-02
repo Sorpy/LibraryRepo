@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import java.util.List;
+
 @Primary
 @Component
 public class UserDaoJPAImpl extends BaseDaoJPAImpl<User,Long> implements UserDao {
@@ -23,7 +25,11 @@ public class UserDaoJPAImpl extends BaseDaoJPAImpl<User,Long> implements UserDao
     @Transactional
     @Override
     public User getUser(String username) {
-        return (User) entityManager.createQuery("SELECT u FROM UserInfo u WHERE userName=?")
-                .setParameter(1,username).getSingleResult();
+        List<User> user  = find("username",username);
+        if (!user.isEmpty()) {
+            return user.get(0);
+        }
+        else
+            return null;
     }
 }

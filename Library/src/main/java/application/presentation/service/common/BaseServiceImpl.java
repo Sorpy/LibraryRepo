@@ -20,7 +20,6 @@ import java.util.List;
         @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
         @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
 })
-
 public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
         PROCESSOR extends BaseProcessor<IN,OUT,PK>>
         implements BaseService<IN,PK> {
@@ -38,9 +37,9 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     })
     @Override
     @ApiOperation("Find entity by PK")
-    @GetMapping("/findByPK")
+    @GetMapping("/findByPK/{id}")
     public ResponseEntity<OUT> findByPK(@RequestHeader(name = "Authorization")@ApiParam("PK to be searched by.")
-                                              @RequestBody PK id) {
+                                            @PathVariable("id") PK id) {
 
         try {
             if (id==null || (Long)id<=0){
@@ -219,15 +218,15 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     })
     @Override
     @ApiOperation("Deletes a List of entities")
-    @DeleteMapping("/deleteById")
-    public ResponseEntity<String> deleteById(
+    @DeleteMapping("/eraseById")
+    public ResponseEntity<String> eraseById(
             @ApiParam("PK of entity that's being deleted")@RequestBody PK id) {
 
         try {
             if (id==null || (Long)id<=0){
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             } else {
-                processor.delete(id);
+                processor.erase(id);
                 return new ResponseEntity<>("Element deleted",HttpStatus.OK);
             }
         } catch (Exception e) {
@@ -245,9 +244,50 @@ public class BaseServiceImpl<IN extends BaseParam,OUT extends BaseResult,PK,
     })
     @Override
     @ApiOperation("Deletes a List of entities")
-    @DeleteMapping("/deleteList")
-    public ResponseEntity<String> delete(
+    @DeleteMapping("/eraseList")
+    public ResponseEntity<String> eraseList(
             @ApiParam("List of IDs of entities that are being deleted")@RequestBody List<PK> idList) {
+        try {
+            if (idList==null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.erase(idList);
+                return new ResponseEntity<>("List of entities successfully deleted",HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+
+    @ApiResponses(value = {
+            @ApiResponse(code = 204, message = "Entities successfully with set ids successfully deleted")
+    })
+    @Override
+    @ApiOperation("Deletes a List of entities")
+    @DeleteMapping("/delete")
+    public ResponseEntity delete(
+            @ApiParam("PK of entity that's being deleted")@RequestBody PK id) {
+
+        try {
+            if (id==null || (Long)id<=0){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            } else {
+                processor.delete(id);
+                return new ResponseEntity<>("Element deleted",HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @ApiResponses(value = {
+            @ApiResponse(code = 204, message = "Entities successfully with set ids successfully deleted")
+    })
+    @Override
+    @ApiOperation("Deletes a List of entities")
+    @DeleteMapping("/deleteList")
+    public ResponseEntity deleteList( @ApiParam("List of IDs of entities that are being deleted")@RequestBody List<PK> idList) {
         try {
             if (idList==null){
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

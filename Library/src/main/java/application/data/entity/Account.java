@@ -25,13 +25,13 @@ public class Account extends PersistentNamed {
     @Column
     private String email;
     @OneToOne
-    @JoinColumn(name = "accountType_id")
+    @JoinColumn(name = "accountType_id",nullable = false)
     private AccountType accountType;
     @OneToOne
-    @JoinColumn(name = "accountStatus_id")
+    @JoinColumn(name = "accountStatus_id",nullable = false)
     private AccountStatus accountStatus;
     @OneToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id",nullable = false)
     private User user;
 
 

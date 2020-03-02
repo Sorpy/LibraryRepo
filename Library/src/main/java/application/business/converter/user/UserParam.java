@@ -1,13 +1,17 @@
 package application.business.converter.user;
 
 import application.business.converter.basepersistent.BaseParam;
+import application.business.converter.common.customannotation.Track;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UserParam extends BaseParam {
     private String username;
-    private String password;
     private Long userStatusId;
+    @Track(ignore =false,source = "password",destination = "password")
+    private String password;
+
+
 
     public String getUsername() {
         return username;

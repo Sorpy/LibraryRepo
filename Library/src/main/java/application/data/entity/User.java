@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class User extends Persistent {
-    @Column
+    @Column(unique=true)
     private String username;
     @Column
     private String password;

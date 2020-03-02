@@ -33,6 +33,6 @@
 
     <bean id="usersUserGroupDaoJPA" class="application.dataaccess.dao.usersusergroupdao.UsersUserGroupDaoJPAImpl" />
 
-
+    <bean id="apiSessionDao" class="application.dataaccess.dao.apisessiondao.ApiSessionDaoImpl" />
 
 </beans>

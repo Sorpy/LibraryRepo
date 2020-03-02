@@ -48,19 +48,35 @@ public abstract class BaseDaoJPAImpl<ENT extends Persistent, PK> implements Base
     }
 
     @Override
-    public void deleteById(PK id) {
-        delete(
+    public void eraseById(PK id) {
+        erase(
                 find(id));
     }
 
     @Override
+    public void delete(PK id) {
+        delete(find(id));
+    }
+
+    @Override
     public void delete(ENT entity) {
-        entityManager.remove(entity);
+        entity.setActive((byte) 0);
+        update(entity);
     }
 
     @Override
     public void delete(List<PK> idList) {
-        idList.forEach(this::deleteById);
+        idList.forEach(this::eraseById);
+    }
+
+    @Override
+    public void erase(ENT entity) {
+        entityManager.remove(entity);
+    }
+
+    @Override
+    public void erase(List<PK> idList) {
+        idList.forEach(this::eraseById);
     }
 
     @Override

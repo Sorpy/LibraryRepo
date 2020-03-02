@@ -1,6 +1,6 @@
 package application.data.entity;
 
-import application.data.common.PersistentNamed;
+import application.data.common.Persistent;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
@@ -9,13 +9,13 @@ import javax.persistence.OneToOne;
 
 @Component
 @Entity
-public class UsersUserGroup extends PersistentNamed {
+public class UsersUserGroup extends Persistent {
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;
     @OneToOne
     @JoinColumn(name = "userGroup_id")
-    private UserGroup userGroup;//list
+    private UserGroup userGroup;
 
     public User getUser() {
         return user;

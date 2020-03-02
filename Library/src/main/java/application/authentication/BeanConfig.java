@@ -17,8 +17,8 @@ public class BeanConfig {
 
     @Bean
     @Primary
-    public AuthenticationFilter authFilter() {
-        return new AuthenticationFilter();
+    public CustomAuthenticationFilter authFilter() {
+        return new CustomAuthenticationFilter();
     }
 
     @Bean

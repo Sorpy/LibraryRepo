@@ -71,6 +71,7 @@ public abstract class BaseParamConverterImpl <IN, ENT > implements BaseParamConv
             entity = getEntity(param);
         }
         entity = convertStandard(param,entity);
+        convertSpecific(param,entity);
         return entity;
     }
 

@@ -17,8 +17,11 @@ public interface BaseService<IN,PK> {
     ResponseEntity update(PK id, IN param);
     ResponseEntity updateList(List<IN> param);
 
-    ResponseEntity deleteById(PK id);
-    ResponseEntity delete(List<PK> idList);
+    ResponseEntity eraseById(PK id);
+    ResponseEntity eraseList(List<PK> idList);
+
+    ResponseEntity delete(PK id);
+    ResponseEntity deleteList(List<PK> idList);
 
     void validateParameters(IN param);
     void validateParameters(List<IN> param);

@@ -11,20 +11,20 @@ public class Book extends PersistentNamed {
     @Column
     private String bookName;
     @OneToOne
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "author_id",nullable = false)
     private Author author;
     @OneToOne
-    @JoinColumn(name = "genre_id")
+    @JoinColumn(name = "genre_id",nullable = false)
     private Genre genre;
     @OneToOne
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "department_id",nullable = false)
     private Department department;
     @Column
     private int year;
     @Column
     private double price;
     @OneToOne
-    @JoinColumn(name = "bookStatus_id")
+    @JoinColumn(name = "bookStatus_id",nullable = false)
     private BookStatus bookStatus;
 
     public String getBookName() {

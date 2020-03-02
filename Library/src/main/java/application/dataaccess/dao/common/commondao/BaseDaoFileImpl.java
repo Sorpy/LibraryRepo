@@ -32,7 +32,7 @@ public abstract class BaseDaoFileImpl<ENT extends Persistent,PK,STORAGE extends 
 
     @Override
     public ENT update(ENT entity) {
-        deleteById (getPK(entity));
+        eraseById(getPK(entity));
         save(entity);
         return entity;
     }
@@ -44,20 +44,34 @@ public abstract class BaseDaoFileImpl<ENT extends Persistent,PK,STORAGE extends 
     }
 
     @Override
-    public void deleteById(PK id) {
+    public void eraseById(PK id) {
         ENT removeEntity = find(id);
-        delete(removeEntity);
+        erase(removeEntity);
         storage.saveToDataSource();
     }
 
     @Override
-    public void delete(ENT entity) {
+    public void erase(ENT entity) {
         storage.getMap().remove(getPK(entity),entity);
     }
 
     @Override
+    public void erase(List<PK> idList) {
+        idList.forEach(this::eraseById);
+    }
+
+    @Override
+    public void delete(PK id) {
+    }
+
+    @Override
+    public void delete(ENT entity) {
+
+    }
+
+    @Override
     public void delete(List<PK> idList) {
-        idList.forEach(this::deleteById);
+
     }
 
     @Override
@@ -71,6 +85,8 @@ public abstract class BaseDaoFileImpl<ENT extends Persistent,PK,STORAGE extends 
                 .filter(e -> e.getId().equals(id))
                 .findFirst().get();
     }
+
+
 
     @Override
     public List<ENT> find(String name, String value){

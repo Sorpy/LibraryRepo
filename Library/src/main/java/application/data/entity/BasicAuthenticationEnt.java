@@ -7,17 +7,18 @@ public class BasicAuthenticationEnt {
     private String username;
     private String password;
 
-    public BasicAuthenticationEnt(String requestHeader){
-        String base64Str = requestHeader.replace("Basic","").trim();
-        byte[] byteArray = Base64.getDecoder().decode(base64Str);
-        String credentials = new String(byteArray, StandardCharsets.UTF_8);
-        String[] splitCredentials = credentials.split(":");
+    public BasicAuthenticationEnt(String requestHeader) {
+        if (null != requestHeader) {
+            String base64Credentials = requestHeader.substring("Basic".length()).trim();
+            byte[] credDecoded = Base64.getDecoder().decode(base64Credentials);
+            String credentials = new String(credDecoded, StandardCharsets.UTF_8);
+            final String[] values = credentials.split(":", 2);
 
-        if (splitCredentials.length==2){
-            setUsername(splitCredentials[0]);
-            setPassword(splitCredentials[1]);
+            if (values != null) {
+                this.setUsername(values[0]);
+                this.setPassword(values[1]);
+            }
         }
-
     }
 
 

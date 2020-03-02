@@ -2,28 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4366cf1e-677a-463d-8a86-bce426ba1f8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParamConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParamConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/authentication/CustomAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/authentication/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/authentication/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/authentication/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/authentication/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseResultConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParamConverterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserResultConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserResultConverterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/userstatus/UserStatusParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/userstatus/UserStatusParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/converter/usersusergroup/UsersUserGroupParamConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/business/processor/usersusergroupprocessor/UsersUserGroupProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/BasicAuthenticationEnt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/data/entity/UsersUserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoFileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoFileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,82 +67,74 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/valves/ErrorReportValve.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/presentation/service/AuthenticationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="168">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardEngineValve.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="63">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/CoyoteAdapter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/TokenAuthenticationProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="426" selection-start-line="426" selection-end-line="426" />
+            <state relative-caret-position="105">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseParamConverterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="452" selection-start-line="452" selection-end-line="452" />
+            <state relative-caret-position="210">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/library/LibraryApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="63">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProtocol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="985" selection-start-line="985" selection-end-line="985" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/NioEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="1618" selection-start-line="1618" selection-end-line="1618" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/SpringSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="43" column="78" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="42">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/BasicAuthenticationEnt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="84">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -156,6 +166,7 @@
       <find>serial</find>
       <find>update</find>
       <find>Credetentials</find>
+      <find>apiSessionResult</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,65 +175,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usergroupstatusdao/UserGroupStatusDaoJPAImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userstatusdao/UserStatusDaoJPAImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/usersusergroupdao/UsersUserGroupDaoJPAImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/accountservice/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/accounttype/AccountTypeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/authorservice/AuthorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/bookservice/BookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/bookstatusservice/BookStatusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/departmentservice/DepartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/genreservice/GenreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/orderservice/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupservice/UserGroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/usergroupstatusservice/UserGroupStatusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/userservice/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/usersusergroupservice/UsersUserGroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/LibraryApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/AccountStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/SpringFoxConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/accountstatusservive/AccountStatusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/userstatusservice/UserStatusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/userstatus/UserStatusParamConverterImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserResultConverterImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/order/OrderResult.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/AppAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/Credetentials.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/Credentials.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/BasicAuthenticationEnt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/genreprocessor/GenreProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoFileImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/security/ApiSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/apisessionservice/ApiSessionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionParamConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionResultConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionResultConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionParamConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/authentication/AuthentticationProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/basepersistent/BaseResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UsernamePasswordTokenAuthentication.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/authentication/BeanConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/authentication/hash/Hash.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/BasicAuthenticationEnt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/userprocessor/UserProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/apisession/ApiSessionProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/apisession/ApiSessionProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/authentication/AuthenticationProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/UsernamePasswordTokenAuthenticationToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/CustomUsernamePasswordAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/apisessiondao/ApiSessionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/authentication/CustomAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/authentication/TokenAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/apisession/ApiSessionParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/ApiSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/dataaccess/dao/apisessiondao/ApiSessionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/processor/authentication/AuthenticationProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/data/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParamConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseParamConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/user/UserParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseResultConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/authentication/SpringSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/presentation/service/AuthenticationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -232,7 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,6 +297,177 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="hash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="accountstatus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="apisession" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="author" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="basepersistent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="apisession" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="authorprocessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="userprocessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,7 +507,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="userdao" type="462c0819:PsiDirectoryNode" />
+              <item name="accounttypedao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
@@ -335,7 +516,70 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="apisessiondao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="authordao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="bookdao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="commondao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="commonstorage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="userdao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
@@ -355,6 +599,28 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="accounttype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="apisessionservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
@@ -372,19 +638,24 @@
               <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="usersusergroupservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,9 +729,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0804904" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,8 +744,8 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.552546" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40411702" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.30010834" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40628386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -481,7 +753,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.3726977" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3261105" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info anchor="bottom" id="Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -528,35 +800,37 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java</url>
-          <line>173</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java</url>
-          <line>121</line>
-          <properties class="application.presentation.service.common.BaseServiceImpl" method="create">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/apisessiondao/ApiSessionDaoImpl.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java</url>
-          <line>21</line>
-          <properties class="application.authentication.BasicAuthenticationProvider" method="authenticate">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/application/presentation/service/AuthenticationServiceImpl.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationFilter.java</url>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/common/commondao/BaseDaoJPAImpl.java</url>
           <line>26</line>
-          <properties class="application.authentication.AuthenticationFilter" method="doFilterInternal">
+          <properties class="application.dataaccess.dao.common.commondao.BaseDaoJPAImpl" method="save" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/application/business/processor/common/BaseProcessorImpl.java</url>
+          <line>27</line>
+          <properties class="application.business.processor.common.BaseProcessorImpl" method="create">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -566,438 +840,313 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.2.1.RELEASE/1ffd134e0a23a0564b44616daf401bbc7918275b/spring-security-core-5.2.1.RELEASE-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="166">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/HttpRequestResponseHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/BasicAuthenticationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#1377#1378#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/util/WebUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="482" selection-start-line="482" selection-end-line="482" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/SaveContextOnUpdateOrErrorResponseWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-          <folding>
-            <element signature="e#4008#4009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/HttpSessionSecurityContextRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/request/async/WebAsyncManagerIntegrationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="476">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.2.1.RELEASE/1ffd134e0a23a0564b44616daf401bbc7918275b/spring-security-core-5.2.1.RELEASE-sources.jar!/org/springframework/security/core/context/ThreadLocalSecurityContextHolderStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.2.1.RELEASE/1ffd134e0a23a0564b44616daf401bbc7918275b/spring-security-core-5.2.1.RELEASE-sources.jar!/org/springframework/security/core/context/SecurityContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="174">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.2.1.RELEASE/1ffd134e0a23a0564b44616daf401bbc7918275b/spring-security-core-5.2.1.RELEASE-sources.jar!/org/springframework/security/core/context/SecurityContextImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.2.2.RELEASE/f673b23665fc2c6c626bed55694091ef29acaf37/spring-context-5.2.2.RELEASE-sources.jar!/org/springframework/context/i18n/LocaleContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/context/request/RequestContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar!/ch/qos/logback/classic/LoggerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar!/ch/qos/logback/classic/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="618" selection-start-line="618" selection-end-line="618" />
+        <state relative-caret-position="174">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
-            <element signature="e#21272#21273#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.2.2.RELEASE/27d11300e5d80662f78adb8b40d95296ad3c4daf/spring-jcl-5.2.2.RELEASE-sources.jar!/org/apache/commons/logging/LogAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/Credentials.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-          <folding>
-            <element signature="e#7837#7838#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/context/request/ServletRequestAttributes.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.2.1.RELEASE/1ffd134e0a23a0564b44616daf401bbc7918275b/spring-security-core-5.2.1.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/context/request/AbstractRequestAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/FormContentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/RequestFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="552" selection-start-line="552" selection-end-line="552" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-          <folding>
-            <element signature="e#8664#8665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardWrapperValve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="300" selection-start-line="300" selection-end-line="300" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardContextValve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/authenticator/AuthenticatorBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="526" selection-start-line="526" selection-end-line="526" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/OutputBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-          <folding>
-            <element signature="e#4240#4241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="472" selection-start-line="472" selection-end-line="472" />
-          <folding>
-            <element signature="e#13066#13067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/util/TLSUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/util/LifecycleBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="342" selection-start-line="342" selection-end-line="342" />
-          <folding>
-            <element signature="e#12038#12039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/LifecycleState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#2356#2357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/ErrorState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="166">
           <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
-            <element signature="e#3146#3147#0" expanded="true" />
+            <element signature="e#2989#2990#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#3080#3081#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/userdao/UserDaoJPAImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="624" selection-start-line="624" selection-end-line="624" />
+        <state relative-caret-position="82">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/Request.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/PersistentNamed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="583" selection-start-line="583" selection-end-line="583" />
+        <state relative-caret-position="227">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#16271#16272#0" expanded="true" />
-            <element signature="e#66019#66020#0" expanded="true" />
-            <element signature="e#66071#66072#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/util/ErrorPageSupport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/common/Persistent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="378">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardContext.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.2.RELEASE/91feb350e99fca988bf065a54a49bbdf1f7efea9/spring-aop-5.2.2.RELEASE-sources.jar!/org/springframework/aop/framework/AdvisedSupport.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.2.RELEASE/91feb350e99fca988bf065a54a49bbdf1f7efea9/spring-aop-5.2.2.RELEASE-sources.jar!/org/springframework/aop/target/SingletonTargetSource.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.2.RELEASE/91feb350e99fca988bf065a54a49bbdf1f7efea9/spring-aop-5.2.2.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/dataaccess/dao/apisessiondao/ApiSessionDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="3373" selection-start-line="3373" selection-end-line="3373" />
+        <state relative-caret-position="342">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/ApiSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#37729#37730#0" expanded="true" />
-            <element signature="e#37791#37792#0" expanded="true" />
-            <element signature="e#99960#99961#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/Response.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/business/processor/authentication/AuthenticationProcessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
-          <folding>
-            <element signature="e#5701#5702#0" expanded="true" />
-            <element signature="e#5730#5731#0" expanded="true" />
-            <element signature="e#7710#7711#0" expanded="true" />
-            <element signature="e#7753#7754#0" expanded="true" />
-            <element signature="e#7844#7845#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/Response.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.2.RELEASE/ebb2e1f8990ace4ddd859ffa35edf84feab9d3d3/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.2.RELEASE/ebb2e1f8990ace4ddd859ffa35edf84feab9d3d3/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.2.RELEASE/ebb2e1f8990ace4ddd859ffa35edf84feab9d3d3/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.2.RELEASE/ebb2e1f8990ace4ddd859ffa35edf84feab9d3d3/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.2.RELEASE/ebb2e1f8990ace4ddd859ffa35edf84feab9d3d3/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.29/4f2cd2c93b01d772473ea69325dc846787228a91/tomcat-embed-websocket-9.0.29-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="422" selection-start-line="422" selection-end-line="422" />
-          <folding>
-            <element signature="e#4571#4572#0" expanded="true" />
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#10742#10743#0" expanded="true" />
-            <element signature="e#10794#10795#0" expanded="true" />
-            <element signature="e#11557#11558#0" expanded="true" />
-            <element signature="e#11609#11610#0" expanded="true" />
-            <element signature="e#11722#11723#0" expanded="true" />
-            <element signature="e#24698#24699#0" expanded="true" />
-            <element signature="e#24752#24753#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="166">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardHostValve.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        <state relative-caret-position="187">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/valves/ErrorReportValve.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/session/SessionManagementFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="174">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardEngineValve.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/authentication/AnonymousAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="174">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/CoyoteAdapter.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="426" selection-start-line="426" selection-end-line="426" />
+        <state relative-caret-position="6132">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="452" selection-start-line="452" selection-end-line="452" />
+        <state relative-caret-position="1911">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="1050">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProtocol.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="985" selection-start-line="985" selection-end-line="985" />
+        <state relative-caret-position="1806">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/NioEndpoint.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="1618" selection-start-line="1618" selection-end-line="1618" />
+        <state relative-caret-position="798">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.29/2f3edb6122c114ef5ff134a62ec5a0bafb700171/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.2.RELEASE/95832bf01d9bc52002836683637855ec254eec0/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/CustomAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="43" column="78" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="291">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.2.1.RELEASE/44a612127342efee296f5a4c04004e6c0f622899/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/servletapi/SecurityContextHolderAwareRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2604">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/BeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/presentation/service/common/BaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/presentation/service/AuthenticationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/LibraryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/TokenAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/library/LibraryApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/authentication/SpringSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/data/entity/BasicAuthenticationEnt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/business/converter/common/BaseParamConverterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>

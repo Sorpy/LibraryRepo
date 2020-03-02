@@ -13,6 +13,9 @@ public interface BaseProcessor <IN,OUT,PK> {
     void update(PK id, IN param);
     void update(List<IN> param);
 
+    void erase(PK id);
+    void erase(List<PK> idList);
+
     void delete(PK id);
     void delete(List<PK> idList);
 
